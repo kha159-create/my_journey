@@ -2,9 +2,9 @@ const siteContent = {
   ar: {
     lang: "ar",
     dir: "rtl",
-    documentTitle: "رحلتي | خليل الصانغ",
-    metaDescription: "رحلتي المهنية لخليل الصانغ عبر الخبرة، الإنجاز، والإدارة المعتمدة على الأرقام.",
-    brandName: "خليل الصانغ",
+    documentTitle: "رحلتي | خليل الصانع",
+    metaDescription: "رحلتي المهنية لخليل الصانع عبر الخبرة، الإنجاز، والإدارة المعتمدة على الأرقام.",
+    brandName: "خليل الصانع",
     brandSubtitle: "رحلتي",
     langToggleLabel: "AR / EN",
     nav: { story: "الرؤية", journey: "المسيرة", leadership: "القيادة", cases: "الحالات", credentials: "الاعتمادات" },
@@ -1677,4 +1677,3 @@ elements.editorToggle?.addEventListener("click", () => {
 const requestedLang = new URLSearchParams(window.location.search).get("lang");
 renderContent(requestedLang && siteContent[requestedLang] ? requestedLang : "ar");
 setupPortraitEditor();
-
