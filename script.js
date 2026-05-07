@@ -235,25 +235,45 @@ const siteContent = {
       ]
     },
     projects: {
-      kicker: "المشاريع والأدوات",
-      heading: "أنظمة رقمية بنيتها لتقريب القرار من الواقع الميداني، وتوحيد القراءة اليومية للأداء.",
-      featuresLabel: "الخصائص",
-      techLabel: "التقنيات",
-      items: [{
-        name: "ORA Cockpit",
-        type: "Retail Operations & Performance Platform",
-        description: "منصة تشغيل وتحليل طورتها لتحويل متابعة الفروع من تقارير متفرقة إلى نظام قرار يومي واحد. تجمع المبيعات، الزوار، الموظفين، المنتجات، العروض، التارجت، والتقارير داخل واجهة موحدة تساعدني على قراءة الأداء بسرعة، كشف الخلل مبكرًا، ومتابعة التنفيذ على مستوى الفرع والمنطقة.",
-        features: [
-          "لوحة تحكم موحدة لـ KPI والمبيعات والزوار والخريطة",
-          "صلاحيات دخول حسب الدور مع فلاتر مدير منطقة وفرع ومدينة",
-          "محاكاة قيمة العميل واكتشاف الأيام الشاذة في الأداء",
-          "Target Split ذكي بفترات 10/15 يوم مع منطق ترحيل العجز أو الفائض",
-          "تحليل الفروع والموظفين والمنتجات والعروض في نظام واحد",
-          "تقارير PDF وExcel جاهزة للاستخدام الإداري",
-          "Live Sales واستعلام منتجات ووضع TV/Watch للمتابعة"
+      kicker: "الأنظمة التي بنيتها",
+      heading: "رحلة بدأت من تنظيم مصاريفي، وتطورت إلى بناء نظام تشغيلي يختصر ساعات التحليل اليدوي.",
+      intro: "لم أتعامل مع بناء الأنظمة كفكرة جانبية. البداية كانت من حاجة شخصية بسيطة، ثم تحولت تدريجيًا إلى طريقة تفكير أطبقها على مشاكلي اليومية في المال والعمل واتخاذ القرار.",
+      origin: {
+        eyebrow: "بداية الرحلة",
+        title: "بياني",
+        story: "بدأت القصة عندما كنت أبحث عن أداة أسجل فيها مصاريفي بشكل يناسبني، ولم أجد حلًا جاهزًا يخدمني كما أريد. بدأت أولًا بملف Excel، ثم نقلت الفكرة إلى Google Sheets، وبعدها دخلت عالم التطبيقات والحلول الذكية وبدأت أمزج الذكاء الاصطناعي بطريقة عملي.",
+        milestones: ["Excel", "Google Sheets", "واجهة عربية", "تحليلات ذكية", "PWA"],
+        note: "بياني لم يكن مجرد أداة مصاريف، بل أول مساحة حقيقية تعلمت فيها كيف أبني نظامًا حول احتياجي أنا.",
+        linkLabel: "زيارة بياني",
+        linkHref: "https://kha159-create.github.io/bayani/"
+      },
+      flagship: {
+        eyebrow: "النظام التشغيلي",
+        title: "ORA Cockpit",
+        type: "منصة تشغيل ومتابعة أداء",
+        story: "بعد بياني، انتقلت نفس العقلية إلى العمل. كنت أتنقل بين ملفات Excel وتقارير PDF وتحليل يدوي يستهلك ساعات حتى أصل إلى الرقم الذي أحتاجه. من هنا بدأ Ora Cockpit: نظام واحد يجمع القراءة اليومية، المقارنة، الموظفين، الفروع، التارجت، والتقارير في مساحة واحدة أسرع وأوضح.",
+        impactTitle: "ما الذي يقدمه فعليًا",
+        impacts: [
+          "يجمع المبيعات والزوار والفروع والموظفين في لوحة تشغيلية واحدة.",
+          "يختصر الوصول للرقم من ملفات متفرقة إلى قراءة مباشرة وسريعة.",
+          "يوحد التقارير والمقارنات وتقسيم التارجت داخل نظام قرار يومي.",
+          "يمنحني رؤية أوضح لأين الخلل وأين يجب أن يبدأ التدخل."
         ],
-        tech: ["React", "TypeScript", "Vite", "React Router", "Recharts", "Leaflet", "XLSX", "jsPDF", "D365 Data", "Tailwind"]
-      }]
+        modulesTitle: "المزايا التي يغطيها",
+        modules: ["لوحة KPI", "المعارض", "قيمة العميل", "المقارنات", "الموظفون", "تقسيمة التارجت", "العروض", "المنتجات", "التقارير", "المبيعات المباشرة"],
+        techTitle: "الهوية التقنية",
+        tech: ["React", "TypeScript", "Vite", "Recharts", "Leaflet", "XLSX", "jsPDF"],
+        scene: {
+          appLabel: "ORA Cockpit",
+          appSubLabel: "Operations Intelligence Layer",
+          statCards: [
+            { value: "KPI", label: "لوحة موحدة" },
+            { value: "Target", label: "تقسيم ذكي" },
+            { value: "Live", label: "متابعة لحظية" }
+          ],
+          panels: ["المبيعات", "الفروع", "الموظفون", "المنتجات", "التقارير", "العروض"]
+        }
+      }
     },
     credentials: {
       kicker: "الاعتمادات",
@@ -517,25 +537,45 @@ const siteContent = {
       ]
     },
     projects: {
-      kicker: "Projects & Tools",
-      heading: "Digital systems I built to bring decisions closer to the field and make daily performance easier to read.",
-      featuresLabel: "Features",
-      techLabel: "Technology",
-      items: [{
-        name: "ORA Cockpit",
+      kicker: "Systems I Built",
+      heading: "A journey that started with tracking my own expenses and evolved into building an operating system that saves hours of manual analysis.",
+      intro: "I did not approach building systems as a side hobby. It started from a personal need, then gradually became a way of thinking I applied to money, work, and decision-making.",
+      origin: {
+        eyebrow: "Where it started",
+        title: "Bayani",
+        story: "The story started when I wanted a simple way to track my own expenses and could not find a tool that truly fit how I think. I began with Excel, moved the idea into Google Sheets, then stepped into app building and smart solutions, gradually mixing AI into the way I work.",
+        milestones: ["Excel", "Google Sheets", "Arabic-first UX", "AI-assisted insights", "PWA"],
+        note: "Bayani was more than an expense tracker. It was the first real space where I learned how to build a system around a personal need.",
+        linkLabel: "Visit Bayani",
+        linkHref: "https://kha159-create.github.io/bayani/"
+      },
+      flagship: {
+        eyebrow: "Operating system",
+        title: "ORA Cockpit",
         type: "Retail Operations & Performance Platform",
-        description: "A platform I built to turn branch follow-up from scattered reports into one daily operating system. It brings sales, traffic, employees, products, offers, targets, and reporting into a single workspace that helps me read performance faster, spot issues earlier, and follow execution at both branch and regional level.",
-        features: [
-          "Unified KPI, sales, traffic, and branch map dashboard",
-          "Role-based access with manager, branch, and city filters",
-          "Customer value simulation and anomaly detection",
-          "Smart target split with 10/15-day phases and carry-forward logic",
-          "Branch, employee, product, and offer analysis in one system",
-          "Administrative PDF and Excel reporting",
-          "Live sales, product inquiry, and TV/watch monitoring modes"
+        story: "After Bayani, the same mindset moved into work. I was moving between Excel files, PDF reports, and manual analysis that could take hours before the right number became visible. Ora Cockpit was built to replace that fragmentation with one daily operating space for targets, branches, people, reporting, and decisions.",
+        impactTitle: "What it actually solves",
+        impacts: [
+          "Brings sales, traffic, branches, and employees into one operational workspace.",
+          "Shortens the path from scattered files to direct, readable numbers.",
+          "Unifies reporting, comparisons, and target logic inside one daily system.",
+          "Makes it easier to see where the issue is and where intervention should start."
         ],
-        tech: ["React", "TypeScript", "Vite", "React Router", "Recharts", "Leaflet", "XLSX", "jsPDF", "D365 Data", "Tailwind"]
-      }]
+        modulesTitle: "What it covers",
+        modules: ["KPI Dashboard", "Stores", "Customer Value", "Comparisons", "Employees", "Target Split", "Offers", "Products", "Reports", "Live Sales"],
+        techTitle: "Technical identity",
+        tech: ["React", "TypeScript", "Vite", "Recharts", "Leaflet", "XLSX", "jsPDF"],
+        scene: {
+          appLabel: "ORA Cockpit",
+          appSubLabel: "Operations Intelligence Layer",
+          statCards: [
+            { value: "KPI", label: "Unified view" },
+            { value: "Target", label: "Smart split" },
+            { value: "Live", label: "Instant follow-up" }
+          ],
+          panels: ["Sales", "Branches", "Employees", "Products", "Reports", "Offers"]
+        }
+      }
     },
     credentials: {
       kicker: "Credentials",
@@ -1273,32 +1313,126 @@ function renderCases(content) {
 
 function renderProjects(content) {
   clearNode(elements.projectList);
-  content.items.forEach((project) => {
-    const card = document.createElement("article");
-    card.className = "project-card";
-    card.innerHTML = `
-      <div class="project-header">
-        <div>
-          <h3>${project.name}</h3>
-          <p class="project-description">${project.description}</p>
+  const originMilestones = content.origin.milestones
+    .map((item) => `<span class="system-milestone">${item}</span>`)
+    .join("");
+
+  const flagshipImpacts = content.flagship.impacts
+    .map((item) => `<li>${item}</li>`)
+    .join("");
+
+  const flagshipModules = content.flagship.modules
+    .map((item) => `<span class="feature-pill">${item}</span>`)
+    .join("");
+
+  const flagshipTech = content.flagship.tech
+    .map((item) => `<span class="tech-pill">${item}</span>`)
+    .join("");
+
+  const sceneStats = content.flagship.scene.statCards
+    .map(
+      (item) => `
+        <div class="cockpit-stat">
+          <strong>${item.value}</strong>
+          <span>${item.label}</span>
         </div>
-        <span class="project-type">${project.type}</span>
-      </div>
-      <div class="project-block">
-        <h4>${content.featuresLabel}</h4>
-        <div class="feature-list">
-          ${project.features.map((feature) => `<span class="feature-pill">${feature}</span>`).join("")}
+      `
+    )
+    .join("");
+
+  const scenePanels = content.flagship.scene.panels
+    .map((item) => `<span class="cockpit-panel-chip">${item}</span>`)
+    .join("");
+
+  const wrapper = document.createElement("div");
+  wrapper.className = "systems-story";
+  wrapper.innerHTML = `
+    <div class="systems-intro">
+      <p>${content.intro}</p>
+    </div>
+    <div class="systems-grid">
+      <article class="project-card system-card system-card-origin">
+        <div class="system-copy">
+          <p class="system-eyebrow">${content.origin.eyebrow}</p>
+          <h3>${content.origin.title}</h3>
+          <p class="project-description">${content.origin.story}</p>
+          <div class="system-milestones">${originMilestones}</div>
+          <p class="system-note">${content.origin.note}</p>
+          <a class="button button-secondary system-link" href="${content.origin.linkHref}" target="_blank" rel="noreferrer">${content.origin.linkLabel}</a>
         </div>
-      </div>
-      <div class="project-block">
-        <h4>${content.techLabel}</h4>
-        <div class="tech-list">
-          ${project.tech.map((tech) => `<span class="tech-pill">${tech}</span>`).join("")}
+      </article>
+
+      <article class="project-card system-card system-card-flagship">
+        <div class="system-copy">
+          <p class="system-eyebrow">${content.flagship.eyebrow}</p>
+          <div class="project-header">
+            <div>
+              <h3>${content.flagship.title}</h3>
+              <p class="project-description">${content.flagship.story}</p>
+            </div>
+            <span class="project-type">${content.flagship.type}</span>
+          </div>
+          <div class="project-block">
+            <h4>${content.flagship.impactTitle}</h4>
+            <ul class="system-impact-list">${flagshipImpacts}</ul>
+          </div>
+          <div class="project-block">
+            <h4>${content.flagship.modulesTitle}</h4>
+            <div class="feature-list">${flagshipModules}</div>
+          </div>
+          <div class="project-block">
+            <h4>${content.flagship.techTitle}</h4>
+            <div class="tech-list">${flagshipTech}</div>
+          </div>
         </div>
-      </div>
-    `;
-    elements.projectList.appendChild(card);
-  });
+
+        <div class="cockpit-scene" aria-hidden="true">
+          <div class="cockpit-scene-shell">
+            <div class="cockpit-scene-top">
+              <div>
+                <p class="cockpit-scene-kicker">${content.flagship.scene.appSubLabel}</p>
+                <h4>${content.flagship.scene.appLabel}</h4>
+              </div>
+              <span class="cockpit-scene-badge">Ops</span>
+            </div>
+
+            <div class="cockpit-stats-row">
+              ${sceneStats}
+            </div>
+
+            <div class="cockpit-main-grid">
+              <div class="cockpit-panel cockpit-panel-map">
+                <div class="cockpit-panel-head"></div>
+                <div class="cockpit-map-glow"></div>
+                <div class="cockpit-map-pins">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="cockpit-panel cockpit-panel-chart">
+                <div class="cockpit-chart-bars">
+                  <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="cockpit-chart-line"></div>
+              </div>
+            </div>
+
+            <div class="cockpit-table-panel">
+              <div class="cockpit-table-head"></div>
+              <div class="cockpit-table-row"></div>
+              <div class="cockpit-table-row"></div>
+              <div class="cockpit-table-row"></div>
+            </div>
+
+            <div class="cockpit-panel-chip-row">
+              ${scenePanels}
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  `;
+
+  elements.projectList.appendChild(wrapper);
 }
 
 function renderEducation(items) {
