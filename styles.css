@@ -97,7 +97,6 @@ a {
 
 .site-header,
 .hero,
-.achievement-band,
 .section,
 .site-footer {
   padding-inline: 5vw;
@@ -712,7 +711,6 @@ body.edit-mode .editable-node.is-editing {
 }
 
 .hero-dossier,
-.achievement-card,
 .timeline-entry,
 .case-card,
 .project-card,
@@ -976,45 +974,11 @@ body[data-lang="en"] .portrait-caption {
   font-size: 0.88rem;
 }
 
-.achievement-band {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
-
-.band-head {
-  max-width: 52rem;
-  margin-bottom: 1.7rem;
-}
-
-.band-head h2,
 .section-head h2,
 .closing-card h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3.45rem);
   line-height: 1.1;
-}
-
-.achievement-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.achievement-card {
-  padding: 1.3rem;
-  border-radius: var(--radius-lg);
-}
-
-.achievement-card strong {
-  display: block;
-  font-size: 1.6rem;
-  line-height: 1.15;
-}
-
-.achievement-card p {
-  margin: 0.6rem 0 0;
-  color: var(--muted);
-  line-height: 1.8;
 }
 
 .section {
@@ -1036,48 +1000,6 @@ body[data-lang="en"] .portrait-caption {
 
 .section-positioning {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.positioning-track {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.95rem;
-  margin-bottom: 1.2rem;
-  counter-reset: positioning-track;
-}
-
-.positioning-track-item {
-  position: relative;
-  padding: 1.15rem 1.2rem 1.1rem;
-  padding-inline-start: 3.2rem;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(180deg, rgba(15, 28, 41, 0.88), rgba(10, 18, 28, 0.82));
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow: var(--shadow);
-}
-
-.positioning-track-item::before {
-  counter-increment: positioning-track;
-  content: counter(positioning-track, decimal-leading-zero);
-  position: absolute;
-  inset-inline-start: 1rem;
-  top: 1rem;
-  color: rgba(241, 168, 96, 0.78);
-  font-size: 0.78rem;
-  letter-spacing: 0.16em;
-}
-
-.positioning-track-item strong {
-  display: block;
-  margin-bottom: 0.45rem;
-  color: rgba(247, 239, 223, 0.95);
-  font-size: 1rem;
-}
-
-.positioning-track-item p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.75;
 }
 
 .positioning-grid {
@@ -1561,6 +1483,35 @@ body[data-lang="en"] .timeline-nav li.is-active {
 .project-header h3 {
   margin: 0 0 0.75rem;
   font-size: 1.42rem;
+}
+
+.timeline-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-proof-card {
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.timeline-proof-card strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.2rem;
+  line-height: 1.15;
+}
+
+.timeline-proof-card span {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .case-grid {
@@ -2215,9 +2166,7 @@ body[data-lang="ar"] .system-link {
   .leadership-layout,
   .overview-layout,
   .timeline-wrap,
-  .achievement-grid,
   .positioning-grid,
-  .positioning-track,
   .mindset-grid,
   .future-layout,
   .case-grid,
@@ -2293,7 +2242,6 @@ body[data-lang="ar"] .system-link {
 
   .site-header,
   .hero,
-  .achievement-band,
   .section,
   .site-footer {
     padding-inline: 1rem;
@@ -2348,7 +2296,6 @@ body[data-lang="ar"] .system-link {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .band-head h2,
   .section-head h2,
   .closing-card h2 {
     font-size: 1.9rem;
