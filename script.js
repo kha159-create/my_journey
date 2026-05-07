@@ -244,8 +244,14 @@ const siteContent = {
         story: "بدأت القصة عندما كنت أبحث عن أداة أسجل فيها مصاريفي بشكل يناسبني، ولم أجد حلًا جاهزًا يخدمني كما أريد. بدأت أولًا بملف Excel، ثم نقلت الفكرة إلى Google Sheets، وبعدها دخلت عالم التطبيقات والحلول الذكية وبدأت أمزج الذكاء الاصطناعي بطريقة عملي.",
         milestones: ["Excel", "Google Sheets", "واجهة عربية", "تحليلات ذكية", "PWA"],
         note: "بياني لم يكن مجرد أداة مصاريف، بل أول مساحة حقيقية تعلمت فيها كيف أبني نظامًا حول احتياجي أنا.",
+        giftLead: "← هديتي لك لأنك وصلت إلى هنا: جرّب بياني، برنامج يساعدك على تسجيل مصاريفك وفهم أموالك بطريقة أبسط وأذكى.",
         linkLabel: "زيارة بياني",
-        linkHref: "https://kha159-create.github.io/bayani/"
+        linkHref: "https://kha159-create.github.io/bayani/",
+        scene: {
+          appLabel: "بياني",
+          appSubLabel: "كل شيء عن مالي... في بياني",
+          footerLabel: "برنامج مصاريف ذكي"
+        }
       },
       flagship: {
         eyebrow: "النظام التشغيلي",
@@ -546,8 +552,14 @@ const siteContent = {
         story: "The story started when I wanted a simple way to track my own expenses and could not find a tool that truly fit how I think. I began with Excel, moved the idea into Google Sheets, then stepped into app building and smart solutions, gradually mixing AI into the way I work.",
         milestones: ["Excel", "Google Sheets", "Arabic-first UX", "AI-assisted insights", "PWA"],
         note: "Bayani was more than an expense tracker. It was the first real space where I learned how to build a system around a personal need.",
+        giftLead: "← A small gift for anyone who made it this far: Bayani is a free expense app that helps you track spending and understand your money more clearly.",
         linkLabel: "Visit Bayani",
-        linkHref: "https://kha159-create.github.io/bayani/"
+        linkHref: "https://kha159-create.github.io/bayani/",
+        scene: {
+          appLabel: "Bayani",
+          appSubLabel: "Everything about my money... in Bayani",
+          footerLabel: "Smart expense app"
+        }
       },
       flagship: {
         eyebrow: "Operating system",
@@ -1352,13 +1364,31 @@ function renderProjects(content) {
     </div>
     <div class="systems-grid">
       <article class="project-card system-card system-card-origin">
+        <div class="bayani-scene" aria-hidden="true">
+          <div class="bayani-scene-shell">
+            <div class="bayani-app-icon">
+              <div class="bayani-app-inner">
+                <span class="bayani-app-b">B</span>
+                <span class="bayani-wallet"></span>
+                <span class="bayani-orbit bayani-orbit-one"></span>
+                <span class="bayani-orbit bayani-orbit-two"></span>
+              </div>
+            </div>
+            <div class="bayani-scene-copy">
+              <strong>${content.origin.scene.appLabel}</strong>
+              <span>${content.origin.scene.appSubLabel}</span>
+            </div>
+            <div class="bayani-scene-bar"></div>
+          </div>
+        </div>
         <div class="system-copy">
           <p class="system-eyebrow">${content.origin.eyebrow}</p>
           <h3>${content.origin.title}</h3>
           <p class="project-description">${content.origin.story}</p>
           <div class="system-milestones">${originMilestones}</div>
           <p class="system-note">${content.origin.note}</p>
-          <a class="button button-secondary system-link" href="${content.origin.linkHref}" target="_blank" rel="noreferrer">${content.origin.linkLabel}</a>
+          <p class="gift-lead">${content.origin.giftLead}</p>
+          <a class="button button-primary system-link system-link-pulse" href="${content.origin.linkHref}" target="_blank" rel="noreferrer">${content.origin.linkLabel}</a>
         </div>
       </article>
 
