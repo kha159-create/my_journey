@@ -13,7 +13,7 @@ const siteContent = {
       name: "خليل الصانع",
       title: "Area Sales Manager | شمال السعودية",
       brandLine: "قيادة ميدانية بعقلية رقمية",
-      summary: "خبرتي تمتد عبر إدارة المبيعات والتشغيل وتطوير الفرق بين السعودية والإمارات والأردن، مع تركيز واضح على تحويل المؤشرات إلى قرارات يومية ترفع جودة التنفيذ وتحافظ على النمو. حاليًا أدير 6 فروع في شمال السعودية، وسبق أن قدت نطاق الرياض في 2024 مع مسؤولية مباشرة عن مبيعات بملايين الريالات وتحقيق نمو +18.3% ورفع معدل الفاتورة بنسبة 18%.",
+      summary: "خبرتي تمتد عبر إدارة المبيعات والتشغيل وتطوير الفرق بين السعودية والإمارات والأردن، مع تركيز واضح على تحويل المؤشرات إلى قرارات يومية ترفع جودة التنفيذ وتحافظ على النمو. قدت 6 فروع في شمال السعودية، كما تمت إدارة نطاق الرياض في 2024 بمسؤولية مباشرة عن مبيعات بملايين الريالات، مع تحقيق نمو +18.3% ورفع معدل الفاتورة بنسبة 18%.",
       primaryAction: "استعرض المسيرة",
       secondaryAction: "استعرض الإنجازات",
       contacts: [
@@ -32,7 +32,7 @@ const siteContent = {
       dossierKicker: "Executive Snapshot",
       dossierTitle: "قيادة تشغيلية تستند إلى أرقام قابلة للقياس",
       metrics: [
-        { value: "6", label: "فروع حالية في المدينة وينبع وعرعر وتبوك والجوف" },
+        { value: "6", label: "فروع تمت إدارتها في المدينة وينبع وعرعر وتبوك والجوف" },
         { value: "Multi-Million SAR", label: "إدارة نطاق مبيعات وفروع في الرياض خلال 2024" },
         { value: "+18.3%", label: "نمو محقق ضمن نطاق الرياض" },
         { value: "+18%", label: "رفع معدل الفاتورة ضمن متابعة الأداء التشغيلي" }
@@ -50,7 +50,7 @@ const siteContent = {
         { value: "+0.31 pts", text: "تحسن معدل التحويل في المنطقة الشمالية بين 2025 و2024 مع استقرار الزيارات على مستوى النطاق." },
         { value: "18%", text: "رفع متوسط قيمة الفاتورة عبر برنامج منظم في البيع التكميلي وتطوير سلوك البيع." },
         { value: "40%", text: "خفض حالات نفاد المخزون من خلال متابعة تشغيلية أدق وربط المخزون بجودة التنفيذ." },
-        { value: "40+", text: "إدارة وتطوير فرق متعددة التخصصات ضمن بيئة تجزئة عالية الإيقاع." },
+        { value: "50+", text: "إدارة وتطوير أكثر من 50 موظفًا ضمن بيئة تجزئة عالية الإيقاع." },
         { value: "Top 5%", text: "الانضمام إلى أعلى 5% في الأداء البيعي لدى Al Ansari Financial Services." },
         { value: "30%", text: "رفع التحويل في تجربة تدريبية قيادية مبنية على تحليل فعلي للحوار البيعي." },
         { value: "From Scratch", text: "بناء أنظمة متابعة ولوحات أداء تساعد الإدارة على اتخاذ قرار أسرع وأكثر وضوحًا." }
@@ -61,8 +61,8 @@ const siteContent = {
       heading: "ملف مهني تنفيذي يجمع بين التشغيل، إدارة المبيعات، وتطوير الفرق على أساس رقمي واضح.",
       quote: "أتعامل مع الرقم بوصفه مؤشرًا تشغيليًا يحتاج إلى تفسير، لا مجرد نتيجة تُعرض.",
       text: "تشكلت خبرتي المهنية بين التجزئة والخدمات المالية والتدريب، لكن المنهج ظل ثابتًا: قراءة المؤشرات في سياقها، فهم الواقع الميداني، ثم بناء تدخل عملي يمكن متابعته وقياس أثره. أعمل بعقلية توازن بين النمو البيعي، الانضباط التشغيلي، وضبط التكلفة، لذلك أميل إلى الأنظمة الواضحة، والمتابعة اليومية، والتدريب الذي ينعكس مباشرة على جودة التنفيذ والنتائج.",
-      regionsKicker: "المناطق الحالية تحت الإدارة",
-      regions: ["المدينة المنورة", "ينبع", "عرعر", "تبوك", "الجوف"],
+      regionsKicker: "المناطق التي تمت إدارتها",
+      regions: ["المدينة المنورة", "ينبع", "عرعر", "تبوك", "الجوف", "الرياض"],
       responsibilitiesKicker: "المسؤوليات الرئيسية",
       responsibilities: [
         "إدارة أداء 6 فروع بمسؤولية مباشرة عن المستهدف البيعي والجودة التشغيلية.",
@@ -123,8 +123,8 @@ const siteContent = {
       kicker: "Career Journey",
       heading: "مسيرة مهنية تصاعدية عبر السعودية والإمارات والأردن.",
       entries: [
-        { label: "Now", nav: "Orange North", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Medina, KSA", period: "Feb 2025 - Present", description: "أتولى حاليًا إدارة 6 فروع في شمال السعودية، مع مسؤولية مباشرة عن الأداء البيعي والانضباط التشغيلي وتطوير القيادات الميدانية. ركزت في هذه المرحلة على رفع جودة المتابعة اليومية، وتطوير وضوح التقارير، وبناء بيئة عمل أكثر انتظامًا وقدرة على الاستجابة.", highlights: ["قيادة نطاق متعدد الفروع عبر المدينة المنورة وينبع وعرعر وتبوك والجوف.", "إدارة أكثر من 40 موظفًا مع تركيز على التطوير والمتابعة العملية.", "بناء متابعة يومية موحدة للـ KPIs وATV والزوار عندما لم تكن الأدوات القائمة كافية.", "تحسين معدل التحويل في المنطقة الشمالية بمقدار 0.31 نقطة مئوية بين 2025 و2024 مع استقرار الزيارات.", "خفض حالات نفاد المخزون 40% ورفع رضا العميل 18% عبر تحسين المتابعة والتدريب."] },
-        { label: "Before", nav: "Orange Riyadh", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "قدت عمليات متعددة الفروع في الرياض مع تركيز على رفع جودة التنفيذ داخل الفروع، وتحسين المتابعة، وبناء ممارسات بيع أكثر انضباطًا. شمل النطاق إدارة مبيعات وفروع بملايين الريالات مع تحقيق نمو +18.3% ورفع معدل الفاتورة بنسبة 18%.", highlights: ["إدارة نطاق متعدد المواقع داخل الرياض مع مسؤولية مباشرة عن الأداء والتنفيذ.", "إطلاق برنامج بيع تكميلي ساهم في رفع متوسط قيمة الفاتورة بنسبة 18%.", "إدارة نطاق مبيعات بملايين الريالات مع نمو +18.3% وتحسن واضح في جودة البيع.", "تحسين جودة التنفيذ داخل الفروع من خلال المتابعة والتدريب وربط المؤشرات بالسلوك اليومي."] },
+        { label: "Now", nav: "Orange North", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Medina, KSA", period: "Feb 2025 - 2026", description: "تمت إدارة 6 فروع في شمال السعودية، مع مسؤولية مباشرة عن الأداء البيعي والانضباط التشغيلي وتطوير القيادات الميدانية. خلال هذه المرحلة تم رفع جودة المتابعة اليومية، وتطوير وضوح التقارير، وبناء بيئة عمل أكثر انتظامًا وقدرة على الاستجابة.", highlights: ["تمت قيادة نطاق متعدد الفروع عبر المدينة المنورة وينبع وعرعر وتبوك والجوف.", "تمت إدارة أكثر من 50 موظفًا مع تركيز على التطوير والمتابعة العملية.", "تم بناء متابعة يومية موحدة للـ KPIs وATV والزوار عندما لم تكن الأدوات القائمة كافية.", "تم تحسين معدل التحويل في المنطقة الشمالية بمقدار 0.31 نقطة مئوية بين 2025 و2024 مع استقرار الزيارات.", "تم خفض حالات نفاد المخزون 40% ورفع رضا العميل 18% عبر تحسين المتابعة والتدريب."] },
+        { label: "Before", nav: "Orange Riyadh", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "تمت قيادة عمليات متعددة الفروع في الرياض مع تركيز على رفع جودة التنفيذ داخل الفروع، وتحسين المتابعة، وبناء ممارسات بيع أكثر انضباطًا. شمل النطاق إدارة مبيعات وفروع بملايين الريالات مع تحقيق نمو +18.3% ورفع معدل الفاتورة بنسبة 18%.", highlights: ["تمت إدارة نطاق متعدد المواقع داخل الرياض مع مسؤولية مباشرة عن الأداء والتنفيذ.", "تم إطلاق برنامج بيع تكميلي ساهم في رفع متوسط قيمة الفاتورة بنسبة 18%.", "تمت إدارة نطاق مبيعات بملايين الريالات مع نمو +18.3% وتحسن واضح في جودة البيع.", "تم تحسين جودة التنفيذ داخل الفروع من خلال المتابعة والتدريب وربط المؤشرات بالسلوك اليومي."] },
         { label: "Training", nav: "51Talk", role: "Sales Trainer & Team Leader", company: "51Talk", location: "Amman, Jordan", period: "Aug 2023 - Dec 2023", description: "في 51Talk ركزت على تدريب فرق المبيعات وبناء مسار تأهيل أسرع وأكثر دقة. اعتمدت على تحليل نقاط التعثر داخل الحوار البيعي، ثم تحويلها إلى وحدات تدريبية قابلة للتطبيق والمتابعة.", highlights: ["رفع معدلات التحويل بنسبة 30% من خلال تدريب مبني على مواقف اعتراضية فعلية.", "تقليص مدة التأهيل بنسبة 25% عبر تنظيم المحتوى التدريبي وتوجيهه بحسب الحاجة العملية."] },
         { label: "Finance", nav: "Al Ansari", role: "Financial Services Advisor", company: "Al Ansari Financial Services", location: "Dubai, UAE", period: "Aug 2021 - Jul 2023", description: "عملت في بيئة مالية عالية الإيقاع تتطلب دقة وثقة وانضباطًا مستمرًا في التعامل مع العميل. هذه المرحلة عمقت فهمي لسلوك العميل تحت الضغط، ورفعت قدرتي على تحقيق النتائج مع الحفاظ على جودة الخدمة.", highlights: ["الانضمام إلى أعلى 5% في الأداء البيعي على مستوى المؤسسة.", "الحفاظ على جودة خدمة مستقرة في بيئة تشغيلية ذات ضغط مرتفع وحجم تعاملات كبير."] },
         { label: "Store Turnaround", nav: "Tala Store", role: "Store Manager", company: "Tala Store", location: "Irbid, Jordan", period: "Apr 2019 - Apr 2021", description: "توليت إدارة متجر يحتاج إلى إعادة ضبط على مستوى الفريق والتنفيذ. ركزت على بناء بيئة أكثر استقرارًا، وتوضيح الأدوار، وربط الأداء اليومي بمستهدفات قابلة للقياس.", highlights: ["تحويل المتجر إلى أحد أفضل 10 فروع على المستوى الوطني.", "تحقيق نمو في المبيعات بنسبة 15% بعد إعادة تنظيم المتابعة وربط الأداء بدور كل موظف.", "خفض معدل دوران الموظفين بنسبة 35% عبر تطوير القيادة الداخلية وتحسين بيئة العمل."] },
@@ -295,7 +295,7 @@ const siteContent = {
       name: "Khaleel Alsani",
       title: "Area Sales Manager | Northern Region, Saudi Arabia",
       brandLine: "Field leadership with a digital mindset.",
-      summary: "My career has been built across sales leadership, operations, and team development in Saudi Arabia, the UAE, and Jordan, with a strong habit of turning performance indicators into practical daily decisions. Today I manage 6 branches in Northern Saudi Arabia, and in 2024 I led the Riyadh scope with direct responsibility for a multi-million SAR sales operation, +18.3% growth, and an 18% improvement in average ticket.",
+      summary: "My career has been built across sales leadership, operations, and team development in Saudi Arabia, the UAE, and Jordan, with a strong habit of turning performance indicators into practical daily decisions. I led 6 branches in Northern Saudi Arabia, and in 2024 I led the Riyadh scope with direct responsibility for a multi-million SAR sales operation, +18.3% growth, and an 18% improvement in average ticket.",
       primaryAction: "View the Journey",
       secondaryAction: "See the Wins",
       contacts: [
@@ -314,7 +314,7 @@ const siteContent = {
       dossierKicker: "Executive Snapshot",
       dossierTitle: "Operational leadership backed by measurable numbers",
       metrics: [
-        { value: "6", label: "Current branches across Madinah, Yanbu, Arar, Tabuk, and Al Jouf" },
+        { value: "6", label: "Branches led across Madinah, Yanbu, Arar, Tabuk, and Al Jouf" },
         { value: "Multi-Million SAR", label: "Sales and branch scope led in Riyadh during 2024" },
         { value: "+18.3%", label: "Growth delivered within the Riyadh scope" },
         { value: "+18%", label: "Average ticket improvement from live operating review" }
@@ -332,7 +332,7 @@ const siteContent = {
         { value: "+0.31 pts", text: "Improved conversion across the Northern region year over year while traffic remained broadly stable." },
         { value: "18%", text: "Improved average ticket value through a structured cross-selling program and better sales behavior." },
         { value: "40%", text: "Reduced stockouts by strengthening operating follow-up and connecting inventory discipline to execution quality." },
-        { value: "40+", text: "Managed and developed multi-level teams in a fast-moving retail environment." },
+        { value: "50+", text: "Managed and developed 50+ employees in a fast-moving retail environment." },
         { value: "Top 5%", text: "Ranked in the top 5% of sales performance at Al Ansari Financial Services." },
         { value: "30%", text: "Raised conversion through a leadership-led training model built around real sales conversations." },
         { value: "From Scratch", text: "Built dashboards and reporting systems that made management follow-up faster and clearer." }
@@ -343,8 +343,8 @@ const siteContent = {
       heading: "An executive profile built around operations, sales leadership, and disciplined data-led improvement.",
       quote: "I treat numbers as operating signals that need interpretation, not just results to display.",
       text: "My experience spans retail, financial services, and sales training, but the method has remained consistent: read the indicators in context, understand the field reality, and build a practical intervention that can be followed and measured. I work with a mindset that balances sales growth, operating discipline, and cost awareness, which is why I value clear systems, daily follow-up, and coaching that shows up in execution quality and results.",
-      regionsKicker: "Current Operating Coverage",
-      regions: ["Madinah", "Yanbu", "Arar", "Tabuk", "Al Jouf"],
+      regionsKicker: "Areas Managed",
+      regions: ["Madinah", "Yanbu", "Arar", "Tabuk", "Al Jouf", "Riyadh"],
       responsibilitiesKicker: "Core Responsibilities",
       responsibilities: [
         "Lead six branches with direct ownership of sales targets and operating quality.",
@@ -405,8 +405,8 @@ const siteContent = {
       kicker: "Career Journey",
       heading: "A rising career across Saudi Arabia, the UAE, and Jordan.",
       entries: [
-        { label: "Now", nav: "Orange North", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Medina, KSA", period: "Feb 2025 - Present", description: "I currently lead six branches in Northern Saudi Arabia with direct responsibility for sales performance, operating discipline, and field leadership development. In this phase, my focus has been to improve daily follow-up quality, strengthen reporting clarity, and build a more responsive working rhythm.", highlights: ["Leading a multi-branch scope across Madinah, Yanbu, Arar, Tabuk, and Al Jouf.", "Managing 40+ employees with strong focus on coaching and practical follow-up.", "Built a unified daily follow-up structure for KPIs, ATV, and traffic where existing tools were not sufficient.", "Improved Northern region conversion by 0.31 percentage points year over year while traffic remained broadly stable.", "Reduced stockouts by 40% and improved customer satisfaction by 18% through stronger follow-up and training."] },
-        { label: "Before", nav: "Orange Riyadh", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "I led multi-branch operations in Riyadh with a focus on improving in-store execution, tightening follow-up, and building stronger selling discipline. The scope covered a multi-million SAR sales operation with +18.3% growth and an 18% uplift in average ticket.", highlights: ["Managed a multi-location Riyadh scope with direct ownership of execution and performance.", "Launched a cross-selling program that helped improve average ticket value by 18%.", "Led a multi-million SAR sales scope with +18.3% growth and stronger selling quality.", "Improved execution quality through clearer follow-up, coaching, and day-to-day accountability."] },
+        { label: "Now", nav: "Orange North", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Medina, KSA", period: "Feb 2025 - 2026", description: "I led six branches in Northern Saudi Arabia with direct responsibility for sales performance, operating discipline, and field leadership development. During this phase, the work focused on improving daily follow-up quality, strengthening reporting clarity, and building a more responsive operating rhythm.", highlights: ["Led a multi-branch scope across Madinah, Yanbu, Arar, Tabuk, and Al Jouf.", "Managed 50+ employees with strong focus on coaching and practical follow-up.", "Built a unified daily follow-up structure for KPIs, ATV, and traffic where existing tools were not sufficient.", "Improved Northern region conversion by 0.31 percentage points year over year while traffic remained broadly stable.", "Reduced stockouts by 40% and improved customer satisfaction by 18% through stronger follow-up and training."] },
+        { label: "Before", nav: "Orange Riyadh", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "I led multi-branch operations in Riyadh with a focus on improving in-store execution, tightening follow-up, and building stronger selling discipline. The scope covered a multi-million SAR sales operation with +18.3% growth and an 18% uplift in average ticket.", highlights: ["Managed a multi-location Riyadh scope with direct ownership of execution and performance.", "Launched a cross-selling program that improved average ticket value by 18%.", "Led a multi-million SAR sales scope with +18.3% growth and stronger selling quality.", "Improved execution quality through clearer follow-up, coaching, and day-to-day accountability."] },
         { label: "Training", nav: "51Talk", role: "Sales Trainer & Team Leader", company: "51Talk", location: "Amman, Jordan", period: "Aug 2023 - Dec 2023", description: "At 51Talk, I focused on training sales teams and building a faster, sharper onboarding path. I relied on identifying breakdown points inside the sales conversation, then turning them into practical modules that could be coached and tracked.", highlights: ["Raised conversion by 30% through training built around real objection-handling moments.", "Reduced onboarding time by 25% by organizing the training path around practical needs."] },
         { label: "Finance", nav: "Al Ansari", role: "Financial Services Advisor", company: "Al Ansari Financial Services", location: "Dubai, UAE", period: "Aug 2021 - Jul 2023", description: "I worked in a high-volume financial environment where accuracy, trust, and consistency were essential. That stage strengthened my understanding of customer behavior under pressure and improved my ability to deliver results without compromising service quality.", highlights: ["Ranked in the top 5% of sales performance across the organization.", "Maintained consistent service quality in a demanding, high-pressure operating environment."] },
         { label: "Store Turnaround", nav: "Tala Store", role: "Store Manager", company: "Tala Store", location: "Irbid, Jordan", period: "Apr 2019 - Apr 2021", description: "I took responsibility for a store that needed a reset in team structure and execution quality. My focus was to create more stability, clarify roles, and reconnect daily work to measurable targets.", highlights: ["Moved the store into the national top 10.", "Delivered 15% sales growth after reorganizing follow-up and reconnecting performance to role clarity.", "Reduced employee turnover by 35% through stronger internal leadership and better working conditions."] },
