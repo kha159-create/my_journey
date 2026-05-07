@@ -273,7 +273,7 @@ const siteContent = {
       heading: "أبحث عن أدوار تقدّر القيادة الميدانية، وتمنح مساحة لبناء فرق قوية وتحسين الأداء بشكل مستدام.",
       text: "بعد أكثر من 13 عامًا في الميدان، أصبحت أؤمن أن أفضل أثر مهني لا يظهر فقط في النتائج، بل في الفريق الذي ينمو، والنظام الذي يتحسن، والثقة التي أتركها خلفي. هذا هو النوع من القيمة التي أحرص على تقديمها في كل مرحلة جديدة.",
       actions: [
-        { label: "تحميل السيرة الذاتية", href: "https://drive.google.com/file/d/16Z4Uhv0mMGU9s1jqV6oi480se7rtUY1u/view?usp=sharing" },
+        { label: "تحميل السيرة الذاتية", href: "https://drive.google.com/file/d/1ROJ1-H2Di0Ik-9wWcGZGUrFytWCkwlUc/view?usp=sharing" },
         { label: "واتساب", href: "https://wa.me/966567028690" },
         { label: "إيميل", href: "mailto:kha.als@outlook.com" },
         { label: "لينكدإن", href: "https://linkedin.com/in/khaleel-alsani" }
@@ -555,7 +555,7 @@ const siteContent = {
       heading: "I am interested in roles that value field leadership, strong teams, and sustainable performance improvement.",
       text: "More than 13 years in the field taught me that professional value is not only reflected in results, but in the team that grows, the system that improves, and the trust a leader leaves behind. That is the kind of value I aim to bring in every new role.",
       actions: [
-        { label: "Download CV", href: "https://drive.google.com/file/d/16Z4Uhv0mMGU9s1jqV6oi480se7rtUY1u/view?usp=sharing" },
+        { label: "Download CV", href: "https://drive.google.com/file/d/1ROJ1-H2Di0Ik-9wWcGZGUrFytWCkwlUc/view?usp=sharing" },
         { label: "WhatsApp", href: "https://wa.me/966567028690" },
         { label: "Email", href: "mailto:kha.als@outlook.com" },
         { label: "LinkedIn", href: "https://linkedin.com/in/khaleel-alsani" }
