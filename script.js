@@ -2,10 +2,10 @@ const siteContent = {
   ar: {
     lang: "ar",
     dir: "rtl",
-    documentTitle: "الحياة العملية | خليل الصانع",
-    metaDescription: "موقع مهني تنفيذي يقدّم الحياة العملية لخليل الصانع عبر الخبرة، الإنجاز، والإدارة المعتمدة على الأرقام.",
-    brandName: "خليل الصانع",
-    brandSubtitle: "الحياة العملية",
+    documentTitle: "رحلتي | خليل الصانغ",
+    metaDescription: "رحلتي المهنية لخليل الصانغ عبر الخبرة، الإنجاز، والإدارة المعتمدة على الأرقام.",
+    brandName: "خليل الصانغ",
+    brandSubtitle: "رحلتي",
     langToggleLabel: "AR / EN",
     nav: { story: "الرؤية", journey: "المسيرة", leadership: "القيادة", cases: "الحالات", credentials: "الاعتمادات" },
     hero: {
