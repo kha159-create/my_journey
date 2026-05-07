@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ط§ظ„ط­ظٹط§ط© ط§ظ„ط¹ظ…ظ„ظٹط© | ط®ظ„ظٹظ„ ط§ظ„طµط§ظ†ط¹</title>
+    <meta
+      name="description"
+      content="ظ…ظˆظ‚ط¹ ظ…ظ‡ظ†ظٹ طھظ†ظپظٹط°ظٹ ظٹظ‚ط¯ظ‘ظ… ط§ظ„ط­ظٹط§ط© ط§ظ„ط¹ظ…ظ„ظٹط© ظ„ط®ظ„ظٹظ„ ط§ظ„طµط§ظ†ط¹ ط¹ط¨ط± ط§ظ„ط®ط¨ط±ط©طŒ ط§ظ„ط¥ظ†ط¬ط§ط²طŒ ظˆط§ظ„ط¥ط¯ط§ط±ط© ط§ظ„ظ…ط¹طھظ…ط¯ط© ط¹ظ„ظ‰ ط§ظ„ط£ط±ظ‚ط§ظ…."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-lang="ar">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ط§ظ„ط¹ظˆط¯ط© ط¥ظ„ظ‰ ط¨ط¯ط§ظٹط© ط§ظ„طµظپط­ط©">
+        <span class="brand-mark">KA</span>
+        <span class="brand-copy">
+          <strong id="brand-name">ط®ظ„ظٹظ„ ط§ظ„طµط§ظ†ط¹</strong>
+          <small id="brand-subtitle">ط§ظ„ط­ظٹط§ط© ط§ظ„ط¹ظ…ظ„ظٹط©</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="ط§ظ„طھظ†ظ‚ظ„ ط§ظ„ط±ط¦ظٹط³ظٹ">
+          <a href="#story" id="nav-story">ط§ظ„ط±ط¤ظٹط©</a>
+          <a href="#journey" id="nav-journey">ط§ظ„ظ…ط³ظٹط±ط©</a>
+          <a href="#leadership" id="nav-leadership">ط§ظ„ظ‚ظٹط§ط¯ط©</a>
+          <a href="#cases" id="nav-cases">ط§ظ„ط­ط§ظ„ط§طھ</a>
+          <a href="#credentials" id="nav-credentials">ط§ظ„ط§ط¹طھظ…ط§ط¯ط§طھ</a>
+        </nav>
+
+        <button class="lang-toggle" id="lang-toggle" type="button" aria-label="طھط¨ط¯ظٹظ„ ط§ظ„ظ„ط؛ط©">
+          <span id="lang-toggle-label">AR / EN</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-visual reveal">
+          <div class="portrait-stage">
+            <div class="portrait-core">
+              <img class="portrait-image" id="portrait-image" alt="" />
+              <div class="portrait-core-sheen"></div>
+              <div class="portrait-monogram">KA</div>
+            </div>
+          </div>
+
+          <div class="visual-utility">
+            <div class="portrait-editor" id="portrait-editor" aria-label="Portrait editor">
+              <label class="portrait-upload">
+                <span>رفع صورة</span>
+                <input id="portrait-upload-input" type="file" accept="image/*" />
+              </label>
+              <label class="portrait-control">
+                <span>تكبير</span>
+                <input id="portrait-zoom" type="range" min="1" max="2.4" step="0.01" value="1.18" />
+              </label>
+              <label class="portrait-control">
+                <span>يمين / يسار</span>
+                <input id="portrait-x" type="range" min="-40" max="40" step="1" value="0" />
+              </label>
+              <label class="portrait-control">
+                <span>فوق / تحت</span>
+                <input id="portrait-y" type="range" min="-40" max="40" step="1" value="0" />
+              </label>
+              <button class="portrait-reset" id="portrait-reset" type="button">حذف الصورة</button>
+            </div>
+
+            <div class="hero-contact" id="hero-contact"></div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#journey" id="hero-primary-action">استعرض المسيرة</a>
+              <a class="button button-secondary" href="#cases" id="hero-secondary-action">استعرض الإنجازات</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" id="hero-kicker">Regional Sales Leadership</p>
+            <h1 id="hero-name">خليل الصانع</h1>
+            <p class="hero-title" id="hero-title">مدير مبيعات إقليمي | شمال السعودية</p>
+            <p class="hero-brandline" id="hero-brandline">قيادة ميدانية بعقلية رقمية</p>
+            <p class="hero-summary" id="hero-summary"></p>
+          </div>
+
+          <div class="hero-dossier reveal">
+            <div class="dossier-head">
+              <p class="panel-kicker" id="dossier-kicker">Executive Snapshot</p>
+              <h2 id="dossier-title">قيادة تشغيلية تستند إلى أرقام قابلة للقياس</h2>
+            </div>
+            <div class="hero-metrics" id="hero-metrics"></div>
+            <div class="analysis-lens">
+              <p class="block-kicker" id="analysis-kicker">Analytical Lens</p>
+              <div class="lens-grid" id="analysis-lens-grid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="achievement-band reveal" id="story">
+        <div class="band-head">
+          <p class="section-kicker" id="achievements-kicker">Key Achievements</p>
+          <h2 id="achievements-heading">ط§ظ„ط£ط«ط± ظ„ظٹط³ ظˆط¸ظٹظپط© ظپظ‚ط·. ط§ظ„ط£ط«ط± ظ‡ظˆ ظ…ط§ طھط؛ظٹظ‘ط± ظ„ط£ظ† ط®ظ„ظٹظ„ ظƒط§ظ† ظ‡ظ†ط§ظƒ.</h2>
+        </div>
+        <div class="achievement-grid" id="achievement-grid"></div>
+      </section>
+
+      <section class="section section-overview reveal" id="overview">
+        <div class="section-head">
+          <p class="section-kicker" id="overview-kicker">Profile</p>
+          <h2 id="overview-heading">ط¨ط±ظˆظپط§ظٹظ„ طھظ†ظپظٹط°ظٹ ظٹط¬ظ…ط¹ ط¨ظٹظ† ط§ظ„طھط´ط؛ظٹظ„طŒ ط§ظ„طھط¯ط±ظٹط¨طŒ ظˆط§ظ„طھط­ط³ظٹظ† ط§ظ„ط±ط¨ط­ظٹ.</h2>
+        </div>
+
+        <div class="overview-layout">
+          <div class="overview-story">
+            <p class="lead-quote" id="lead-quote"></p>
+            <p class="overview-text" id="overview-text"></p>
+          </div>
+
+          <div class="overview-side">
+            <div class="side-block">
+              <p class="block-kicker" id="regions-kicker">ط§ظ„ظ†ط·ط§ظ‚ ط§ظ„ط¬ط؛ط±ط§ظپظٹ</p>
+              <div class="region-list" id="region-list"></div>
+            </div>
+
+            <div class="side-block">
+              <p class="block-kicker" id="responsibilities-kicker">ط§ظ„ظ…ط³ط¤ظˆظ„ظٹط§طھ ط§ظ„ط±ط¦ظٹط³ظٹط©</p>
+              <ul class="responsibility-list" id="responsibility-list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-positioning reveal" id="positioning">
+        <div class="section-head">
+          <p class="section-kicker" id="positioning-kicker">Executive Profile</p>
+          <h2 id="positioning-heading">ظ„ظ…ط§ط°ط§ ظٹظ„ظپطھ ظ…ظ„ظپ ط®ظ„ظٹظ„ ط§ظ„ط§ظ†طھط¨ط§ظ‡ ظ…ظ† ط£ظˆظ„ ظ‚ط±ط§ط،ط©طں</h2>
+        </div>
+
+        <div class="positioning-track" id="positioning-track"></div>
+
+        <div class="positioning-grid">
+          <article class="positioning-card positioning-card-feature">
+            <p class="block-kicker" id="snapshot-kicker">Executive Snapshot</p>
+            <div class="positioning-feature-layout">
+              <div class="positioning-feature-copy">
+                <p class="mindset-lead" id="snapshot-lead"></p>
+                <div class="mini-pills" id="snapshot-pills"></div>
+              </div>
+              <div class="positioning-stats" id="positioning-stats"></div>
+            </div>
+          </article>
+
+          <article class="positioning-card positioning-card-steps">
+            <p class="block-kicker" id="how-lead-kicker">How I Lead</p>
+            <ol class="step-list" id="how-lead-steps"></ol>
+          </article>
+
+          <article class="positioning-card">
+            <p class="block-kicker" id="hr-notice-kicker">What HR Will Notice</p>
+            <ul class="mindset-list" id="hr-notice-list"></ul>
+          </article>
+
+          <article class="positioning-card">
+            <p class="block-kicker" id="team-lens-kicker">Team Development Lens</p>
+            <p class="mindset-lead" id="team-lens-lead"></p>
+            <div class="challenge-lanes" id="team-lens-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-journey" id="journey">
+        <div class="section-head reveal">
+          <p class="section-kicker" id="journey-kicker">Career Journey</p>
+          <h2 id="journey-heading">ظ…ط³ظٹط±ط© ظ…ظ‡ظ†ظٹط© طھطµط§ط¹ط¯ظٹط© ط¹ط¨ط± ط§ظ„ط³ط¹ظˆط¯ظٹط© ظˆط§ظ„ط¥ظ…ط§ط±ط§طھ ظˆط§ظ„ط£ط±ط¯ظ†.</h2>
+        </div>
+
+        <div class="timeline-wrap">
+          <aside class="timeline-rail reveal">
+            <div class="rail-line">
+              <span class="rail-progress" id="rail-progress"></span>
+            </div>
+            <ol class="timeline-nav" id="timeline-nav"></ol>
+          </aside>
+
+          <div class="timeline-list" id="timeline-list"></div>
+        </div>
+      </section>
+
+      <section class="section section-leadership reveal" id="leadership">
+        <div class="section-head">
+          <p class="section-kicker" id="leadership-kicker">Leadership Style</p>
+          <h2 id="leadership-heading">ط·ط±ظٹظ‚ط© ظ‚ظٹط§ط¯ط© طھظ…ط²ط¬ ط§ظ„ط§ظ†ط¶ط¨ط§ط·طŒ ط§ظ„طھط¯ط±ظٹط¨طŒ ظˆط§ظ„طھط­ظ„ظٹظ„ ط§ظ„ط¬ط°ط±ظٹ ظ„ظ„ظ…ط´ظƒظ„ط©.</h2>
+        </div>
+
+        <div class="leadership-layout">
+          <div class="leadership-story">
+            <p class="leadership-text" id="leadership-description"></p>
+          </div>
+
+          <div class="leadership-side">
+            <div class="principles-panel">
+              <p class="block-kicker" id="principles-kicker">Operating Principles</p>
+              <ul class="principles-list" id="principles-list"></ul>
+            </div>
+
+            <div class="skills-panel">
+              <p class="block-kicker" id="skills-kicker">Core Skills</p>
+              <div class="skills-grid" id="skills-grid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-mindset reveal" id="mindset">
+        <div class="section-head">
+          <p class="section-kicker" id="mindset-kicker">Mindset & Method</p>
+          <h2 id="mindset-heading">ط·ط¨ظ‚ط§طھ ط£ط¹ظ…ظ‚ طھط´ط±ط­ ظƒظٹظپ ظٹظپظƒط± ط®ظ„ظٹظ„طŒ ظƒظٹظپ ظٹظ‚ظˆط¯طŒ ظˆظƒظٹظپ ظٹطھط·ظˆط±.</h2>
+        </div>
+
+        <div class="mindset-grid">
+          <article class="mindset-card">
+            <p class="block-kicker" id="philosophy-kicker">Leadership Philosophy</p>
+            <h3 id="philosophy-core"></h3>
+            <div class="quote-mark" id="philosophy-quote"></div>
+            <ul class="mindset-list" id="philosophy-list"></ul>
+          </article>
+
+          <article class="mindset-card">
+            <p class="block-kicker" id="analytical-kicker">Analytical Thinking</p>
+            <p class="mindset-lead" id="analytical-method"></p>
+            <div class="example-list" id="analytical-examples"></div>
+            <div class="mini-pills" id="analytical-tools"></div>
+          </article>
+
+          <article class="mindset-card">
+            <p class="block-kicker" id="problem-kicker">Problem Solving</p>
+            <p class="mindset-lead" id="problem-style"></p>
+            <ol class="step-list" id="problem-steps"></ol>
+            <p class="mindset-note" id="problem-belief"></p>
+          </article>
+
+          <article class="mindset-card">
+            <p class="block-kicker" id="team-kicker">People Management</p>
+            <ul class="mindset-list" id="team-approach"></ul>
+            <div class="challenge-lanes" id="team-challenges"></div>
+          </article>
+
+          <article class="mindset-card">
+            <p class="block-kicker" id="success-kicker">Success Mindset</p>
+            <p class="mindset-lead" id="success-definition"></p>
+            <ul class="mindset-list" id="success-beliefs"></ul>
+          </article>
+
+          <article class="mindset-card">
+            <p class="block-kicker" id="strengths-kicker">Strengths & Growth</p>
+            <div class="mini-pills" id="strengths-list"></div>
+            <div class="challenge-panel">
+              <p class="mindset-note" id="challenge-growth"></p>
+              <ul class="mindset-list" id="challenge-list"></ul>
+            </div>
+          </article>
+
+          <article class="mindset-card mindset-card-wide">
+            <p class="block-kicker" id="future-kicker">Future Vision</p>
+            <div class="future-layout">
+              <div>
+                <p class="mindset-lead" id="future-goal"></p>
+                <div class="mini-pills" id="future-focus"></div>
+              </div>
+              <div>
+                <p class="block-kicker" id="daily-kicker">Daily Work Style</p>
+                <ul class="mindset-list" id="daily-work-style"></ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-cases" id="cases">
+        <div class="section-head reveal">
+          <p class="section-kicker" id="cases-kicker">Operational Case Studies</p>
+          <h2 id="cases-heading">ط­ط§ظ„ط§طھ ط¹ظ…ظ„ظٹط© طھظˆط¶ظ‘ط­ ظƒظٹظپ طھطھط­ظˆظ„ ط§ظ„ط£ط±ظ‚ط§ظ… ط¥ظ„ظ‰ ظ‚ط±ط§ط±ط§طھ ظˆطھظ†ظپظٹط°.</h2>
+        </div>
+
+        <div class="case-grid" id="case-grid"></div>
+      </section>
+
+      <section class="section section-projects reveal" id="projects">
+        <div class="section-head">
+          <p class="section-kicker" id="projects-kicker">Projects & Tools</p>
+          <h2 id="projects-heading">ط£ط¯ظˆط§طھ ط±ظ‚ظ…ظٹط© ظˆطھظ‚ظ†ظٹط© طھط¯ط¹ظ… ط§ظ„ظ‚ط±ط§ط± ط§ظ„ظٹظˆظ…ظٹ ظˆط§ظ„ظ†ظ…ظˆ ط§ظ„ط¥ظ‚ظ„ظٹظ…ظٹ.</h2>
+        </div>
+
+        <div class="project-list" id="project-list"></div>
+      </section>
+
+      <section class="section section-credentials reveal" id="credentials">
+        <div class="section-head">
+          <p class="section-kicker" id="credentials-kicker">Credentials</p>
+          <h2 id="credentials-heading">ط§ظ„ط§ط¹طھظ…ط§ط¯ط§طھطŒ ط§ظ„طھط¹ظ„ظٹظ…طŒ ظˆط§ظ„ظ„ط؛ط§طھ ط§ظ„طھظٹ طھظˆط³ظ‘ط¹ ظ‡ط°ط§ ط§ظ„ط­ط¶ظˆط± ط§ظ„ظ…ظ‡ظ†ظٹ.</h2>
+        </div>
+
+        <div class="credentials-grid">
+          <div class="credential-column">
+            <p class="block-kicker" id="education-kicker">Education</p>
+            <div class="education-list" id="education-list"></div>
+          </div>
+
+          <div class="credential-column">
+            <p class="block-kicker" id="certifications-kicker">Certifications</p>
+            <ul class="credential-list" id="certification-list"></ul>
+          </div>
+
+          <div class="credential-column">
+            <p class="block-kicker" id="languages-kicker">Languages</p>
+            <div class="language-list" id="language-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-closing reveal" id="closing">
+        <div class="closing-card">
+          <p class="section-kicker" id="closing-kicker">Closing Statement</p>
+          <h2 id="closing-heading">ط®ظ„ظٹظ„ ط§ظ„طµط§ظ†ط¹ ظ„ظٹط³ ظپظ‚ط· ظ…ط¯ظٹط± ظ…ط¨ظٹط¹ط§طھ ط¥ظ‚ظ„ظٹظ…ظٹطŒ ط¨ظ„ ط¨ظ†ظٹط© طھط´ط؛ظٹظ„ظٹط© طھظ…ط´ظٹ ط¹ظ„ظ‰ ظ‚ط¯ظ…ظٹظ†.</h2>
+          <p class="closing-text" id="closing-text"></p>
+          <div class="closing-actions" id="closing-actions"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p id="footer-note">ظ†ط³ط®ط© طھظ†ظپظٹط°ظٹط© ط«ظ†ط§ط¦ظٹط© ط§ظ„ظ„ط؛ط©طŒ ظ‚ط§ط¨ظ„ط© ظ„ظ„طھظˆط³ط¹ط© ظ„ط§ط­ظ‚ظ‹ط§ ط¨ط¥ط¶ط§ظپط© طµظˆط±ط© ط´ط®طµظٹط©طŒ ط´ظ‡ط§ط¯ط§طھ ط¥ط¶ط§ظپظٹط©طŒ ظˆط±ظˆط§ط¨ط· ط£ط¹ظ…ط§ظ„ ط£ظƒط«ط±.</p>
+    </footer>
+
+    <button class="editor-toggle" id="editor-toggle" type="button" aria-label="ظپطھط­ ظˆط¶ط¹ ط§ظ„طھط¹ط¯ظٹظ„">ط®ظ„ظٹظ„</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

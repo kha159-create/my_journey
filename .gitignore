@@ -1,0 +1,5 @@
+.pydeps/
+__pycache__/
+*.pyc
+script.js.bak-before-encoding-fix-*
+
