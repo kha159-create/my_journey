@@ -553,9 +553,9 @@ body.edit-mode .portrait-editor {
 .contact-chip-icon {
   display: inline-grid;
   place-items: center;
-  width: 2.9rem;
-  min-width: 2.9rem;
-  min-height: 2.9rem;
+  width: 3.35rem;
+  min-width: 3.35rem;
+  min-height: 3.35rem;
   padding: 0;
   border-radius: 50%;
 }
@@ -566,6 +566,35 @@ body.edit-mode .portrait-editor {
   background: rgba(241, 168, 96, 0.08);
 }
 
+.contact-chip-email {
+  border-color: rgba(241, 168, 96, 0.28);
+  background: rgba(241, 168, 96, 0.14);
+}
+
+.contact-chip-whatsapp {
+  border-color: rgba(37, 211, 102, 0.48);
+  background: #25d366;
+  color: #ffffff;
+}
+
+.contact-chip-linkedin {
+  border-color: rgba(10, 102, 194, 0.48);
+  background: #0a66c2;
+  color: #ffffff;
+}
+
+.contact-chip-whatsapp:hover,
+.contact-chip-whatsapp:focus-visible {
+  border-color: rgba(37, 211, 102, 0.72);
+  background: #20bd5a;
+}
+
+.contact-chip-linkedin:hover,
+.contact-chip-linkedin:focus-visible {
+  border-color: rgba(10, 102, 194, 0.72);
+  background: #0959aa;
+}
+
 .contact-icon {
   width: 1.05rem;
   height: 1.05rem;
@@ -574,8 +603,8 @@ body.edit-mode .portrait-editor {
 
 .contact-icon-img {
   display: block;
-  width: 1.05rem;
-  height: 1.05rem;
+  width: 1.45rem;
+  height: 1.45rem;
   object-fit: contain;
 }
 
