@@ -211,27 +211,31 @@ const siteContent = {
       items: [
         {
           quote: "سنة عن سنة تتطور، وخبراتك أكبر من عمرك. أنت مكسب لأي جهة ممكن تتعاقد معك.",
-          source: "من بيان، زوجتي وأقرب الناس معرفة برحلتي وأكبر الداعمين لي"
+          source: "بيان، شريكة رحلتي وأقرب الناس لي"
         },
         {
           quote: "ما قصرت بكل لحظة. النهايات هي من طبيعة العمل، وأكيد رب العالمين لما يطلعك من مكان يوصلك لمكان أنت متمكن إنك تترك فيه بصمة جديدة.",
-          source: "مهند، مدير سابق عبر LinkedIn"
+          source: "مديري السابق من أورنج"
         },
         {
-          quote: "كنت مديرًا محترمًا وراقيًا ومتفهمًا، وبنفس الوقت عادلًا ومنصفًا. وجودك فرق معنا كثير، وكنت دائمًا تدعمنا بأسلوبك وتعاملك.",
+          quote: "مدير محترم وراق ومتفهم، وبنفس الوقت عادل ومنصف. وجودك فرق معنا كثير، ودائمًا تدعمنا بأسلوبك وتعاملك.",
           source: "أحد أعضاء الفريق"
         },
         {
-          quote: "كنت من أحسن المدراء اللي اشتغلنا معهم. خروجك كان خبرًا صعبًا، ووجودك كان فارق معنا بدعمك ووقفتك وكلامك الطيب.",
+          quote: "من أحسن المدراء اللي اشتغلنا معهم. وجودك كان فارق معنا بدعمك ووقفتك وكلامك الطيب.",
           source: "موظف سابق"
         },
         {
-          quote: "كنت مديرًا وأخًا وصديقًا، وشخصًا لا يقدر بثمن. كنت مصدر طاقة وشغف، وأساس النجاح والطاقة، وكل كلمة ونصيحة قدمتها كانت تفرق.",
+          quote: "مدير وأخ وصديق، وشخص لا يقدر بثمن. مصدر طاقة وشغف، وأساس النجاح والطاقة، وكل كلمة ونصيحة قدمتها كانت تفرق.",
           source: "مديرة فرع"
         },
         {
           quote: "الأثر كان متبادلًا. من الناس القلائل الذين اشتغلت معهم وامتدت علاقتي معهم لأكثر من زميل عمل، وعندي يقين أنك ذاهب لمكان أكبر بكثير.",
-          source: "زميل عمل في تقنية المعلومات"
+          source: "علاء، زميل العمل من أورنج"
+        },
+        {
+          quote: "كل التوفيق خليل المبدع. أينما ذهبت تكون مكسب ونقطة قوة للمكان.",
+          source: "محمد، زميل سابق من 51Talk"
         }
       ]
     },
@@ -460,27 +464,31 @@ const siteContent = {
       items: [
         {
           quote: "Year after year, you keep growing, and your experience is bigger than your age. You are a real gain for any organization.",
-          source: "From Bayan, my wife, closest witness to my journey, and biggest supporter"
+          source: "Bayan, my journey partner and the closest person to me"
         },
         {
           quote: "You gave your best in every moment. Endings are part of work, and I believe leaving one place means you are being moved toward a place where you can leave a new mark.",
-          source: "Mohand, former manager on LinkedIn"
+          source: "My former manager from Orange"
         },
         {
-          quote: "You were respectful, refined, understanding, fair, and supportive. Your presence made a real difference for us through your style and the way you treated people.",
+          quote: "Respectful, refined, understanding, fair, and supportive. Your presence made a real difference through your style and the way you treated people.",
           source: "Team member"
         },
         {
-          quote: "You were one of the best managers we worked with. Your departure was difficult news, and your presence made a difference through your support, care, and kind words.",
+          quote: "One of the best managers we worked with. Your presence made a difference through your support, care, and kind words.",
           source: "Former team member"
         },
         {
-          quote: "You were a manager, a brother, and a friend, and someone truly valuable. You were a source of energy and passion, a foundation for success, and every word of advice mattered.",
+          quote: "A manager, a brother, and a friend, and someone truly valuable. A source of energy and passion, a foundation for success, and every word of advice mattered.",
           source: "Branch manager"
         },
         {
           quote: "The impact was mutual. You are one of the few people I worked with whose relationship extended beyond being a colleague, and I believe you are heading somewhere much bigger.",
-          source: "IT colleague"
+          source: "Alaa, work colleague from Orange"
+        },
+        {
+          quote: "All the best, creative Khaleel. Wherever you go, you become a gain and a point of strength for the place.",
+          source: "Mohammad, former colleague from 51Talk"
         }
       ]
     },
