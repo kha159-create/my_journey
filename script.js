@@ -210,7 +210,7 @@ const siteContent = {
       heading: "أثر القيادة كما يراه الآخرون.",
       items: [
         {
-          quote: "سنة عن سنة تتطور، وخبراتك أكبر من عمرك. أنت مكسب لأي جهة ممكن تتعاقد معك، حتى لو كانت شركة كبيرة.",
+          quote: "سنة عن سنة تتطور، وخبراتك أكبر من عمرك. أنت مكسب لأي جهة ممكن تتعاقد معك.",
           source: "من بيان، زوجتي وأقرب الناس معرفة برحلتي وأكبر الداعمين لي"
         },
         {
@@ -459,7 +459,7 @@ const siteContent = {
       heading: "Leadership impact as seen by others.",
       items: [
         {
-          quote: "Year after year, you keep growing, and your experience is bigger than your age. You are a real gain for any organization, even a large one.",
+          quote: "Year after year, you keep growing, and your experience is bigger than your age. You are a real gain for any organization.",
           source: "From Bayan, my wife, closest witness to my journey, and biggest supporter"
         },
         {
