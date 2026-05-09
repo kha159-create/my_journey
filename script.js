@@ -214,7 +214,11 @@ const siteContent = {
         },
         {
           quote: "ما قصرت بكل لحظة. النهايات هي من طبيعة العمل، وأكيد رب العالمين لما يطلعك من مكان يوصلك لمكان أنت متمكن إنك تترك فيه بصمة جديدة.",
-          source: "مديري السابق من أورنج"
+          source: "مهند، مديري السابق بأورنج"
+        },
+        {
+          quote: "عملت مع خليل الصانع في مراحل مختلفة مرتبطة بالمبيعات والتسويق في بدايات مسيرته. هو شخص ملتزم ومنفتح على تعلم مهارات جديدة وتطوير قدراته.",
+          source: "محمد فرنجي"
         },
         {
           quote: "مدير محترم وراق ومتفهم، وبنفس الوقت عادل ومنصف. وجودك فرق معنا كثير، ودائمًا تدعمنا بأسلوبك وتعاملك.",
@@ -466,7 +470,11 @@ const siteContent = {
         },
         {
           quote: "You gave your best in every moment. Endings are part of work, and I believe leaving one place means you are being moved toward a place where you can leave a new mark.",
-          source: "My former manager from Orange"
+          source: "Mohand, my former manager at Orange"
+        },
+        {
+          quote: "I worked with Khaleel AlSani in different capacities related to sales and marketing on his early career. He is a committed person with an open appetite to learn new skills and improve his capabilities.",
+          source: "Mohammed Alafranji"
         },
         {
           quote: "Respectful, refined, understanding, fair, and supportive. Your presence made a real difference through your style and the way you treated people.",
