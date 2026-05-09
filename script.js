@@ -205,6 +205,32 @@ const siteContent = {
       languagesKicker: "اللغات",
       languages: ["العربية (Native)", "الإنجليزية (Professional)", "الألمانية (Advanced)"]
     },
+    testimonials: {
+      kicker: "أثر القيادة",
+      heading: "أثر القيادة كما يراه الآخرون.",
+      items: [
+        {
+          quote: "سنة عن سنة تتطور، وخبراتك أكبر من عمرك. أنت مكسب لأي جهة تتعاقد معك.",
+          source: "من بيان، زوجتي وأقرب الناس معرفة برحلتي وأكبر الداعمين لي"
+        },
+        {
+          quote: "كنت مديرًا محترمًا وراقيًا ومتفهمًا، وبنفس الوقت عادلًا ومنصفًا. وجودك فرق معنا كثير، وكنت دائمًا تدعمنا.",
+          source: "مدير سابق"
+        },
+        {
+          quote: "كنت من أحسن المدراء اللي اشتغلنا معهم، ووجودك كان فارق معنا.",
+          source: "موظف سابق"
+        },
+        {
+          quote: "كنت مصدر طاقة وشغف، وأساس النجاح والطاقة. كل كلمة ونصيحة قدمتها كانت تفرق.",
+          source: "مديرة فرع"
+        },
+        {
+          quote: "الأثر كان متبادلًا. من الناس القلائل الذين امتدت علاقتي معهم لأكثر من زميل عمل، وعندي يقين أنك ذاهب لمكان أكبر.",
+          source: "زميل عمل في تقنية المعلومات"
+        }
+      ]
+    },
     closing: {
       kicker: "الخلاصة",
       heading: "أبحث عن أدوار تقدّر القيادة الميدانية، وتمنح مساحة لبناء فرق قوية وتحسين الأداء بشكل مستدام.",
@@ -424,6 +450,32 @@ const siteContent = {
       languagesKicker: "Languages",
       languages: ["Arabic (Native)", "English (Professional)", "German (Advanced)"]
     },
+    testimonials: {
+      kicker: "Leadership Impact",
+      heading: "Leadership impact as seen by others.",
+      items: [
+        {
+          quote: "Year after year, you keep growing, and your experience is bigger than your age. You are a real gain for any organization.",
+          source: "From Bayan, my wife, closest witness to my journey, and biggest supporter"
+        },
+        {
+          quote: "You were respectful, refined, understanding, fair, and supportive. Your presence made a real difference for us.",
+          source: "Former manager"
+        },
+        {
+          quote: "You were one of the best managers we worked with, and your presence made a difference.",
+          source: "Former team member"
+        },
+        {
+          quote: "You were a source of energy and passion, and a foundation for success. Every word and piece of advice mattered.",
+          source: "Branch manager"
+        },
+        {
+          quote: "The impact was mutual. You are one of the few people whose relationship extended beyond work, and I believe you are heading somewhere bigger.",
+          source: "IT colleague"
+        }
+      ]
+    },
     closing: {
       kicker: "Closing Statement",
       heading: "I am interested in roles that value field leadership, strong teams, and sustainable performance improvement.",
@@ -528,6 +580,9 @@ const elements = {
   certificationList: $("certification-list"),
   languagesKicker: $("languages-kicker"),
   languageList: $("language-list"),
+  testimonialsKicker: $("testimonials-kicker"),
+  testimonialsHeading: $("testimonials-heading"),
+  testimonialGrid: $("testimonial-grid"),
   closingKicker: $("closing-kicker"),
   closingHeading: $("closing-heading"),
   closingText: $("closing-text"),
@@ -1253,6 +1308,20 @@ function renderEducation(items) {
   });
 }
 
+function renderTestimonials(content) {
+  clearNode(elements.testimonialGrid);
+  content.items.forEach((item, index) => {
+    const card = document.createElement("article");
+    card.className = "testimonial-card";
+    card.innerHTML = `
+      <span class="testimonial-index">${String(index + 1).padStart(2, "0")}</span>
+      <blockquote>${item.quote}</blockquote>
+      <p>${item.source}</p>
+    `;
+    elements.testimonialGrid.appendChild(card);
+  });
+}
+
 function renderClosingActions(items) {
   clearNode(elements.closingActions);
   items.forEach((item, index) => {
@@ -1458,6 +1527,8 @@ function renderContent(lang) {
   elements.educationKicker.textContent = content.credentials.educationKicker;
   elements.certificationsKicker.textContent = content.credentials.certificationsKicker;
   elements.languagesKicker.textContent = content.credentials.languagesKicker;
+  elements.testimonialsKicker.textContent = content.testimonials.kicker;
+  elements.testimonialsHeading.textContent = content.testimonials.heading;
   elements.closingKicker.textContent = content.closing.kicker;
   elements.closingHeading.textContent = content.closing.heading;
   elements.closingText.textContent = content.closing.text;
@@ -1486,6 +1557,7 @@ function renderContent(lang) {
   renderEducation(content.credentials.education);
   renderList(elements.certificationList, content.credentials.certifications);
   renderPills(elements.languageList, content.credentials.languages, "language-chip");
+  renderTestimonials(content.testimonials);
   renderClosingActions(content.closing.actions);
 
   setupTimelineObserver();

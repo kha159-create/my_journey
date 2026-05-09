@@ -714,6 +714,7 @@ body.edit-mode .editable-node.is-editing {
 .timeline-entry,
 .case-card,
 .project-card,
+.testimonial-card,
 .credential-column,
 .closing-card,
 .side-block,
@@ -1438,7 +1439,8 @@ body[data-lang="en"] .timeline-nav li.is-active {
 
 .timeline-list,
 .case-grid,
-.project-list {
+.project-list,
+.testimonial-grid {
   display: grid;
   gap: 1rem;
 }
@@ -1519,9 +1521,75 @@ body[data-lang="en"] .timeline-nav li.is-active {
 }
 
 .case-card,
-.project-card {
+.project-card,
+.testimonial-card {
   padding: 1.35rem;
   border-radius: var(--radius-lg);
+}
+
+.section-testimonials {
+  position: relative;
+}
+
+.testimonial-grid {
+  grid-template-columns: 1.15fr 1fr 1fr;
+  align-items: stretch;
+}
+
+.testimonial-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 15rem;
+  display: grid;
+  align-content: space-between;
+  gap: 1.25rem;
+  border-color: rgba(241, 168, 96, 0.18);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(241, 168, 96, 0.16), transparent 32%),
+    linear-gradient(180deg, rgba(13, 24, 36, 0.94), rgba(8, 16, 25, 0.98));
+}
+
+.testimonial-card:first-child {
+  grid-row: span 2;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at 10% 5%, rgba(255, 186, 120, 0.2), transparent 34%),
+    linear-gradient(180deg, rgba(24, 33, 39, 0.96), rgba(8, 16, 25, 0.98));
+}
+
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 1.35rem;
+  bottom: 1.35rem;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--accent), transparent);
+}
+
+.testimonial-index {
+  width: max-content;
+  color: var(--accent);
+  font-size: 0.76rem;
+  letter-spacing: 0.18em;
+  font-weight: 800;
+}
+
+.testimonial-card blockquote {
+  position: relative;
+  margin: 0;
+  color: rgba(247, 239, 223, 0.94);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  line-height: 1.85;
+  font-weight: 650;
+}
+
+.testimonial-card p {
+  margin: 0;
+  color: rgba(199, 187, 167, 0.86);
+  font-size: 0.92rem;
+  line-height: 1.7;
 }
 
 .case-row {
@@ -2170,8 +2238,14 @@ body[data-lang="ar"] .system-link {
   .mindset-grid,
   .future-layout,
   .case-grid,
+  .testimonial-grid,
   .credentials-grid {
     grid-template-columns: 1fr;
+  }
+
+  .testimonial-card:first-child {
+    grid-row: auto;
+    min-height: 15rem;
   }
 
   .hero {
