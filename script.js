@@ -230,8 +230,8 @@ const siteContent = {
           source: "مديرة فرع"
         },
         {
-          quote: "الأثر كان متبادلًا. من الناس القلائل الذين اشتغلت معهم وامتدت علاقتي معهم لأكثر من زميل عمل، وعندي يقين أنك ذاهب لمكان أكبر بكثير.",
-          source: "علاء، زميل العمل من أورنج"
+          quote: "فخور جدًا إني جزء من رحلتك. أنت من الناس القلائل اللي اشتغلت معهم وامتدت علاقتي معهم لأكثر من زميل عمل، وكان عندهم شغف حقيقي بالتطوير وتحمل المسؤولية مهما كانت الضغوط. بالتوفيق في رحلتك القادمة.",
+          source: "علاء، زميل العمل من تقنية المعلومات"
         },
         {
           quote: "كل التوفيق خليل المبدع. أينما ذهبت تكون مكسب ونقطة قوة للمكان.",
@@ -483,8 +483,8 @@ const siteContent = {
           source: "Branch manager"
         },
         {
-          quote: "The impact was mutual. You are one of the few people I worked with whose relationship extended beyond being a colleague, and I believe you are heading somewhere much bigger.",
-          source: "Alaa, work colleague from Orange"
+          quote: "I am very proud to be part of your journey. You are one of the few people I worked with whose relationship extended beyond being a colleague, with a real passion for development and taking responsibility no matter the pressure. Wishing you all the best in your next journey.",
+          source: "Alaa, IT work colleague"
         },
         {
           quote: "All the best, creative Khaleel. Wherever you go, you become a gain and a point of strength for the place.",
