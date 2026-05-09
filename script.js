@@ -13,7 +13,7 @@ const siteContent = {
       name: "خليل الصانع",
       title: "Area Sales Manager | شمال السعودية",
       brandLine: "قيادة ميدانية بعقلية رقمية",
-      summary: "أعمل في قيادة المبيعات والتشغيل وتطوير الفرق بين السعودية والإمارات والأردن، مع تركيز ثابت على تحويل المؤشرات إلى قرارات يومية أوضح وأسرع. قدت 6 فروع في شمال السعودية، كما أدرت نطاق الرياض في 2024 مع نمو محقق بنسبة +18.3% ورفع معدل الفاتورة بنسبة 18%.",
+      summary: "أقود المبيعات والتشغيل وتطوير الفرق مع تركيز ثابت على تحويل المؤشرات إلى قرارات يومية أوضح. قدت 6 فروع في شمال السعودية، وحققت في نطاق الرياض نموًا +18.3% ورفعًا لمعدل الفاتورة 18%.",
       primaryAction: "استعرض المسيرة",
       secondaryAction: "استعرض الإنجازات",
       contacts: [
@@ -49,14 +49,10 @@ const siteContent = {
       kicker: "الملف المهني",
       heading: "ملف مهني تنفيذي يجمع بين التشغيل، إدارة المبيعات، وتطوير الفرق على أساس رقمي واضح.",
       quote: "أتعامل مع الرقم بوصفه مؤشرًا تشغيليًا يحتاج إلى تفسير، لا مجرد نتيجة تُعرض.",
-      text: "تنقلت بين التجزئة والخدمات المالية والتدريب، لكن منهجي بقي ثابتًا: قراءة المؤشرات في سياقها، فهم الواقع الميداني، ثم تحويل ذلك إلى إجراء عملي يمكن متابعته وقياس أثره.",
-      regionsKicker: "المناطق التي تمت إدارتها",
-      regions: ["المدينة المنورة", "ينبع", "عرعر", "تبوك", "الجوف", "الرياض"],
+      text: "تنقلت بين التجزئة والخدمات المالية والتدريب، وبقي منهجي ثابتًا: قراءة المؤشرات في سياقها وتحويلها إلى إجراء يمكن قياس أثره.",
       responsibilitiesKicker: "المسؤوليات الرئيسية",
       responsibilities: [
         "إدارة أداء الفروع مع مسؤولية مباشرة عن المستهدف البيعي والجودة التشغيلية.",
-        "متابعة KPIs والزوار والتحويل وATV وربطها بالربحية اليومية.",
-        "الموازنة بين النمو البيعي والانضباط التشغيلي وضبط التكلفة.",
         "قراءة العمر الوظيفي للموظف وربطه باحتياج التدريب والاستقرار داخل الفريق.",
         "بناء تقارير تشغيلية أوضح عندما لا تكفي الأدوات القائمة.",
         "تطوير مدراء الفروع والموظفين عبر التدريب والتوجيه العملي."
@@ -74,49 +70,42 @@ const siteContent = {
         { value: "ملايين الريالات", label: "نطاق رياض 2024" },
         { value: "+18%", label: "رفع معدل الفاتورة" }
       ],
-      howLeadKicker: "كيف أقود",
-      howLeadSteps: [
-        "أقرأ المؤشرات داخل سياقها اليومي في الفرع.",
-        "أحدّد سبب الخلل قبل اقتراح الإجراء.",
-        "أحوّل الملاحظة إلى توجيه واضح ومتابعة قابلة للقياس."
-      ],
-      hrNoticeKicker: "ما الذي يلفت الانتباه",
+      hrNoticeKicker: "أبرز ما يميز الملف",
       hrNotice: [
-        "خبرة متدرجة من البيع المباشر إلى إدارة الفروع والنطاقات.",
-        "قدرة واضحة على تطوير الفرق لا متابعة الأهداف فقط.",
-        "فهم رقمي يترجم إلى تشغيل ومتابعة وتحسين.",
+        "تدرج واضح من البيع المباشر إلى إدارة الفروع والنطاقات.",
+        "قدرة مثبتة على تطوير الفرق لا متابعة الأهداف فقط.",
+        "قراءة رقمية تتحول إلى تشغيل ومتابعة وتحسين.",
         "حضور ميداني مع انضباط إداري واضح."
       ],
-      teamLensKicker: "منظور تطوير الفريق",
-      teamLensLead: "أنظر إلى تطوير الفريق كجزء من الأداء نفسه، لذلك أقرأ مستوى كل موظف بحسب مرحلته المهنية واستعداده للنمو.",
+      teamLensKicker: "تطوير وإدارة الفريق",
+      teamLensLead: "أتعامل مع تطوير الفريق كجزء من الأداء نفسه: أوضح التوقعات، أدرّب عمليًا، وأقرأ مرحلة كل موظف قبل الحكم على النتيجة.",
       teamLensItems: [
-        { title: "الموظف الجديد", text: "أركز معه على الأساسيات، الثقة، وسرعة التهيئة للعمل الفعلي." },
-        { title: "الموظف المستقر", text: "أرفع لديه جودة التنفيذ والانتباه للتفاصيل وتحمل المسؤولية." },
-        { title: "صاحب الإمكانات العالية", text: "أمنحه مساحة أكبر في القرار وأبدأ بإعداده للقيادة." },
-        { title: "العمر الوظيفي", text: "أقرأ العمر الوظيفي كعامل مؤثر في الأداء، الحاجة للتدريب، والاستقرار داخل الفريق." }
+        { title: "الموظف الجديد", text: "أركز على الأساسيات والثقة وسرعة التهيئة للعمل الفعلي." },
+        { title: "الموظف المستقر", text: "أرفع جودة التنفيذ والملكية والانتباه للتفاصيل." },
+        { title: "صاحب الإمكانات العالية", text: "أمنحه مساحة أكبر في القرار وأبدأ بإعداده للقيادة." }
       ]
     },
     journey: {
       kicker: "المسيرة المهنية",
       heading: "مسيرة مهنية تصاعدية عبر السعودية والإمارات والأردن.",
       entries: [
-        { label: "المرحلة الأخيرة", nav: "أورنج - الشمال", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Medina, KSA", period: "Feb 2025 - 2026", description: "تمت إدارة 6 فروع في شمال السعودية مع مسؤولية مباشرة عن الأداء البيعي والانضباط التشغيلي وتطوير القيادات الميدانية.", highlights: ["قيادة نطاق متعدد الفروع عبر المدينة المنورة وينبع وعرعر وتبوك والجوف.", "إدارة أكثر من 50 موظفًا مع تركيز على التطوير والمتابعة العملية.", "بناء متابعة يومية موحدة للمؤشرات والزوار عند الحاجة."], proofs: [{ value: "+0.31", label: "تحسن التحويل" }, { value: "-40%", label: "خفض نفاد المخزون" }, { value: "+18%", label: "رفع رضا العميل" }] },
-        { label: "قبل ذلك", nav: "أورنج - الرياض", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "تمت قيادة عمليات متعددة الفروع في الرياض مع تركيز على رفع جودة التنفيذ وبناء ممارسات بيع أكثر انضباطًا.", highlights: ["إدارة نطاق متعدد المواقع داخل الرياض بمسؤولية مباشرة عن الأداء والتنفيذ.", "إطلاق برنامج بيع تكميلي ساهم في رفع معدل الفاتورة بنسبة 18%.", "ربط المؤشرات بالمتابعة والتدريب اليومي داخل الفروع."], proofs: [{ value: "ملايين", label: "نطاق مبيعات" }, { value: "+18.3%", label: "نمو محقق" }, { value: "+18%", label: "رفع معدل الفاتورة" }] },
-        { label: "Training", nav: "51Talk", role: "Sales Trainer & Team Leader", company: "51Talk", location: "Amman, Jordan", period: "Aug 2023 - Dec 2023", description: "في 51Talk ركزت على تدريب فرق المبيعات وبناء مسار تأهيل أسرع وأكثر دقة.", highlights: ["اعتمدت على تحليل نقاط التعثر داخل الحوار البيعي وتحويلها إلى وحدات تدريبية قابلة للتطبيق والمتابعة."], proofs: [{ value: "+30%", label: "رفع التحويل" }, { value: "-25%", label: "تقليص التأهيل" }] },
-        { label: "Finance", nav: "Al Ansari", role: "Financial Services Advisor", company: "Al Ansari Financial Services", location: "Dubai, UAE", period: "Aug 2021 - Jul 2023", description: "عملت في بيئة مالية عالية الإيقاع تتطلب دقة وثقة وانضباطًا مستمرًا في التعامل مع العميل.", highlights: ["هذه المرحلة عمقت فهمي لسلوك العميل تحت الضغط ورفعت قدرتي على تحقيق النتائج مع الحفاظ على جودة الخدمة."], proofs: [{ value: "أعلى 5%", label: "أداء بيعي" }] },
-        { label: "Store Turnaround", nav: "Tala Store", role: "Store Manager", company: "Tala Store", location: "Irbid, Jordan", period: "Apr 2019 - Apr 2021", description: "توليت إدارة متجر يحتاج إلى إعادة ضبط على مستوى الفريق والتنفيذ.", highlights: ["ركزت على بناء بيئة أكثر استقرارًا وتوضيح الأدوار وربط الأداء اليومي بمستهدفات قابلة للقياس."], proofs: [{ value: "Top 10", label: "ترتيب وطني" }, { value: "+15%", label: "نمو المبيعات" }, { value: "-35%", label: "خفض الدوران" }] },
-        { label: "Alshaya", nav: "Growth Track", role: "Assistant Store Manager / Department Manager / Senior Sales Associate", company: "Alshaya Group", location: "Irbid, Jordan", period: "Nov 2015 - Mar 2019", description: "في هذه المرحلة انتقلت تدريجيًا من البيع المباشر إلى إدارة التنفيذ داخل المتجر وربط العمل اليومي بالأهداف التجارية.", highlights: ["Assistant Store Manager | Feb 2018 - Mar 2019", "Department Manager | Feb 2017 - Jan 2018", "Senior Sales Associate | Nov 2015 - Jan 2017", "تحسين العرض التجاري والمبادرات المحلية.", "ربط الـ Visual Merchandising بالمستهدف البيعي.", "تطوير مهارات الفريق على أرض المبيعات."], proofs: [{ value: "+20%", label: "رفع حركة الزوار" }, { value: "+12%", label: "تحسن أداء الفئة" }] },
-        { label: "Outdoor Sales", nav: "Al Qawasmeh", role: "Sales Representative (Outdoor Sales)", company: "Al Qawasmeh Co. for Household Items", location: "Irbid, Jordan", period: "Apr 2012 - Sep 2015", description: "شكلت هذه المرحلة قاعدة خبرتي البيعية الأولى، حيث اعتمد النجاح فيها على بناء العلاقات، الوصول إلى العملاء، وتحويل الثقة إلى نتائج فعلية. من هناك تشكلت لدي أساسيات البيع المنظم والانضباط في المتابعة.", highlights: ["بناء قاعدة عملاء من الصفر عبر التوسع الميداني والمتابعة المستمرة.", "تنمية الإيرادات من خلال البيع التكميلي وفهم احتياج العميل بشكل مباشر."] }
+        { label: "المرحلة الأخيرة", nav: "أورنج - الشمال", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Medina, KSA", period: "Feb 2025 - 2026", description: "إدارة 6 فروع في شمال السعودية مع مسؤولية مباشرة عن الأداء والانضباط التشغيلي.", highlights: ["قيادة نطاق متعدد الفروع عبر المدينة وينبع وعرعر وتبوك والجوف.", "إدارة 50+ موظفًا مع تركيز على التطوير والمتابعة العملية."], proofs: [{ value: "+0.31", label: "تحسن التحويل" }, { value: "-40%", label: "خفض نفاد المخزون" }, { value: "+18%", label: "رفع رضا العميل" }] },
+        { label: "قبل ذلك", nav: "أورنج - الرياض", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "قيادة عمليات متعددة الفروع في الرياض ورفع جودة التنفيذ والانضباط البيعي.", highlights: ["إدارة نطاق متعدد المواقع داخل الرياض.", "إطلاق برنامج بيع تكميلي رفع معدل الفاتورة 18%."], proofs: [{ value: "ملايين", label: "نطاق مبيعات" }, { value: "+18.3%", label: "نمو محقق" }, { value: "+18%", label: "رفع معدل الفاتورة" }] },
+        { label: "Training", nav: "51Talk", role: "Sales Trainer & Team Leader", company: "51Talk", location: "Amman, Jordan", period: "Aug 2023 - Dec 2023", description: "تدريب فرق المبيعات وبناء مسار تأهيل أسرع.", highlights: ["تحويل نقاط التعثر البيعي إلى وحدات تدريبية قابلة للمتابعة."], proofs: [{ value: "+30%", label: "رفع التحويل" }, { value: "-25%", label: "تقليص التأهيل" }] },
+        { label: "Finance", nav: "Al Ansari", role: "Financial Services Advisor", company: "Al Ansari Financial Services", location: "Dubai, UAE", period: "Aug 2021 - Jul 2023", description: "بيئة مالية سريعة تتطلب دقة وثقة وانضباطًا.", highlights: ["فهم أعمق لسلوك العميل تحت الضغط مع الحفاظ على جودة الخدمة."], proofs: [{ value: "أعلى 5%", label: "أداء بيعي" }] },
+        { label: "Store Turnaround", nav: "Tala Store", role: "Store Manager", company: "Tala Store", location: "Irbid, Jordan", period: "Apr 2019 - Apr 2021", description: "إعادة ضبط متجر على مستوى الفريق والتنفيذ.", highlights: ["توضيح الأدوار وربط الأداء اليومي بمستهدفات قابلة للقياس."], proofs: [{ value: "Top 10", label: "ترتيب وطني" }, { value: "+15%", label: "نمو المبيعات" }, { value: "-35%", label: "خفض الدوران" }] },
+        { label: "Alshaya", nav: "Growth Track", role: "Assistant Store Manager / Department Manager / Senior Sales Associate", company: "Alshaya Group", location: "Irbid, Jordan", period: "Nov 2015 - Mar 2019", description: "الانتقال من البيع المباشر إلى قيادة التنفيذ داخل المتجر.", highlights: ["Assistant Store Manager | Feb 2018 - Mar 2019", "Department Manager | Feb 2017 - Jan 2018", "Senior Sales Associate | Nov 2015 - Jan 2017", "ربط العرض التجاري بالمستهدف البيعي."], proofs: [{ value: "+20%", label: "رفع حركة الزوار" }, { value: "+12%", label: "تحسن أداء الفئة" }] },
+        { label: "Outdoor Sales", nav: "Al Qawasmeh", role: "Sales Representative (Outdoor Sales)", company: "Al Qawasmeh Co. for Household Items", location: "Irbid, Jordan", period: "Apr 2012 - Sep 2015", description: "قاعدة خبرتي البيعية الأولى: علاقات، متابعة، وتحويل الثقة إلى نتائج.", highlights: ["بناء قاعدة عملاء من الصفر عبر التوسع الميداني.", "تنمية الإيرادات بالبيع التكميلي وفهم احتياج العميل."] }
       ]
     },
     leadership: {
       kicker: "أسلوب القيادة",
       heading: "طريقة قيادة تمزج الانضباط، التدريب، والتحليل الجذري للمشكلة.",
-      description: "أتعامل مع القيادة بوصفها مسؤولية تشغيلية وتطويرية في آن واحد. هدفي ليس فقط تحقيق الرقم، بل بناء فريق يفهم ما خلفه ويترجمه إلى تنفيذ يومي منضبط. لذلك أركز على وضوح التوقعات، والمتابعة المنتظمة، ومعالجة السبب الجذري قبل الحكم على النتيجة.",
+      description: "أتعامل مع القيادة كمسؤولية تشغيلية وتطويرية: وضوح توقعات، متابعة منتظمة، وفهم للسبب الجذري قبل الحكم على النتيجة.",
       principlesKicker: "مرتكزات العمل",
-      principles: ["الرقم ليس للعرض، بل لاتخاذ قرار أسرع وأدق.", "المشكلة يجب أن تُفهم من جذورها.", "التدريب المستمر جزء من التشغيل.", "المعيار الحقيقي للقائد هو ما يصبح عليه الفريق بعده."],
+      principles: ["الرقم ليس للعرض، بل لاتخاذ قرار أسرع.", "المشكلة يجب أن تُفهم من جذورها.", "المعيار الحقيقي للقائد هو ما يصبح عليه الفريق بعده."],
       skillsKicker: "المهارات الأساسية",
-      skills: ["Retail Operations", "P&L Awareness", "Budget Discipline", "Branch Performance Analytics", "Revenue Growth Strategy", "Inventory Optimization", "Loss Prevention Awareness", "Customer Experience Strategy", "Team Development", "Succession Planning", "Sales Coaching", "Sales Forecasting", "Performance Management", "Five Whys Problem Solving", "Excel Dashboards", "Power BI", "Microsoft Dynamics 365", "Automation (n8n)", "AI Tools for Sales"]
+      skills: ["Retail Operations", "P&L Awareness", "Branch Performance Analytics", "Revenue Growth Strategy", "Inventory Optimization", "Team Development", "Performance Management", "Five Whys Problem Solving", "Excel Dashboards", "Power BI", "Microsoft Dynamics 365", "AI Tools for Sales"]
     },
     mindset: {
       kicker: "طريقة التفكير والعمل",
@@ -126,7 +115,6 @@ const siteContent = {
       philosophyQuote: "عندما يتراجع أداء الفرع، لا أبدأ بسؤال من أخطأ، بل أين اختل النظام.",
       philosophyList: [
         "أركز على الحلول بدل اللوم.",
-        "أفصل بين المشكلة والشخص.",
         "أبني قراراتي على الأرقام لكن أفسرها بالواقع.",
         "أوازن بين الضغط على النتائج وبناء الفريق."
       ],
@@ -134,58 +122,25 @@ const siteContent = {
       analyticalMethod: "أربط المؤشرات ببعضها بدل قراءتها منفصلة، وأضع العمر الوظيفي للموظف في الاعتبار عند تفسير الأداء.",
       analyticalExamples: [
         { title: "المبيعات نازلة أكثر من الزوار", text: "هذا يعني أن جوهر المشكلة في قيمة العميل أو السلة، لا في حركة الدخول فقط." },
-        { title: "التحويل ثابت لكن المبيعات نازلة", text: "هنا يصبح التركيز على متوسط الفاتورة وفعالية البيع التكميلي." },
-        { title: "الزوار نازلين لكن الأداء ثابت", text: "هذا يثبت أن الفريق يعمل بكفاءة أعلى ويحافظ على النتائج تحت ضغط أقل." }
+        { title: "التحويل ثابت لكن المبيعات نازلة", text: "هنا يصبح التركيز على متوسط الفاتورة وفعالية البيع التكميلي." }
       ],
       analyticalTools: ["Excel", "تقارير المقارنة", "تفكيك المؤشرات", "التحليل السنوي"],
-      problemKicker: "حل المشكلات",
-      problemStyle: "أسلوبي في حل المشاكل عملي، سريع، ويبدأ من الرقم لكنه لا ينتهي عنده.",
-      problemSteps: [
-        "تحديد المشكلة من الأرقام.",
-        "ربطها بالواقع الميداني.",
-        "اقتراح حل مباشر قابل للتطبيق.",
-        "متابعة التنفيذ.",
-        "تعديل المسار حسب النتائج."
-      ],
-      problemBelief: "كل مشكلة لها حل، لكن الحل يختلف حسب الفريق والظروف.",
-      teamKicker: "إدارة الفريق",
-      teamApproach: [
-        "أتعامل مع كل موظف حسب شخصيته.",
-        "أعطي توجيهًا واضحًا بدل الكلام العام.",
-        "أركز على التدريب العملي أكثر من النظري.",
-        "أراقب الأداء بدون أن أخلق ضغطًا سلبيًا."
-      ],
-      teamChallenges: [
-        { title: "الموظف الجديد", text: "أركز معه على الأساسيات، حتى يثبت على أرض صلبة." },
-        { title: "الموظف المتوسط", text: "أطور لديه مهارات البيع، وأرفع وعيه بالسلوك الشرائي." },
-        { title: "الموظف القوي", text: "أجهزه للقيادة، وأعطيه مساحة مسؤولية أكبر." }
-      ],
       successKicker: "مفهوم النجاح",
       successDefinition: "النجاح بالنسبة لي هو الجهد المبذول والانضباط اليومي، وليس فقط النتيجة النهائية.",
       successBeliefs: ["السعي أهم من النتيجة.", "الاستمرارية أهم من الضربة الواحدة."],
       strengthsKicker: "نقاط القوة والتطور",
-      strengths: ["قراءة الأرقام وتحويلها لقرارات", "فهم عميق لعمليات التجزئة", "التعامل مع الضغط العالي", "بناء فرق من الصفر", "الربط بين التحليل والتنفيذ"],
+      strengths: ["قراءة الأرقام وتحويلها لقرارات", "فهم عميق لعمليات التجزئة", "بناء فرق من الصفر", "الربط بين التحليل والتنفيذ"],
       challengeGrowth: "الصدق المهني جزء من شخصيتي، لذلك أعترف بالتحديات كجزء من التطور لا كنقطة ضعف نهائية.",
       challenges: [
         "أحيانًا أتبع حدسي حتى لو كان القرار غير مكتمل.",
-        "أميل إلى العناد في بعض القرارات عندما أقتنع بالمسار.",
         "أرفع سقف التوقعات على الفريق أحيانًا أكثر من اللازم."
       ],
       futureKicker: "الرؤية المستقبلية",
-      futureGoal: "الوصول إلى منصب قيادي أعلى في قطاع التجزئة مع بناء أنظمة تشغيل أقوى وأكثر ذكاءً.",
+      futureGoal: "الوصول إلى قيادة أوسع في التجزئة مع بناء أنظمة تشغيل أقوى وأكثر ذكاءً.",
       futureFocus: [
         "بناء أنظمة تشغيل أقوى",
         "الاعتماد على البيانات بشكل أكبر",
         "تطوير فرق قيادية",
-        "تحقيق استقرار مالي وعائلي"
-      ],
-      dailyKicker: "أسلوب العمل اليومي",
-      dailyWorkStyle: [
-        "أتابع الأرقام بشكل يومي.",
-        "أركز على الفروع الضعيفة أكثر من القوية.",
-        "أحل المشاكل بشكل مباشر بدون تعقيد.",
-        "أعطي ملاحظات سريعة وواضحة.",
-        "أتابع التنفيذ وليس التخطيط فقط."
       ]
     },
     cases: {
@@ -202,11 +157,11 @@ const siteContent = {
     projects: {
       kicker: "الأنظمة التي بنيتها",
       heading: "رحلة بدأت من تنظيم مصاريفي، وتطورت إلى بناء نظام تشغيلي يختصر ساعات التحليل اليدوي.",
-      intro: "لم أتعامل مع بناء الأنظمة كفكرة جانبية. البداية كانت من حاجة شخصية بسيطة، ثم تحولت تدريجيًا إلى طريقة تفكير أطبقها على مشاكلي اليومية في المال والعمل واتخاذ القرار.",
+      intro: "بدأت ببناء الأنظمة من حاجة شخصية بسيطة، ثم تحولت تدريجيًا إلى طريقة تفكير أطبقها على العمل واتخاذ القرار.",
       origin: {
         eyebrow: "بداية الرحلة",
         title: "بياني",
-        story: "بدأت القصة عندما كنت أبحث عن أداة أسجل فيها مصاريفي بشكل يناسبني، ولم أجد حلًا جاهزًا يخدمني كما أريد. بدأت أولًا بملف Excel، ثم نقلت الفكرة إلى Google Sheets، وبعدها دخلت عالم التطبيقات والحلول الذكية وبدأت أمزج الذكاء الاصطناعي بطريقة عملي.",
+        story: "بياني أداة تساعد على تسجيل المصاريف وفهم المال بطريقة أبسط وأذكى. كانت البداية من حاجة شخصية، ثم تحولت إلى تجربة عملية في بناء منتج عربي واضح.",
         milestones: ["Excel", "Google Sheets", "واجهة عربية", "تحليلات ذكية", "PWA"],
         note: "بياني لم يكن مجرد أداة مصاريف، بل أول مساحة حقيقية تعلمت فيها كيف أبني نظامًا حول احتياجي أنا.",
         giftLead: "← هديتي لك لأنك وصلت إلى هنا: جرّب بياني، برنامج يساعدك على تسجيل مصاريفك وفهم أموالك بطريقة أبسط وأذكى.",
@@ -222,7 +177,7 @@ const siteContent = {
         eyebrow: "النظام التشغيلي",
         title: "ORA Cockpit",
         type: "منصة تشغيل ومتابعة أداء",
-        story: "بعد بياني، انتقلت نفس العقلية إلى العمل. كنت أتنقل بين ملفات Excel وتقارير PDF وتحليل يدوي يستهلك ساعات حتى أصل إلى الرقم الذي أحتاجه. من هنا بدأ Ora Cockpit: نظام واحد يجمع القراءة اليومية، المقارنة، الموظفين، الفروع، التارجت، والتقارير في مساحة واحدة أسرع وأوضح.",
+        story: "بعد بياني، انتقلت نفس العقلية إلى العمل. بدأ Ora Cockpit كمساحة واحدة تجمع القراءة اليومية، المقارنة، الموظفين، الفروع، التارجت، والتقارير بدل التحليل اليدوي المتفرق.",
         impactTitle: "ما الذي يقدمه فعليًا",
         impacts: [
           "يجمع المبيعات والزوار والفروع والموظفين في لوحة تشغيلية واحدة.",
@@ -286,7 +241,7 @@ const siteContent = {
       name: "Khaleel Alsani",
       title: "Area Sales Manager | Northern Region, Saudi Arabia",
       brandLine: "Field leadership with a digital mindset.",
-      summary: "My career has been built across sales leadership, operations, and team development in Saudi Arabia, the UAE, and Jordan, with a strong habit of turning indicators into practical daily decisions. I led 6 branches in Northern Saudi Arabia, and in 2024 I led the Riyadh scope with +18.3% growth and an 18% improvement in average ticket.",
+      summary: "I lead sales, operations, and team development with a habit of turning indicators into clearer daily decisions. I led 6 branches in Northern Saudi Arabia and delivered +18.3% growth with an 18% average-ticket uplift in Riyadh.",
       primaryAction: "View the Journey",
       secondaryAction: "See the Wins",
       contacts: [
@@ -322,17 +277,13 @@ const siteContent = {
       kicker: "Profile",
       heading: "An executive profile built around operations, sales leadership, and disciplined data-led improvement.",
       quote: "I treat numbers as operating signals that need interpretation, not just results to display.",
-      text: "My experience spans retail, financial services, and sales training, but the method has remained consistent: read indicators in context, understand field reality, and turn that into practical action that can be followed and measured.",
-      regionsKicker: "Areas Managed",
-      regions: ["Madinah", "Yanbu", "Arar", "Tabuk", "Al Jouf", "Riyadh"],
+      text: "My experience spans retail, financial services, and training, but the method stays consistent: read indicators in context and turn them into measurable action.",
       responsibilitiesKicker: "Core Responsibilities",
       responsibilities: [
         "Lead branch performance with direct ownership of sales targets and operating quality.",
-        "Track KPIs, traffic, conversion, and ATV with clear profitability awareness.",
-        "Balance growth, operating discipline, and cost control across the scope.",
         "Read employee tenure as part of performance analysis and training need.",
         "Build clearer operational reporting when existing tools lack precision.",
-        "Coach store managers and staff through practical, repeatable training."
+        "Coach store managers through practical, repeatable training."
       ]
     },
     positioning: {
@@ -347,49 +298,42 @@ const siteContent = {
         { value: "Multi-Million SAR", label: "Riyadh 2024 scope" },
         { value: "+18%", label: "Average ticket uplift" }
       ],
-      howLeadKicker: "How I Lead",
-      howLeadSteps: [
-        "I read indicators inside their daily operating context.",
-        "I look for the root cause before proposing action.",
-        "I turn observations into clear direction and measurable follow-up."
-      ],
-      hrNoticeKicker: "What HR Will Notice",
+      hrNoticeKicker: "What Stands Out",
       hrNotice: [
-        "A clear career path from frontline sales to multi-branch leadership.",
-        "Strong ability to develop teams, not only track targets.",
-        "A solid grasp of numbers translated into execution and improvement.",
+        "A clear path from frontline sales to multi-branch leadership.",
+        "Proven team development, not only target tracking.",
+        "Numeric thinking translated into execution and improvement.",
         "Field presence combined with management discipline."
       ],
-      teamLensKicker: "Team Development Lens",
-      teamLensLead: "I treat team development as part of performance itself, reading each employee through their stage, readiness, and potential to grow.",
+      teamLensKicker: "Team Development & Management",
+      teamLensLead: "I treat team development as part of performance: clarify expectations, coach practically, and read each employee's stage before judging the result.",
       teamLensItems: [
         { title: "New employee", text: "Builds confidence, fundamentals, and faster readiness for real work." },
         { title: "Stable performer", text: "Raises execution quality, ownership, and attention to detail." },
-        { title: "High-potential employee", text: "Gives wider responsibility and begins preparing them for leadership." },
-        { title: "Employee tenure", text: "Reads tenure as a factor in performance, training need, and team stability." }
+        { title: "High-potential employee", text: "Gives wider responsibility and begins preparing them for leadership." }
       ]
     },
     journey: {
       kicker: "Career Journey",
       heading: "A rising career across Saudi Arabia, the UAE, and Jordan.",
       entries: [
-        { label: "Now", nav: "Orange North", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Medina, KSA", period: "Feb 2025 - 2026", description: "I led six branches in Northern Saudi Arabia with direct responsibility for sales performance, operating discipline, and field leadership development.", highlights: ["Led a multi-branch scope across Madinah, Yanbu, Arar, Tabuk, and Al Jouf.", "Managed 50+ employees with strong focus on coaching and practical follow-up.", "Built a unified daily follow-up structure when existing tools were not enough."], proofs: [{ value: "+0.31", label: "Conversion uplift" }, { value: "-40%", label: "Stockouts" }, { value: "+18%", label: "Customer satisfaction" }] },
-        { label: "Before", nav: "Orange Riyadh", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "I led multi-branch operations in Riyadh with a focus on improving execution and building stronger selling discipline.", highlights: ["Managed a multi-location Riyadh scope with direct ownership of execution and performance.", "Launched a cross-selling program that improved average ticket value by 18%.", "Connected daily indicators to coaching and follow-up inside branches."], proofs: [{ value: "Multi-Million", label: "Sales scope" }, { value: "+18.3%", label: "Growth" }, { value: "+18%", label: "Average ticket" }] },
-        { label: "Training", nav: "51Talk", role: "Sales Trainer & Team Leader", company: "51Talk", location: "Amman, Jordan", period: "Aug 2023 - Dec 2023", description: "At 51Talk, I focused on training sales teams and building a faster, sharper onboarding path.", highlights: ["Turned sales conversation friction points into practical training modules that could be coached and tracked."], proofs: [{ value: "+30%", label: "Conversion" }, { value: "-25%", label: "Onboarding time" }] },
-        { label: "Finance", nav: "Al Ansari", role: "Financial Services Advisor", company: "Al Ansari Financial Services", location: "Dubai, UAE", period: "Aug 2021 - Jul 2023", description: "I worked in a high-volume financial environment where accuracy, trust, and consistency were essential.", highlights: ["Strengthened my understanding of customer behavior under pressure while maintaining service quality."], proofs: [{ value: "Top 5%", label: "Sales performance" }] },
-        { label: "Store Turnaround", nav: "Tala Store", role: "Store Manager", company: "Tala Store", location: "Irbid, Jordan", period: "Apr 2019 - Apr 2021", description: "I took responsibility for a store that needed a reset in team structure and execution quality.", highlights: ["Created more stability, clarified roles, and reconnected daily work to measurable targets."], proofs: [{ value: "Top 10", label: "National rank" }, { value: "+15%", label: "Sales growth" }, { value: "-35%", label: "Turnover" }] },
-        { label: "Alshaya", nav: "Growth Track", role: "Assistant Store Manager / Department Manager / Senior Sales Associate", company: "Alshaya Group", location: "Irbid, Jordan", period: "Nov 2015 - Mar 2019", description: "This period marked my transition from direct selling into execution leadership inside the store.", highlights: ["Assistant Store Manager | Feb 2018 - Mar 2019", "Department Manager | Feb 2017 - Jan 2018", "Senior Sales Associate | Nov 2015 - Jan 2017", "Improved merchandising and localized initiatives.", "Aligned visual merchandising with sales goals.", "Developed customer engagement on the floor."], proofs: [{ value: "+20%", label: "Footfall" }, { value: "+12%", label: "Category performance" }] },
-        { label: "Outdoor Sales", nav: "Al Qawasmeh", role: "Sales Representative (Outdoor Sales)", company: "Al Qawasmeh Co. for Household Items", location: "Irbid, Jordan", period: "Apr 2012 - Sep 2015", description: "This stage formed the foundation of my sales discipline. Success depended on prospecting, relationship building, and turning trust into repeatable revenue.", highlights: ["Built a customer base from zero through field outreach and consistent follow-up.", "Generated additional revenue through upselling and cross-selling based on direct customer need."] }
+        { label: "Now", nav: "Orange North", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Medina, KSA", period: "Feb 2025 - 2026", description: "Led six Northern Saudi branches with direct responsibility for performance and operating discipline.", highlights: ["Led a multi-branch scope across Madinah, Yanbu, Arar, Tabuk, and Al Jouf.", "Managed 50+ employees with practical coaching and follow-up."], proofs: [{ value: "+0.31", label: "Conversion uplift" }, { value: "-40%", label: "Stockouts" }, { value: "+18%", label: "Customer satisfaction" }] },
+        { label: "Before", nav: "Orange Riyadh", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "Led multi-branch Riyadh operations and strengthened selling discipline.", highlights: ["Managed a multi-location Riyadh scope.", "Launched cross-selling that improved average ticket value by 18%."], proofs: [{ value: "Multi-Million", label: "Sales scope" }, { value: "+18.3%", label: "Growth" }, { value: "+18%", label: "Average ticket" }] },
+        { label: "Training", nav: "51Talk", role: "Sales Trainer & Team Leader", company: "51Talk", location: "Amman, Jordan", period: "Aug 2023 - Dec 2023", description: "Trained sales teams and built a faster onboarding path.", highlights: ["Turned sales friction points into trackable coaching modules."], proofs: [{ value: "+30%", label: "Conversion" }, { value: "-25%", label: "Onboarding time" }] },
+        { label: "Finance", nav: "Al Ansari", role: "Financial Services Advisor", company: "Al Ansari Financial Services", location: "Dubai, UAE", period: "Aug 2021 - Jul 2023", description: "A fast financial environment built on accuracy, trust, and consistency.", highlights: ["Improved customer handling under pressure while protecting service quality."], proofs: [{ value: "Top 5%", label: "Sales performance" }] },
+        { label: "Store Turnaround", nav: "Tala Store", role: "Store Manager", company: "Tala Store", location: "Irbid, Jordan", period: "Apr 2019 - Apr 2021", description: "Reset team structure and execution quality.", highlights: ["Clarified roles and reconnected daily work to measurable targets."], proofs: [{ value: "Top 10", label: "National rank" }, { value: "+15%", label: "Sales growth" }, { value: "-35%", label: "Turnover" }] },
+        { label: "Alshaya", nav: "Growth Track", role: "Assistant Store Manager / Department Manager / Senior Sales Associate", company: "Alshaya Group", location: "Irbid, Jordan", period: "Nov 2015 - Mar 2019", description: "Moved from direct selling into store execution leadership.", highlights: ["Assistant Store Manager | Feb 2018 - Mar 2019", "Department Manager | Feb 2017 - Jan 2018", "Senior Sales Associate | Nov 2015 - Jan 2017", "Aligned merchandising with sales goals."], proofs: [{ value: "+20%", label: "Footfall" }, { value: "+12%", label: "Category performance" }] },
+        { label: "Outdoor Sales", nav: "Al Qawasmeh", role: "Sales Representative (Outdoor Sales)", company: "Al Qawasmeh Co. for Household Items", location: "Irbid, Jordan", period: "Apr 2012 - Sep 2015", description: "The foundation of my sales discipline: prospecting, trust, and repeatable revenue.", highlights: ["Built a customer base from zero through field outreach.", "Generated additional revenue through upselling and cross-selling."] }
       ]
     },
     leadership: {
       kicker: "Leadership Style",
       heading: "A management style shaped by discipline, coaching, and root-cause thinking.",
-      description: "I see leadership as both an operating and a developmental responsibility. The goal is not only to hit the number, but to build a team that understands what sits behind it and translates that into disciplined daily execution. That is why I focus on clarity, regular follow-up, and root-cause understanding before judging the result.",
+      description: "I see leadership as both operating and development work: clear expectations, regular follow-up, and root-cause understanding before judging the result.",
       principlesKicker: "Operating Principles",
-      principles: ["A number is not for display. It is for faster and better judgment.", "A problem must be understood at the root.", "Training is part of operations.", "The real measure of a leader is what the team becomes after them."],
+      principles: ["A number is for faster judgment, not display.", "A problem must be understood at the root.", "A leader is measured by what the team becomes after them."],
       skillsKicker: "Core Skills",
-      skills: ["Retail Operations", "P&L Awareness", "Budget Discipline", "Branch Performance Analytics", "Revenue Growth Strategy", "Inventory Optimization", "Loss Prevention Awareness", "Customer Experience Strategy", "Team Development", "Succession Planning", "Sales Coaching", "Sales Forecasting", "Performance Management", "Five Whys Problem Solving", "Excel Dashboards", "Power BI", "Microsoft Dynamics 365", "Automation (n8n)", "AI Tools for Sales"]
+      skills: ["Retail Operations", "P&L Awareness", "Branch Performance Analytics", "Revenue Growth Strategy", "Inventory Optimization", "Team Development", "Performance Management", "Five Whys Problem Solving", "Excel Dashboards", "Power BI", "Microsoft Dynamics 365", "AI Tools for Sales"]
     },
     mindset: {
       kicker: "Mindset & Method",
@@ -399,7 +343,6 @@ const siteContent = {
       philosophyQuote: "When branch performance declines, I do not begin with who failed. I begin with where the system broke.",
       philosophyList: [
         "I focus on solutions instead of blame.",
-        "I separate the problem from the person.",
         "I build decisions on numbers, then read them through field reality.",
         "I balance pressure for results with team building."
       ],
@@ -407,58 +350,25 @@ const siteContent = {
       analyticalMethod: "I connect indicators instead of reading them one by one, and I consider employee tenure when interpreting performance.",
       analyticalExamples: [
         { title: "Sales fall faster than traffic", text: "The core issue is customer value or basket size, not only visits." },
-        { title: "Conversion is stable but sales decline", text: "The focus shifts to average ticket value and cross-selling effectiveness." },
-        { title: "Traffic is down but performance holds", text: "That usually means the team is executing more efficiently under pressure." }
+        { title: "Conversion is stable but sales decline", text: "The focus shifts to average ticket value and cross-selling effectiveness." }
       ],
       analyticalTools: ["Excel", "Comparative Reports", "KPI Breakdown", "YoY Analysis"],
-      problemKicker: "Problem Solving",
-      problemStyle: "My problem-solving style is practical, fast, and grounded in numbers without stopping there.",
-      problemSteps: [
-        "Define the problem from the data.",
-        "Tie it to field reality.",
-        "Propose a direct and executable solution.",
-        "Follow up on execution.",
-        "Adjust based on results."
-      ],
-      problemBelief: "Every problem has a solution, but the solution changes with the team and the situation.",
-      teamKicker: "People Management",
-      teamApproach: [
-        "I deal with each employee according to their personality.",
-        "I give clear direction instead of vague advice.",
-        "I prefer practical training over theory-heavy instruction.",
-        "I watch performance without creating negative pressure."
-      ],
-      teamChallenges: [
-        { title: "New employee", text: "I anchor them in the fundamentals first." },
-        { title: "Average performer", text: "I sharpen sales ability and buying-behavior awareness." },
-        { title: "Strong performer", text: "I start preparing them for leadership." }
-      ],
       successKicker: "Success Mindset",
       successDefinition: "To me, success is the quality of the effort and the discipline behind it, not only the final outcome.",
       successBeliefs: ["The pursuit matters more than the result.", "Consistency matters more than one isolated win."],
       strengthsKicker: "Strengths & Growth",
-      strengths: ["Turning numbers into decisions", "Deep understanding of retail operations", "Working effectively under pressure", "Building teams from zero", "Connecting analysis with execution"],
+      strengths: ["Turning numbers into decisions", "Deep understanding of retail operations", "Building teams from zero", "Connecting analysis with execution"],
       challengeGrowth: "Professional honesty matters to me, so I treat challenges as growth points, not things to polish away.",
       challenges: [
         "I sometimes follow instinct even when the full picture is not complete.",
-        "I can be stubborn once I am convinced of a direction.",
         "I sometimes raise expectations on the team very high."
       ],
       futureKicker: "Future Vision",
-      futureGoal: "I want to move into a higher leadership role in retail while building stronger and smarter operating systems.",
+      futureGoal: "I want to move into wider retail leadership while building stronger, smarter operating systems.",
       futureFocus: [
         "Build stronger operating systems",
         "Lean further into data-driven execution",
         "Develop leadership benches",
-        "Create financial and family stability"
-      ],
-      dailyKicker: "Daily Work Style",
-      dailyWorkStyle: [
-        "I track the numbers every day.",
-        "I focus more on weaker branches than stronger ones.",
-        "I solve problems directly without overcomplication.",
-        "I give quick and clear feedback.",
-        "I follow execution, not planning alone."
       ]
     },
     cases: {
@@ -475,11 +385,11 @@ const siteContent = {
     projects: {
       kicker: "Systems I Built",
       heading: "A journey that started with tracking my own expenses and evolved into building an operating system that saves hours of manual analysis.",
-      intro: "I did not approach building systems as a side hobby. It started from a personal need, then gradually became a way of thinking I applied to money, work, and decision-making.",
+      intro: "I started building systems from a simple personal need, then turned it into a way of thinking I apply to work and decision-making.",
       origin: {
         eyebrow: "Where it started",
         title: "Bayani",
-        story: "The story started when I wanted a simple way to track my own expenses and could not find a tool that truly fit how I think. I began with Excel, moved the idea into Google Sheets, then stepped into app building and smart solutions, gradually mixing AI into the way I work.",
+        story: "Bayani helps track expenses and understand money in a simpler, smarter way. It began as a personal need and became a practical Arabic-first product experiment.",
         milestones: ["Excel", "Google Sheets", "Arabic-first UX", "AI-assisted insights", "PWA"],
         note: "Bayani was more than an expense tracker. It was the first real space where I learned how to build a system around a personal need.",
         giftLead: "← A small gift for anyone who made it this far: Bayani is a free expense app that helps you track spending and understand your money more clearly.",
@@ -495,7 +405,7 @@ const siteContent = {
         eyebrow: "Operating system",
         title: "ORA Cockpit",
         type: "Retail Operations & Performance Platform",
-        story: "After Bayani, the same mindset moved into work. I was moving between Excel files, PDF reports, and manual analysis that could take hours before the right number became visible. Ora Cockpit was built to replace that fragmentation with one daily operating space for targets, branches, people, reporting, and decisions.",
+        story: "After Bayani, the same mindset moved into work. Ora Cockpit became one daily operating space for targets, branches, people, reporting, and decisions instead of scattered manual analysis.",
         impactTitle: "What it actually solves",
         impacts: [
           "Brings sales, traffic, branches, and employees into one operational workspace.",
@@ -584,8 +494,6 @@ const elements = {
   overviewHeading: $("overview-heading"),
   leadQuote: $("lead-quote"),
   overviewText: $("overview-text"),
-  regionsKicker: $("regions-kicker"),
-  regionList: $("region-list"),
   responsibilitiesKicker: $("responsibilities-kicker"),
   responsibilityList: $("responsibility-list"),
   positioningKicker: $("positioning-kicker"),
@@ -594,8 +502,6 @@ const elements = {
   snapshotLead: $("snapshot-lead"),
   snapshotPills: $("snapshot-pills"),
   positioningStats: $("positioning-stats"),
-  howLeadKicker: $("how-lead-kicker"),
-  howLeadSteps: $("how-lead-steps"),
   hrNoticeKicker: $("hr-notice-kicker"),
   hrNoticeList: $("hr-notice-list"),
   teamLensKicker: $("team-lens-kicker"),
@@ -622,13 +528,6 @@ const elements = {
   analyticalMethod: $("analytical-method"),
   analyticalExamples: $("analytical-examples"),
   analyticalTools: $("analytical-tools"),
-  problemKicker: $("problem-kicker"),
-  problemStyle: $("problem-style"),
-  problemSteps: $("problem-steps"),
-  problemBelief: $("problem-belief"),
-  teamKicker: $("team-kicker"),
-  teamApproach: $("team-approach"),
-  teamChallenges: $("team-challenges"),
   successKicker: $("success-kicker"),
   successDefinition: $("success-definition"),
   successBeliefs: $("success-beliefs"),
@@ -639,8 +538,6 @@ const elements = {
   futureKicker: $("future-kicker"),
   futureGoal: $("future-goal"),
   futureFocus: $("future-focus"),
-  dailyKicker: $("daily-kicker"),
-  dailyWorkStyle: $("daily-work-style"),
   casesKicker: $("cases-kicker"),
   casesHeading: $("cases-heading"),
   caseGrid: $("case-grid"),
@@ -708,8 +605,6 @@ const EDITABLE_SELECTOR = [
   "#overview-heading",
   "#lead-quote",
   "#overview-text",
-  "#regions-kicker",
-  ".region-pill",
   "#responsibilities-kicker",
   ".responsibility-list li",
   "#positioning-kicker",
@@ -721,8 +616,6 @@ const EDITABLE_SELECTOR = [
   ".mini-pill",
   ".positioning-stat strong",
   ".positioning-stat span",
-  "#how-lead-kicker",
-  "#how-lead-steps li",
   "#hr-notice-kicker",
   "#hr-notice-list li",
   "#team-lens-kicker",
@@ -755,12 +648,6 @@ const EDITABLE_SELECTOR = [
   "#analytical-method",
   ".example-item strong",
   ".example-item span",
-  "#problem-kicker",
-  "#problem-style",
-  "#problem-steps li",
-  "#problem-belief",
-  "#team-kicker",
-  "#team-approach li",
   "#success-kicker",
   "#success-definition",
   "#success-beliefs li",
@@ -769,8 +656,6 @@ const EDITABLE_SELECTOR = [
   "#challenge-list li",
   "#future-kicker",
   "#future-goal",
-  "#daily-kicker",
-  "#daily-work-style li",
   "#cases-kicker",
   "#cases-heading",
   ".case-card h3",
@@ -1141,6 +1026,9 @@ function renderPositioningStats(items) {
 }
 
 function renderList(node, items) {
+  if (!node || !items) {
+    return;
+  }
   clearNode(node);
   items.forEach((item) => {
     const li = document.createElement("li");
@@ -1150,6 +1038,9 @@ function renderList(node, items) {
 }
 
 function renderTitledItems(node, items, className) {
+  if (!node || !items) {
+    return;
+  }
   clearNode(node);
   items.forEach((item) => {
     const block = document.createElement("div");
@@ -1425,6 +1316,12 @@ function updateMeta(content) {
   }
 }
 
+function setText(node, value) {
+  if (node) {
+    node.textContent = value ?? "";
+  }
+}
+
 function setupTimelineObserver() {
   const entries = [...document.querySelectorAll(".timeline-entry")];
   const navItems = [...document.querySelectorAll(".timeline-nav li")];
@@ -1558,14 +1455,12 @@ function renderContent(lang) {
   elements.overviewHeading.textContent = content.overview.heading;
   elements.leadQuote.textContent = content.overview.quote;
   elements.overviewText.textContent = content.overview.text;
-  elements.regionsKicker.textContent = content.overview.regionsKicker;
-  elements.responsibilitiesKicker.textContent = content.overview.responsibilitiesKicker;
+  setText(elements.responsibilitiesKicker, content.overview.responsibilitiesKicker);
   elements.positioningKicker.textContent = content.positioning.kicker;
   elements.positioningHeading.textContent = content.positioning.heading;
   elements.snapshotKicker.textContent = content.positioning.snapshotKicker;
   elements.snapshotLead.textContent = content.positioning.snapshotLead;
-  elements.howLeadKicker.textContent = content.positioning.howLeadKicker;
-  elements.hrNoticeKicker.textContent = content.positioning.hrNoticeKicker;
+  setText(elements.hrNoticeKicker, content.positioning.hrNoticeKicker);
   elements.teamLensKicker.textContent = content.positioning.teamLensKicker;
   elements.teamLensLead.textContent = content.positioning.teamLensLead;
   elements.journeyKicker.textContent = content.journey.kicker;
@@ -1582,17 +1477,12 @@ function renderContent(lang) {
   elements.philosophyQuote.textContent = content.mindset.philosophyQuote;
   elements.analyticalKicker.textContent = content.mindset.analyticalKicker;
   elements.analyticalMethod.textContent = content.mindset.analyticalMethod;
-  elements.problemKicker.textContent = content.mindset.problemKicker;
-  elements.problemStyle.textContent = content.mindset.problemStyle;
-  elements.problemBelief.textContent = content.mindset.problemBelief;
-  elements.teamKicker.textContent = content.mindset.teamKicker;
   elements.successKicker.textContent = content.mindset.successKicker;
   elements.successDefinition.textContent = content.mindset.successDefinition;
   elements.strengthsKicker.textContent = content.mindset.strengthsKicker;
   elements.challengeGrowth.textContent = content.mindset.challengeGrowth;
   elements.futureKicker.textContent = content.mindset.futureKicker;
   elements.futureGoal.textContent = content.mindset.futureGoal;
-  elements.dailyKicker.textContent = content.mindset.dailyKicker;
   elements.casesKicker.textContent = content.cases.kicker;
   elements.casesHeading.textContent = content.cases.heading;
   elements.projectsKicker.textContent = content.projects.kicker;
@@ -1612,11 +1502,9 @@ function renderContent(lang) {
   renderPills(elements.cityOrbit, content.hero.orbitCities, "city-chip");
   renderMetrics(content.hero.metrics);
   renderPills(elements.analysisLensGrid, content.hero.analyticalLens, "lens-chip");
-  renderPills(elements.regionList, content.overview.regions, "region-pill");
   renderList(elements.responsibilityList, content.overview.responsibilities);
   renderPositioningStats(content.positioning.snapshotStats);
   renderMiniPills(elements.snapshotPills, content.positioning.snapshotPills);
-  renderList(elements.howLeadSteps, content.positioning.howLeadSteps);
   renderList(elements.hrNoticeList, content.positioning.hrNotice);
   renderTitledItems(elements.teamLensList, content.positioning.teamLensItems, "challenge-lane");
   renderJourney(content.journey.entries);
@@ -1625,14 +1513,10 @@ function renderContent(lang) {
   renderList(elements.philosophyList, content.mindset.philosophyList);
   renderTitledItems(elements.analyticalExamples, content.mindset.analyticalExamples, "example-item");
   renderMiniPills(elements.analyticalTools, content.mindset.analyticalTools);
-  renderList(elements.problemSteps, content.mindset.problemSteps);
-  renderList(elements.teamApproach, content.mindset.teamApproach);
-  renderTitledItems(elements.teamChallenges, content.mindset.teamChallenges, "challenge-lane");
   renderList(elements.successBeliefs, content.mindset.successBeliefs);
   renderMiniPills(elements.strengthsList, content.mindset.strengths);
   renderList(elements.challengeList, content.mindset.challenges);
   renderMiniPills(elements.futureFocus, content.mindset.futureFocus);
-  renderList(elements.dailyWorkStyle, content.mindset.dailyWorkStyle);
   renderCases(content.cases);
   renderProjects(content.projects);
   renderEducation(content.credentials.education);

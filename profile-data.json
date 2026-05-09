@@ -13,8 +13,7 @@
     "core_belief": "الإدارة ليست فقط تحقيق أرقام، بل فهم الأسباب الحقيقية خلف الأرقام والعمل على تحسينها.",
     "approach": [
       "أركز على الحلول بدل اللوم",
-      "أفصل بين المشكلة والشخص",
-      "أبني قراراتي على الأرقام لكن أفسرها بالواقع",
+      "أبني قراراتي على الأرقام وأفسرها بالواقع",
       "أوازن بين الضغط على النتائج وبناء الفريق"
     ],
     "quote": "الأرقام لا تكذب، لكن تحتاج شخص يفهمها صح"
@@ -23,33 +22,25 @@
     "method": "ربط المؤشرات بدل قراءتها بشكل منفصل",
     "examples": [
       "إذا نزلت المبيعات أكثر من الزوار فالمشكلة في قيمة العميل",
-      "إذا التحويل ثابت لكن المبيعات نازلة فالمشكلة في متوسط الفاتورة",
-      "إذا الزوار نازلين لكن الأداء ثابت فالفريق شغال صح"
+      "إذا التحويل ثابت لكن المبيعات نازلة فالمشكلة في متوسط الفاتورة"
     ],
-    "tools": ["Excel", "Comparative Reports", "KPI Breakdown", "YoY Analysis"]
-  },
-  "problem_solving": {
-    "style": "عملي وسريع",
-    "steps": [
-      "تحديد المشكلة من الأرقام",
-      "ربطها بالواقع الميداني",
-      "اقتراح حل مباشر قابل للتطبيق",
-      "متابعة التنفيذ",
-      "تعديل حسب النتائج"
-    ],
-    "belief": "كل مشكلة لها حل، لكن الحل يختلف حسب الفريق والظروف"
+    "tools": [
+      "Excel",
+      "Comparative Reports",
+      "KPI Breakdown",
+      "YoY Analysis"
+    ]
   },
   "team_management": {
     "approach": [
-      "أتعامل مع كل موظف حسب شخصيته",
-      "أعطي توجيه واضح بدل كلام عام",
-      "أركز على التدريب العملي أكثر من النظري",
-      "أراقب الأداء بدون ما أخلق ضغط سلبي"
+      "توجيه الموظفين حسب الخبرة والشخصية ومرحلة التطور",
+      "التعامل مع كل مستوى بما يناسب التدريب والاستقرار والنمو",
+      "بناء صف قيادي جاهز بدل الاعتماد على شخص واحد"
     ],
     "challenge_handling": [
-      "الموظف الجديد: أركز على الأساسيات",
-      "الموظف المتوسط: أطور مهارات البيع",
-      "الموظف القوي: أجهزه للقيادة"
+      "الموظف الجديد: أساسيات واضحة ومتابعة قريبة",
+      "الموظف المتوسط: تطوير مهارة البيع بثقة",
+      "الموظف القوي: تجهيز للقيادة وتحمل المسؤولية"
     ]
   },
   "success_mindset": {
@@ -61,17 +52,13 @@
     ]
   },
   "strengths": [
-    "القدرة على قراءة الأرقام وتحويلها لقرارات",
+    "قراءة الأرقام وتحويلها لقرارات",
     "فهم عميق لعمليات التجزئة",
-    "التعامل مع الضغط العالي",
-    "التكيف مع التغيير",
     "بناء فرق من الصفر",
-    "التركيز العالي على التفاصيل",
-    "القدرة على الربط بين التحليل والتنفيذ"
+    "الربط بين التحليل والتنفيذ"
   ],
   "challenges": [
     "أحيانًا أتبع حدسي حتى لو كان القرار غير مكتمل",
-    "العناد في بعض القرارات",
     "أرفع سقف التوقعات على الفريق أحيانًا"
   ],
   "growth": "أعمل دائمًا على تطوير نفسي ومراجعة قراراتي",
@@ -84,13 +71,6 @@
       "تحقيق استقرار مالي وعائلي"
     ]
   },
-  "daily_work_style": [
-    "أتابع الأرقام بشكل يومي",
-    "أركز على الفروع الضعيفة أكثر من القوية",
-    "أحل المشاكل بشكل مباشر بدون تعقيد",
-    "أعطي ملاحظات سريعة وواضحة",
-    "أتابع التنفيذ مش بس التخطيط"
-  ],
   "highlights": [
     "Increased regional ATV by 18% through structured cross-selling training across 5 branches",
     "Reduced inventory stockouts by 40%, improving customer satisfaction scores by 18%",
@@ -99,11 +79,35 @@
     "Ranked Top 5% in sales performance at Al Ansari Financial Services",
     "Revitalized Tala Store into a top-10 nationwide performer with a 15% sales surge"
   ],
-  "regions": ["Medina", "Tabuk", "Arar", "Jouf", "Yanbu", "Riyadh", "Dubai", "Irbid", "Amman"],
+  "regions": [
+    "Medina",
+    "Tabuk",
+    "Arar",
+    "Jouf",
+    "Yanbu",
+    "Riyadh",
+    "Dubai",
+    "Irbid",
+    "Amman"
+  ],
   "skills": {
-    "retail_operations": ["KPI Management", "Branch Performance Analytics", "Inventory Optimization", "Customer Experience Strategy"],
-    "leadership_training": ["Team Development", "Sales Coaching", "Performance Management", "Five Whys Problem Solving"],
-    "analytics_technology": ["Excel Dashboards", "Power BI", "Microsoft Dynamics 365", "Automation (n8n)", "AI Tools for Sales"]
+    "retail_operations": [
+      "KPI Management",
+      "Branch Performance Analytics",
+      "Inventory Optimization"
+    ],
+    "leadership_training": [
+      "Team Development",
+      "Performance Management",
+      "Five Whys Problem Solving"
+    ],
+    "analytics_technology": [
+      "Excel Dashboards",
+      "Power BI",
+      "Microsoft Dynamics 365",
+      "Automation (n8n)",
+      "AI Tools for Sales"
+    ]
   },
   "experience": [
     {
@@ -204,7 +208,11 @@
     "Fundamentals of Digital Marketing",
     "Occupational Safety & Health"
   ],
-  "languages": ["Arabic", "English", "German"],
+  "languages": [
+    "Arabic",
+    "English",
+    "German"
+  ],
   "projects": [
     {
       "name": "ORA Cockpit",
@@ -219,7 +227,18 @@
         "Administrative PDF and Excel reporting",
         "Live sales, product inquiry, and TV/watch monitoring modes"
       ],
-      "tech": ["React", "TypeScript", "Vite", "React Router", "Recharts", "Leaflet", "XLSX", "jsPDF", "D365 Data", "Tailwind"]
+      "tech": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "React Router",
+        "Recharts",
+        "Leaflet",
+        "XLSX",
+        "jsPDF",
+        "D365 Data",
+        "Tailwind"
+      ]
     }
   ]
 }
