@@ -49,7 +49,6 @@ const siteContent = {
       kicker: "الملف المهني",
       heading: "ملف مهني تنفيذي يجمع بين التشغيل، إدارة المبيعات، وتطوير الفرق على أساس رقمي واضح.",
       quote: "أتعامل مع الرقم بوصفه مؤشرًا تشغيليًا يحتاج إلى تفسير، لا مجرد نتيجة تُعرض.",
-      text: "تنقلت بين التجزئة والخدمات المالية والتدريب، وبقي منهجي ثابتًا: قراءة المؤشرات في سياقها وتحويلها إلى إجراء يمكن قياس أثره.",
       responsibilitiesKicker: "المسؤوليات الرئيسية",
       responsibilities: [
         "إدارة أداء الفروع مع مسؤولية مباشرة عن المستهدف البيعي والجودة التشغيلية.",
@@ -102,22 +101,14 @@ const siteContent = {
       kicker: "أسلوب القيادة",
       heading: "طريقة قيادة تمزج الانضباط، التدريب، والتحليل الجذري للمشكلة.",
       description: "أتعامل مع القيادة كمسؤولية تشغيلية وتطويرية: وضوح توقعات، متابعة منتظمة، وفهم للسبب الجذري قبل الحكم على النتيجة.",
-      principlesKicker: "مرتكزات العمل",
-      principles: ["الرقم ليس للعرض، بل لاتخاذ قرار أسرع.", "المشكلة يجب أن تُفهم من جذورها.", "المعيار الحقيقي للقائد هو ما يصبح عليه الفريق بعده."],
+      principlesKicker: "فلسفة القيادة ومرتكزات العمل",
+      principles: ["عندما يتراجع أداء الفرع، لا أبدأ بسؤال من أخطأ، بل أين اختل النظام.", "أركز على الحلول بدل اللوم وأبني قراراتي على الأرقام لكن أفسرها بالواقع.", "الرقم ليس للعرض، بل لاتخاذ قرار أسرع، والمشكلة يجب أن تُفهم من جذورها.", "المعيار الحقيقي للقائد هو ما يصبح عليه الفريق بعده."],
       skillsKicker: "المهارات الأساسية",
       skills: ["Retail Operations", "P&L Awareness", "Branch Performance Analytics", "Revenue Growth Strategy", "Inventory Optimization", "Team Development", "Performance Management", "Five Whys Problem Solving", "Excel Dashboards", "Power BI", "Microsoft Dynamics 365", "AI Tools for Sales"]
     },
     mindset: {
       kicker: "طريقة التفكير والعمل",
       heading: "كيف أفكر وأقود وأتعامل مع التطوير.",
-      philosophyKicker: "فلسفة القيادة",
-      philosophyCore: "الرقم ليس الجواب النهائي، بل نقطة البداية في التحليل.",
-      philosophyQuote: "عندما يتراجع أداء الفرع، لا أبدأ بسؤال من أخطأ، بل أين اختل النظام.",
-      philosophyList: [
-        "أركز على الحلول بدل اللوم.",
-        "أبني قراراتي على الأرقام لكن أفسرها بالواقع.",
-        "أوازن بين الضغط على النتائج وبناء الفريق."
-      ],
       analyticalKicker: "التفكير التحليلي",
       analyticalMethod: "أربط المؤشرات ببعضها بدل قراءتها منفصلة، وأضع العمر الوظيفي للموظف في الاعتبار عند تفسير الأداء.",
       analyticalExamples: [
@@ -127,7 +118,6 @@ const siteContent = {
       analyticalTools: ["Excel", "تقارير المقارنة", "تفكيك المؤشرات", "التحليل السنوي"],
       successKicker: "مفهوم النجاح",
       successDefinition: "النجاح بالنسبة لي هو الجهد المبذول والانضباط اليومي، وليس فقط النتيجة النهائية.",
-      successBeliefs: ["السعي أهم من النتيجة.", "الاستمرارية أهم من الضربة الواحدة."],
       strengthsKicker: "نقاط القوة والتطور",
       strengths: ["قراءة الأرقام وتحويلها لقرارات", "فهم عميق لعمليات التجزئة", "بناء فرق من الصفر", "الربط بين التحليل والتنفيذ"],
       challengeGrowth: "الصدق المهني جزء من شخصيتي، لذلك أعترف بالتحديات كجزء من التطور لا كنقطة ضعف نهائية.",
@@ -141,6 +131,7 @@ const siteContent = {
         "بناء أنظمة تشغيل أقوى",
         "الاعتماد على البيانات بشكل أكبر",
         "تطوير فرق قيادية",
+        "تحقيق استقرار مالي وعائلي"
       ]
     },
     cases: {
@@ -277,7 +268,6 @@ const siteContent = {
       kicker: "Profile",
       heading: "An executive profile built around operations, sales leadership, and disciplined data-led improvement.",
       quote: "I treat numbers as operating signals that need interpretation, not just results to display.",
-      text: "My experience spans retail, financial services, and training, but the method stays consistent: read indicators in context and turn them into measurable action.",
       responsibilitiesKicker: "Core Responsibilities",
       responsibilities: [
         "Lead branch performance with direct ownership of sales targets and operating quality.",
@@ -330,22 +320,14 @@ const siteContent = {
       kicker: "Leadership Style",
       heading: "A management style shaped by discipline, coaching, and root-cause thinking.",
       description: "I see leadership as both operating and development work: clear expectations, regular follow-up, and root-cause understanding before judging the result.",
-      principlesKicker: "Operating Principles",
-      principles: ["A number is for faster judgment, not display.", "A problem must be understood at the root.", "A leader is measured by what the team becomes after them."],
+      principlesKicker: "Leadership Philosophy & Operating Principles",
+      principles: ["When branch performance declines, I do not begin with who failed. I begin with where the system broke.", "I focus on solutions instead of blame and build decisions on numbers interpreted through field reality.", "A number is for faster judgment, not display, and every problem must be understood at the root.", "A leader is measured by what the team becomes after them."],
       skillsKicker: "Core Skills",
       skills: ["Retail Operations", "P&L Awareness", "Branch Performance Analytics", "Revenue Growth Strategy", "Inventory Optimization", "Team Development", "Performance Management", "Five Whys Problem Solving", "Excel Dashboards", "Power BI", "Microsoft Dynamics 365", "AI Tools for Sales"]
     },
     mindset: {
       kicker: "Mindset & Method",
       heading: "How I think, lead, and keep developing.",
-      philosophyKicker: "Leadership Philosophy",
-      philosophyCore: "A number is not the final answer. It is the starting point of analysis.",
-      philosophyQuote: "When branch performance declines, I do not begin with who failed. I begin with where the system broke.",
-      philosophyList: [
-        "I focus on solutions instead of blame.",
-        "I build decisions on numbers, then read them through field reality.",
-        "I balance pressure for results with team building."
-      ],
       analyticalKicker: "Analytical Thinking",
       analyticalMethod: "I connect indicators instead of reading them one by one, and I consider employee tenure when interpreting performance.",
       analyticalExamples: [
@@ -355,7 +337,6 @@ const siteContent = {
       analyticalTools: ["Excel", "Comparative Reports", "KPI Breakdown", "YoY Analysis"],
       successKicker: "Success Mindset",
       successDefinition: "To me, success is the quality of the effort and the discipline behind it, not only the final outcome.",
-      successBeliefs: ["The pursuit matters more than the result.", "Consistency matters more than one isolated win."],
       strengthsKicker: "Strengths & Growth",
       strengths: ["Turning numbers into decisions", "Deep understanding of retail operations", "Building teams from zero", "Connecting analysis with execution"],
       challengeGrowth: "Professional honesty matters to me, so I treat challenges as growth points, not things to polish away.",
@@ -369,6 +350,7 @@ const siteContent = {
         "Build stronger operating systems",
         "Lean further into data-driven execution",
         "Develop leadership benches",
+        "Create financial and family stability"
       ]
     },
     cases: {
@@ -493,7 +475,6 @@ const elements = {
   overviewKicker: $("overview-kicker"),
   overviewHeading: $("overview-heading"),
   leadQuote: $("lead-quote"),
-  overviewText: $("overview-text"),
   responsibilitiesKicker: $("responsibilities-kicker"),
   responsibilityList: $("responsibility-list"),
   positioningKicker: $("positioning-kicker"),
@@ -520,17 +501,12 @@ const elements = {
   skillsGrid: $("skills-grid"),
   mindsetKicker: $("mindset-kicker"),
   mindsetHeading: $("mindset-heading"),
-  philosophyKicker: $("philosophy-kicker"),
-  philosophyCore: $("philosophy-core"),
-  philosophyQuote: $("philosophy-quote"),
-  philosophyList: $("philosophy-list"),
   analyticalKicker: $("analytical-kicker"),
   analyticalMethod: $("analytical-method"),
   analyticalExamples: $("analytical-examples"),
   analyticalTools: $("analytical-tools"),
   successKicker: $("success-kicker"),
   successDefinition: $("success-definition"),
-  successBeliefs: $("success-beliefs"),
   strengthsKicker: $("strengths-kicker"),
   strengthsList: $("strengths-list"),
   challengeGrowth: $("challenge-growth"),
@@ -604,7 +580,6 @@ const EDITABLE_SELECTOR = [
   "#overview-kicker",
   "#overview-heading",
   "#lead-quote",
-  "#overview-text",
   "#responsibilities-kicker",
   ".responsibility-list li",
   "#positioning-kicker",
@@ -640,17 +615,12 @@ const EDITABLE_SELECTOR = [
   ".skill-chip",
   "#mindset-kicker",
   "#mindset-heading",
-  "#philosophy-kicker",
-  "#philosophy-core",
-  "#philosophy-quote",
-  "#philosophy-list li",
   "#analytical-kicker",
   "#analytical-method",
   ".example-item strong",
   ".example-item span",
   "#success-kicker",
   "#success-definition",
-  "#success-beliefs li",
   "#strengths-kicker",
   "#challenge-growth",
   "#challenge-list li",
@@ -1454,7 +1424,6 @@ function renderContent(lang) {
   elements.overviewKicker.textContent = content.overview.kicker;
   elements.overviewHeading.textContent = content.overview.heading;
   elements.leadQuote.textContent = content.overview.quote;
-  elements.overviewText.textContent = content.overview.text;
   setText(elements.responsibilitiesKicker, content.overview.responsibilitiesKicker);
   elements.positioningKicker.textContent = content.positioning.kicker;
   elements.positioningHeading.textContent = content.positioning.heading;
@@ -1472,9 +1441,6 @@ function renderContent(lang) {
   elements.skillsKicker.textContent = content.leadership.skillsKicker;
   elements.mindsetKicker.textContent = content.mindset.kicker;
   elements.mindsetHeading.textContent = content.mindset.heading;
-  elements.philosophyKicker.textContent = content.mindset.philosophyKicker;
-  elements.philosophyCore.textContent = content.mindset.philosophyCore;
-  elements.philosophyQuote.textContent = content.mindset.philosophyQuote;
   elements.analyticalKicker.textContent = content.mindset.analyticalKicker;
   elements.analyticalMethod.textContent = content.mindset.analyticalMethod;
   elements.successKicker.textContent = content.mindset.successKicker;
@@ -1510,10 +1476,8 @@ function renderContent(lang) {
   renderJourney(content.journey.entries);
   renderList(elements.principlesList, content.leadership.principles);
   renderPills(elements.skillsGrid, content.leadership.skills, "skill-chip");
-  renderList(elements.philosophyList, content.mindset.philosophyList);
   renderTitledItems(elements.analyticalExamples, content.mindset.analyticalExamples, "example-item");
   renderMiniPills(elements.analyticalTools, content.mindset.analyticalTools);
-  renderList(elements.successBeliefs, content.mindset.successBeliefs);
   renderMiniPills(elements.strengthsList, content.mindset.strengths);
   renderList(elements.challengeList, content.mindset.challenges);
   renderMiniPills(elements.futureFocus, content.mindset.futureFocus);
