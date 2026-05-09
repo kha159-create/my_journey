@@ -210,23 +210,27 @@ const siteContent = {
       heading: "أثر القيادة كما يراه الآخرون.",
       items: [
         {
-          quote: "سنة عن سنة تتطور، وخبراتك أكبر من عمرك. أنت مكسب لأي جهة تتعاقد معك.",
+          quote: "سنة عن سنة تتطور، وخبراتك أكبر من عمرك. أنت مكسب لأي جهة ممكن تتعاقد معك، حتى لو كانت شركة كبيرة.",
           source: "من بيان، زوجتي وأقرب الناس معرفة برحلتي وأكبر الداعمين لي"
         },
         {
-          quote: "كنت مديرًا محترمًا وراقيًا ومتفهمًا، وبنفس الوقت عادلًا ومنصفًا. وجودك فرق معنا كثير، وكنت دائمًا تدعمنا.",
-          source: "مدير سابق"
+          quote: "ما قصرت بكل لحظة. النهايات هي من طبيعة العمل، وأكيد رب العالمين لما يطلعك من مكان يوصلك لمكان أنت متمكن إنك تترك فيه بصمة جديدة.",
+          source: "مهند، مدير سابق عبر LinkedIn"
         },
         {
-          quote: "كنت من أحسن المدراء اللي اشتغلنا معهم، ووجودك كان فارق معنا.",
+          quote: "كنت مديرًا محترمًا وراقيًا ومتفهمًا، وبنفس الوقت عادلًا ومنصفًا. وجودك فرق معنا كثير، وكنت دائمًا تدعمنا بأسلوبك وتعاملك.",
+          source: "أحد أعضاء الفريق"
+        },
+        {
+          quote: "كنت من أحسن المدراء اللي اشتغلنا معهم. خروجك كان خبرًا صعبًا، ووجودك كان فارق معنا بدعمك ووقفتك وكلامك الطيب.",
           source: "موظف سابق"
         },
         {
-          quote: "كنت مصدر طاقة وشغف، وأساس النجاح والطاقة. كل كلمة ونصيحة قدمتها كانت تفرق.",
+          quote: "كنت مديرًا وأخًا وصديقًا، وشخصًا لا يقدر بثمن. كنت مصدر طاقة وشغف، وأساس النجاح والطاقة، وكل كلمة ونصيحة قدمتها كانت تفرق.",
           source: "مديرة فرع"
         },
         {
-          quote: "الأثر كان متبادلًا. من الناس القلائل الذين امتدت علاقتي معهم لأكثر من زميل عمل، وعندي يقين أنك ذاهب لمكان أكبر.",
+          quote: "الأثر كان متبادلًا. من الناس القلائل الذين اشتغلت معهم وامتدت علاقتي معهم لأكثر من زميل عمل، وعندي يقين أنك ذاهب لمكان أكبر بكثير.",
           source: "زميل عمل في تقنية المعلومات"
         }
       ]
@@ -455,23 +459,27 @@ const siteContent = {
       heading: "Leadership impact as seen by others.",
       items: [
         {
-          quote: "Year after year, you keep growing, and your experience is bigger than your age. You are a real gain for any organization.",
+          quote: "Year after year, you keep growing, and your experience is bigger than your age. You are a real gain for any organization, even a large one.",
           source: "From Bayan, my wife, closest witness to my journey, and biggest supporter"
         },
         {
-          quote: "You were respectful, refined, understanding, fair, and supportive. Your presence made a real difference for us.",
-          source: "Former manager"
+          quote: "You gave your best in every moment. Endings are part of work, and I believe leaving one place means you are being moved toward a place where you can leave a new mark.",
+          source: "Mohand, former manager on LinkedIn"
         },
         {
-          quote: "You were one of the best managers we worked with, and your presence made a difference.",
+          quote: "You were respectful, refined, understanding, fair, and supportive. Your presence made a real difference for us through your style and the way you treated people.",
+          source: "Team member"
+        },
+        {
+          quote: "You were one of the best managers we worked with. Your departure was difficult news, and your presence made a difference through your support, care, and kind words.",
           source: "Former team member"
         },
         {
-          quote: "You were a source of energy and passion, and a foundation for success. Every word and piece of advice mattered.",
+          quote: "You were a manager, a brother, and a friend, and someone truly valuable. You were a source of energy and passion, a foundation for success, and every word of advice mattered.",
           source: "Branch manager"
         },
         {
-          quote: "The impact was mutual. You are one of the few people whose relationship extended beyond work, and I believe you are heading somewhere bigger.",
+          quote: "The impact was mutual. You are one of the few people I worked with whose relationship extended beyond being a colleague, and I believe you are heading somewhere much bigger.",
           source: "IT colleague"
         }
       ]
