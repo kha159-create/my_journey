@@ -256,7 +256,7 @@ const siteContent = {
       heading: "أبحث عن مسؤولية أوسع، لا مجرد مسمى جديد.",
       text: "بعد أكثر من 13 عامًا في الميدان، أصبحت أؤمن أن أفضل أثر مهني لا يظهر فقط في رقم المبيعات، بل في الفريق الذي ينمو، والمدير الذي يصبح جاهزًا للخطوة التالية، والنظام الذي يستمر بعد غياب صاحبه. هذه هي القيمة التي أقدمها لأي شركة تجزئة تبحث عن تنفيذ يومي أقوى ونمو يمكن استدامته.",
       actions: [
-        { label: "تحميل السيرة الذاتية", href: "assets/Khaleel_Alsani_CV.pdf" },
+        { label: "تحميل السيرة الذاتية", href: "assets/Khaleel_Alsani_Retail_CV_2026.pdf" },
         { label: "واتساب", href: "https://wa.me/966567028690" },
         { label: "إيميل", href: "mailto:kha.als@outlook.com" },
         { label: "لينكدإن", href: "https://linkedin.com/in/khaleel-alsani" }
@@ -521,7 +521,7 @@ const siteContent = {
       heading: "I am looking for wider responsibility, not simply a new title.",
       text: "More than 13 years in the field taught me that professional value is not only reflected in a sales number, but in the team that grows, the manager who becomes ready for the next step, and the system that keeps working without its creator. That is the value I bring to retailers seeking stronger daily execution and sustainable growth.",
       actions: [
-        { label: "Download CV", href: "assets/Khaleel_Alsani_CV.pdf" },
+        { label: "Download CV", href: "assets/Khaleel_Alsani_Retail_CV_2026.pdf" },
         { label: "WhatsApp", href: "https://wa.me/966567028690" },
         { label: "Email", href: "mailto:kha.als@outlook.com" },
         { label: "LinkedIn", href: "https://linkedin.com/in/khaleel-alsani" }
