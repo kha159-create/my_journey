@@ -1,20 +1,22 @@
 {
   "name": "Khaleel Alsani",
   "arabic_name": "خليل الصانع",
-  "title": "Regional Sales Manager",
-  "location": "Saudi Arabia",
+  "title": "Area Manager | Multi-Branch Retail Operations",
+  "location": "Madinah, Saudi Arabia",
   "email": "kha.als@outlook.com",
   "phone": "+966 567 028 690",
   "linkedin": "https://linkedin.com/in/khaleel-alsani",
-  "summary": "Operations-driven Regional Sales Manager with 13+ years of retail leadership across Saudi Arabia, UAE, and Jordan. Currently leading a 5-branch region at Orange Bed & Bath, specializing in KPI-driven performance management, team development, and data-driven retail operations.",
-  "summary_ar": "مدير مبيعات إقليمي بخبرة تتجاوز 13 سنة في قيادة التجزئة عبر السعودية والإمارات والأردن، يقود حاليًا منطقة تضم 5 فروع في Orange Bed & Bath، مع تركيز على الأداء المعتمد على KPIs، تطوير الفرق، والعمليات المبنية على البيانات.",
-  "personal_brand": "مدير يعتمد على الأرقام… لكن يفهم الناس",
+  "summary": "Retail Area Manager with 13+ years across Saudi Arabia, the UAE, and Jordan, progressing from frontline sales to five-store Riyadh and six-branch Northern Region leadership. Combines field execution, people development, stock discipline, and practical retail analytics.",
+  "summary_ar": "مدير منطقة بخبرة تتجاوز 13 سنة في التجزئة عبر السعودية والإمارات والأردن، تدرج من البيع المباشر إلى قيادة 5 فروع في الرياض ثم 6 فروع في شمال السعودية، جامعًا بين التنفيذ الميداني وتطوير الفرق وضبط المخزون والتحليل التشغيلي.",
+  "personal_brand": "أحوّل المؤشرات والناس والمخزون إلى تنفيذ بيعي يومي",
   "leadership_philosophy": {
     "core_belief": "فلسفة القيادة ومرتكزات العمل",
     "approach": [
-      "عندما يتراجع أداء الفرع، لا أبدأ بسؤال من أخطأ، بل أين اختل النظام.",
-      "أركز على الحلول بدل اللوم وأبني قراراتي على الأرقام لكن أفسرها بالواقع.",
-      "الرقم ليس للعرض، بل لاتخاذ قرار أسرع، والمشكلة يجب أن تُفهم من جذورها.",
+      "البيانات قبل القرار: أربط المؤشرات ثم أتحقق منها ميدانيًا.",
+      "القناعة قبل التنفيذ: أوضح سبب القرار حتى يملكه الفريق.",
+      "التطوير على أرض المبيعات، لا داخل القاعات فقط.",
+      "المبيعات هي النتيجة النهائية، وليست نقطة البداية.",
+      "عندما يتراجع الأداء، أبحث أين اختل النظام قبل أن أسأل من أخطأ.",
       "المعيار الحقيقي للقائد هو ما يصبح عليه الفريق بعده."
     ],
     "quote": ""
@@ -45,13 +47,15 @@
     ]
   },
   "success_mindset": {
-    "definition": "النجاح بالنسبة لي هو الجهد المبذول والانضباط اليومي، وليس فقط النتيجة النهائية."
+    "definition": "النجاح ليس رقم شهر واحد؛ هو نظام يستطيع الفريق تكراره حتى في غياب المدير."
   },
   "strengths": [
-    "قراءة الأرقام وتحويلها لقرارات",
-    "فهم عميق لعمليات التجزئة",
-    "بناء فرق من الصفر",
-    "الربط بين التحليل والتنفيذ"
+    "تحويل الأرقام إلى تنفيذ",
+    "قيادة متعددة الفروع",
+    "تطوير المدراء والصف الثاني",
+    "استعادة أداء الفروع",
+    "ربط المخزون وVM بنتيجة البيع",
+    "بناء حلول تشغيلية"
   ],
   "challenges": [
     "أحيانًا أتبع حدسي حتى لو كان القرار غير مكتمل",
@@ -64,16 +68,18 @@
       "بناء أنظمة تشغيل أقوى",
       "الاعتماد على البيانات بشكل أكبر",
       "تطوير فرق قيادية",
-      "تحقيق استقرار مالي وعائلي"
+      "توسيع الأثر التجاري والتشغيلي"
     ]
   },
   "highlights": [
-    "Increased regional ATV by 18% through structured cross-selling training across 5 branches",
+    "Led annual sales portfolios of approximately SAR 33M in Riyadh and SAR 28.9M in the Northern Region",
+    "Managed 625K+ annual visitors and 116K+ transactions at 18.7% conversion",
+    "Sustained 18% ATV growth through structured cross-selling routines and manager coaching",
     "Reduced inventory stockouts by 40% through tighter daily operating follow-up",
-    "Turned underperforming branches into top performers within a single quarter",
-    "Built KPI dashboards and daily reporting systems adopted by leadership",
-    "Ranked Top 5% in sales performance at Al Ansari Financial Services",
-    "Revitalized Tala Store into a top-10 nationwide performer with a 15% sales surge"
+    "Delivered 22% Q1 revenue growth across the Riyadh portfolio",
+    "Promoted four internal candidates into Store Manager roles",
+    "Reduced Riyadh staff turnover from 60% to 20%",
+    "Built ORA Cockpit to translate operating gaps into 15-minute data workflows and live sales views"
   ],
   "regions": [
     "Medina",
@@ -107,28 +113,29 @@
   },
   "experience": [
     {
-      "role": "Regional Sales Manager",
+      "role": "Area Manager",
       "company": "Orange Bed & Bath",
       "location": "Medina, KSA",
       "period": "Feb 2025 - Present",
       "highlights": [
-        "Manage 5 branches and 40+ employees across Northern Region",
-        "Track KPIs, ATV, and visitor data daily across all branches",
-        "Built reporting systems from scratch when existing tools lacked accuracy",
-        "Revamped inventory management, cutting stockouts by 40%",
-        "Designed structured training programs for new retail staff",
-        "Applied Five Whys coaching framework across the regional team"
+        "Lead 6 branches and 40+ employees across approximately SAR 28.9M annual sales",
+        "Manage 625K+ annual visitors, 116K+ transactions, and 18.7% conversion",
+        "Sustained 18% ATV growth and reduced stockout incidents by 40%",
+        "Promoted internal candidates into Store Manager roles at Al Noor and Alia",
+        "Maintained zero turnover in Al Jouf and Arar and below 10% in Tabuk",
+        "Translated reporting gaps into the requirements and workflows implemented in ORA Cockpit"
       ]
     },
     {
-      "role": "Area Sales Manager",
+      "role": "Area Manager",
       "company": "Orange Bed & Bath",
       "location": "Riyadh, KSA",
       "period": "Dec 2023 - Feb 2025",
       "highlights": [
-        "Managed multi-branch operations across Riyadh",
-        "Turned around underperforming branches with a 22% Q1 uplift",
-        "Launched cross-selling training program that increased ATV by 18%"
+        "Managed 5 stores and 40+ employees across approximately SAR 33M annual sales",
+        "Delivered 22% Q1 revenue growth through daily KPI ownership and manager coaching",
+        "Reduced staff turnover from 60% to 20% and average tenure from 2 to 8 months",
+        "Promoted internal candidates into Store Manager roles at Riyadh Park and Riyadh Gallery"
       ]
     },
     {
@@ -137,8 +144,8 @@
       "location": "Amman, Jordan",
       "period": "Aug 2023 - Dec 2023",
       "highlights": [
-        "Boosted team conversion rates by 30% through AI-assisted sales training",
-        "Reduced onboarding time by 25% via structured e-learning platforms"
+        "Led the assigned sales team to achieve target within the first three months",
+        "Built practical onboarding, role-play, and objection-handling routines"
       ]
     },
     {
@@ -157,26 +164,26 @@
       "location": "Irbid, Jordan",
       "period": "Apr 2019 - Apr 2021",
       "highlights": [
-        "Revitalized underperforming location into a top-10 nationwide performer",
-        "Reduced employee turnover by 35% through leadership workshops"
+        "Delivered 15% annual revenue growth through clearer targets and stronger execution",
+        "Reduced employee turnover by 35% through improved onboarding, role clarity, and coaching"
       ]
     },
     {
-      "role": "Assistant Store Manager / Department Manager / Senior Sales Associate",
-      "company": "Alshaya Group",
+      "role": "Assistant Store Manager / Department Manager / Sales Associate",
+      "company": "Alshaya Group - H&M",
       "location": "Irbid, Jordan",
       "period": "Nov 2015 - Mar 2019",
       "highlights": [
-        "Delivered 20% foot traffic growth via data-driven merchandising",
-        "Improved floor productivity by 15%",
-        "Contributed to a 12% uplift in category performance"
+        "Progressed through three roles and was recognised twice as Employee of the Month",
+        "Led approximately 6 employees as Department Manager and supported a store of around 25 employees",
+        "Increased department ATV by 8%, raised UPT from 2 to 4, and achieved target for five consecutive months"
       ]
     },
     {
       "role": "Sales Representative",
       "company": "Al Qawasmeh Co.",
       "location": "Irbid, Jordan",
-      "period": "Apr 2013 - Sep 2015",
+      "period": "Apr 2012 - Sep 2015",
       "highlights": [
         "Expanded customer base through cold calling and networking",
         "Generated additional revenue through upselling and cross-selling"
@@ -191,18 +198,16 @@
       "expected_graduation": "2029"
     },
     {
-      "degree": "Diploma — Drilling Well Technology",
-      "institution": "Al-Balqa Applied University",
-      "period": "Jun 2018 - Jan 2020"
+      "degree": "Intermediate University Degree in Well Drilling Technology",
+      "institution": "Al-Huson University College, Al-Balqa Applied University",
+      "period": "2021"
     }
   ],
   "certifications": [
-    "Advanced Leadership & Retail Market Management Training",
     "Building and Managing a High-Performing Sales Team",
     "Leadership: Practical Skills",
     "Certified Anti-Money Laundering Specialist (CAMLS)",
-    "Fundamentals of Digital Marketing",
-    "Occupational Safety & Health"
+    "Fundamentals of Digital Marketing"
   ],
   "languages": [
     "Arabic",
@@ -213,28 +218,36 @@
     {
       "name": "ORA Cockpit",
       "type": "Retail Operations & Performance Platform",
-      "description": "A platform built to turn branch follow-up from scattered reports into one daily operating system across sales, traffic, employees, products, offers, targets, and reporting.",
+      "description": "A retail operations intelligence platform built from field requirements, KPI logic, master-data mapping, and automated workflows to turn scattered PDF and Excel reporting into one daily operating system.",
       "features": [
-        "Unified KPI, sales, traffic, and branch map dashboard",
-        "Role-based access with manager, branch, and city filters",
-        "Customer value simulation and anomaly detection",
-        "Smart target split with 10/15-day phases and carry-forward logic",
-        "Branch, employee, product, and offer analysis in one system",
-        "Administrative PDF and Excel reporting",
-        "Live sales, product inquiry, and TV/watch monitoring modes"
+        "Sales, visitors, transactions, conversion, ATV, targets, and branch rankings",
+        "Hijri/Gregorian LFL comparisons and Employee 360",
+        "Target allocation, inventory, stock availability, product mix, and market basket",
+        "Employee, branch, product, and operational datasets synchronised every 15 minutes",
+        "Separate Dynamics 365 live and hourly sales workflow",
+        "Bilingual role-based views, alerts, PDF/Excel exports, caching, and fallback handling"
       ],
       "tech": [
+        "SQL",
+        "Dynamics 365 OAuth/OData",
+        "Excel Master-Data Mapping",
+        "JSON Data Pipelines",
         "React",
         "TypeScript",
         "Vite",
-        "React Router",
-        "Recharts",
-        "Leaflet",
-        "XLSX",
-        "jsPDF",
-        "D365 Data",
-        "Tailwind"
+        "GitHub Actions",
+        "Vercel Serverless Functions"
       ]
+    },
+    {
+      "name": "Ramadan Shift Planner",
+      "type": "Workforce Planning Tool",
+      "description": "A multi-branch staffing tool for cross-midnight shifts, hourly coverage, editable templates, local persistence, and PDF schedule exports."
+    },
+    {
+      "name": "K.A. Cockpit",
+      "type": "Retail Performance Prototype",
+      "description": "An earlier prototype using Firebase Authentication, Firestore, role-based workflows, Employee 360, and assisted analysis."
     }
   ],
   "testimonials": [

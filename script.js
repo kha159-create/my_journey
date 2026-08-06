@@ -3,17 +3,17 @@ const siteContent = {
     lang: "ar",
     dir: "rtl",
     documentTitle: "رحلتي | خليل الصانع",
-    metaDescription: "رحلتي المهنية لخليل الصانع عبر الخبرة، الإنجاز، والإدارة المعتمدة على الأرقام.",
+    metaDescription: "الملف المهني لخليل الصانع، مدير منطقة بخبرة 13+ سنة في قيادة التجزئة متعددة الفروع وتحويل مؤشرات الأداء والفرق والمخزون إلى تنفيذ بيعي يومي.",
     brandName: "خليل الصانع",
     brandSubtitle: "رحلتي",
     langToggleLabel: "AR / EN",
     nav: { story: "الرؤية", journey: "المسيرة", leadership: "القيادة", cases: "الحالات", credentials: "الاعتمادات" },
     hero: {
-      kicker: "قيادة المبيعات والتشغيل",
+      kicker: "قيادة متعددة الفروع | التجزئة والتشغيل",
       name: "خليل الصانع",
-      title: "Area Sales Manager | شمال السعودية",
-      brandLine: "قيادة ميدانية بعقلية رقمية",
-      summary: "أقود المبيعات والتشغيل وتطوير الفرق مع تركيز ثابت على تحويل المؤشرات إلى قرارات يومية أوضح. قدت 6 فروع في شمال السعودية، وحققت في نطاق الرياض نموًا +18.3% ورفعًا لمعدل الفاتورة 18%.",
+      title: "Area Manager | Multi-Branch Retail Operations",
+      brandLine: "أحوّل المؤشرات والناس والمخزون إلى تنفيذ بيعي يومي",
+      summary: "خبرة تتجاوز 13 سنة في التجزئة عبر السعودية والإمارات والأردن، من البيع المباشر إلى قيادة نطاقات متعددة الفروع. أدرت 5 فروع في الرياض ثم 6 فروع في شمال السعودية، جامعًا بين الحضور الميداني، تطوير المدراء، الانضباط التشغيلي، والقرار المبني على البيانات.",
       primaryAction: "استعرض المسيرة",
       secondaryAction: "استعرض الإنجازات",
       contacts: [
@@ -22,22 +22,24 @@ const siteContent = {
         { label: "لينكدإن: khaleel-alsani", href: "https://linkedin.com/in/khaleel-alsani" },
       ],
       portraitKicker: "حضور تنفيذي",
-      portraitRole: "تشغيل. نمو. انضباط.",
+      portraitRole: "الناس. الأرقام. التنفيذ.",
       badgeYearsValue: "13+",
       badgeYearsLabel: "سنة خبرة",
       badgeBranchesValue: "6",
       badgeBranchesLabel: "فروع",
       orbitCities: ["المدينة", "ينبع", "عرعر", "تبوك", "الجوف"],
       dossierKicker: "ملخص تنفيذي",
-      dossierTitle: "قيادة تشغيلية تستند إلى أرقام قابلة للقياس",
+      dossierTitle: "نطاق حقيقي، نتائج قابلة للقياس، وقيادة تُبنى على الأرض",
       metrics: [
-        { value: "6", label: "فروع تمت إدارتها في المدينة وينبع وعرعر وتبوك والجوف" },
-        { value: "ملايين الريالات", label: "إدارة نطاق مبيعات وفروع في الرياض خلال 2024" },
-        { value: "+18.3%", label: "نمو محقق ضمن نطاق الرياض" },
-        { value: "+18%", label: "رفع معدل الفاتورة ضمن متابعة الأداء التشغيلي" }
+        { value: "13+", label: "سنة خبرة عبر السعودية والإمارات والأردن" },
+        { value: "5 + 6", label: "فروع في نطاق الرياض ثم فروع شمال السعودية" },
+        { value: "SAR 33M / 28.9M", label: "نطاقا مبيعات سنويان تمت قيادتهما" },
+        { value: "625K+ / 116K+", label: "زائر وعملية سنويًا في نطاق الشمال" },
+        { value: "18.7%", label: "معدل التحويل عبر نطاق الشمال" },
+        { value: "+18% / -40%", label: "نمو ATV وخفض حالات نفاد المخزون" }
       ],
       analysisKicker: "منظور تحليلي",
-      analyticalLens: ["إدارة المؤشرات", "معدل الفاتورة", "الزوار", "التحويل", "العمر الوظيفي", "الربحية"]
+      analyticalLens: ["المبيعات", "الزوار", "التحويل", "ATV وUPT", "توفر المخزون", "تطوير المدراء", "الوعي الربحي"]
     },
     achievements: {
       kicker: "",
@@ -46,34 +48,34 @@ const siteContent = {
     },
     overview: {
       kicker: "الملف المهني",
-      heading: "ملف مهني تنفيذي يجمع بين التشغيل، إدارة المبيعات، وتطوير الفرق على أساس رقمي واضح.",
-      quote: "أتعامل مع الرقم بوصفه مؤشرًا تشغيليًا يحتاج إلى تفسير، لا مجرد نتيجة تُعرض.",
+      heading: "قائد تجزئة ميداني يجمع بين الأداء التجاري، بناء الفرق، والانضباط التشغيلي.",
+      quote: "المبيعات هي النتيجة النهائية، وليست نقطة البداية. البداية تكون من الناس، توفر المنتج، جودة التنفيذ، وفهم ما تقوله الأرقام على أرض الواقع.",
       responsibilitiesKicker: "المسؤوليات الرئيسية",
       responsibilities: [
-        "إدارة أداء الفروع مع مسؤولية مباشرة عن المستهدف البيعي والجودة التشغيلية.",
-        "قراءة العمر الوظيفي للموظف وربطه باحتياج التدريب والاستقرار داخل الفريق.",
-        "بناء تقارير تشغيلية أوضح عندما لا تكفي الأدوات القائمة.",
-        "تطوير مدراء الفروع والموظفين عبر التدريب والتوجيه العملي."
+        "تحويل المستهدفات ومؤشرات الأداء إلى خطط يومية واضحة لكل فرع ومدير.",
+        "تطوير مدراء الفروع على أرض المبيعات وبناء صف ثانٍ جاهز للترقية.",
+        "ربط توفر المخزون، توزيع الفريق، العرض التجاري، وتجربة العميل بنتيجة البيع.",
+        "بناء أدوات وتقارير تشغيلية عندما لا تكفي الأنظمة القائمة لاتخاذ القرار."
       ]
     },
     positioning: {
       kicker: "الملف التنفيذي",
       heading: "لماذا يلفت ملفي الانتباه من أول قراءة؟",
       snapshotKicker: "ملخص تنفيذي",
-      snapshotLead: "خبرة ميدانية متدرجة جمعت بين إدارة الفروع، تطوير الفرق، والانضباط التشغيلي.",
-      snapshotPills: ["قيادة متعددة الفروع", "تشغيل التجزئة", "تطوير الفرق", "قراءة المؤشرات", "وعي ربحي"],
+      snapshotLead: "بدأت من البيع الميداني وتدرجت إلى قيادة نطاقات متعددة الفروع؛ لذلك أقرأ القرار من زاوية العميل والموظف ومدير الفرع والنتيجة التجارية معًا.",
+      snapshotPills: ["قيادة متعددة الفروع", "تشغيل التجزئة", "تنفيذ المبيعات", "تطوير المدراء", "المخزون وVM", "Retail Analytics"],
       snapshotStats: [
         { value: "13+", label: "سنوات خبرة" },
-        { value: "6", label: "فروع" },
-        { value: "ملايين الريالات", label: "نطاق رياض 2024" },
-        { value: "+18%", label: "رفع معدل الفاتورة" }
+        { value: "5 + 6", label: "نطاقا فروع" },
+        { value: "33M / 28.9M", label: "ريال مبيعات سنوية" },
+        { value: "4", label: "ترقيات لمدراء فروع" }
       ],
       hrNoticeKicker: "أبرز ما يميز الملف",
       hrNotice: [
-        "تدرج واضح من البيع المباشر إلى إدارة الفروع والنطاقات.",
-        "قدرة مثبتة على تطوير الفرق لا متابعة الأهداف فقط.",
-        "قراءة رقمية تتحول إلى تشغيل ومتابعة وتحسين.",
-        "حضور ميداني مع انضباط إداري واضح."
+        "تدرج حقيقي من البيع المباشر إلى إدارة 5 فروع بالرياض ثم 6 فروع بالشمال.",
+        "نطاق تجاري سنوي يصل إلى SAR 33M في الرياض وSAR 28.9M في الشمال.",
+        "تطوير أربعة موظفين داخليين إلى مناصب Store Manager وتحسين الاحتفاظ بالمواهب.",
+        "قدرة على تحويل مشكلة تشغيلية إلى نظام عمل فعلي مثل ORA Cockpit."
       ],
       teamLensKicker: "تطوير وإدارة الفريق",
       teamLensLead: "أتعامل مع تطوير الفريق كجزء من الأداء نفسه: أوضح التوقعات، أدرّب عمليًا، وأقرأ مرحلة كل موظف قبل الحكم على النتيجة.",
@@ -87,21 +89,21 @@ const siteContent = {
       kicker: "المسيرة المهنية",
       heading: "مسيرة مهنية تصاعدية عبر السعودية والإمارات والأردن.",
       entries: [
-        { label: "المرحلة الأخيرة", nav: "أورنج - الشمال", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Medina, KSA", period: "Feb 2025 - 2026", description: "إدارة 6 فروع في شمال السعودية مع مسؤولية مباشرة عن الأداء والانضباط التشغيلي.", highlights: ["قيادة نطاق متعدد الفروع عبر المدينة وينبع وعرعر وتبوك والجوف.", "إدارة 50+ موظفًا مع تركيز على التطوير والمتابعة العملية."], proofs: [{ value: "+0.31", label: "تحسن التحويل" }, { value: "-40%", label: "خفض نفاد المخزون" }] },
-        { label: "قبل ذلك", nav: "أورنج - الرياض", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "قيادة عمليات متعددة الفروع في الرياض ورفع جودة التنفيذ والانضباط البيعي.", highlights: ["إدارة نطاق متعدد المواقع داخل الرياض.", "إطلاق برنامج بيع تكميلي رفع معدل الفاتورة 18%."], proofs: [{ value: "ملايين", label: "نطاق مبيعات" }, { value: "+18.3%", label: "نمو محقق" }, { value: "+18%", label: "رفع معدل الفاتورة" }] },
-        { label: "Training", nav: "51Talk", role: "Sales Trainer & Team Leader", company: "51Talk", location: "Amman, Jordan", period: "Aug 2023 - Dec 2023", description: "تدريب فرق المبيعات وبناء مسار تأهيل أسرع.", highlights: ["تحويل نقاط التعثر البيعي إلى وحدات تدريبية قابلة للمتابعة."], proofs: [{ value: "+30%", label: "رفع التحويل" }, { value: "-25%", label: "تقليص التأهيل" }] },
+        { label: "الآن", nav: "أورنج - الشمال", role: "Area Manager", company: "Orange Bed & Bath", location: "Madinah, KSA", period: "Feb 2025 - Present", description: "قيادة 6 فروع و40+ موظفًا في المدينة وينبع وتبوك وعرعر والجوف، مع متابعة تجارية وتشغيلية لنطاق مبيعات سنوي يقارب SAR 28.9M.", highlights: ["إدارة 625K+ زائر و116K+ عملية بمعدل تحويل 18.7% عبر مراجعات KPI وخطط فروع يومية.", "رفع ATV بنسبة 18% وخفض حالات نفاد المخزون 40% عبر التدريب والمتابعة وتنسيق المخزون.", "ترقية مديري فرعي النور والعالية، والحفاظ على صفر دوران في الجوف وعرعر وأقل من 10% في تبوك."], proofs: [{ value: "SAR 28.9M", label: "مبيعات سنوية" }, { value: "18.7%", label: "تحويل" }, { value: "+18%", label: "ATV" }, { value: "-40%", label: "نفاد المخزون" }] },
+        { label: "قبل ذلك", nav: "أورنج - الرياض", role: "Area Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "إدارة 5 فروع و40+ موظفًا ضمن نطاق مبيعات سنوي يقارب SAR 33M، مع تركيز على استعادة الأداء وبناء المساءلة اليومية.", highlights: ["تحقيق نمو 22% في إيرادات Q1 من خلال وضوح المسؤوليات وملكية المؤشرات والتوجيه الميداني.", "خفض دوران الموظفين من 60% إلى 20% ورفع متوسط الاستمرارية من شهرين إلى 8 أشهر.", "ترقية مديري الرياض بارك والرياض جاليري وتنسيق جاهزية افتتاح فرع جديد."], proofs: [{ value: "SAR 33M", label: "مبيعات سنوية" }, { value: "+22%", label: "نمو Q1" }, { value: "60% → 20%", label: "دوران الموظفين" }] },
+        { label: "التدريب", nav: "51Talk", role: "Sales Trainer & Team Leader", company: "51Talk", location: "Amman, Jordan", period: "Aug 2023 - Dec 2023", description: "قيادة فريق مبيعات وبناء جلسات عملية للتأهيل والـrole-play ومعالجة الاعتراضات.", highlights: ["تحقيق مستهدف الفريق خلال الأشهر الثلاثة الأولى عبر متابعة يومية وروتين نشاط واضح."], proofs: [{ value: "3 أشهر", label: "تحقيق مستهدف الفريق" }] },
         { label: "Finance", nav: "Al Ansari", role: "Financial Services Advisor", company: "Al Ansari Financial Services", location: "Dubai, UAE", period: "Aug 2021 - Jul 2023", description: "بيئة مالية سريعة تتطلب دقة وثقة وانضباطًا.", highlights: ["فهم أعمق لسلوك العميل تحت الضغط مع الحفاظ على جودة الخدمة."], proofs: [{ value: "أعلى 5%", label: "أداء بيعي" }] },
-        { label: "Store Turnaround", nav: "Tala Store", role: "Store Manager", company: "Tala Store", location: "Irbid, Jordan", period: "Apr 2019 - Apr 2021", description: "إعادة ضبط متجر على مستوى الفريق والتنفيذ.", highlights: ["توضيح الأدوار وربط الأداء اليومي بمستهدفات قابلة للقياس."], proofs: [{ value: "Top 10", label: "ترتيب وطني" }, { value: "+15%", label: "نمو المبيعات" }, { value: "-35%", label: "خفض الدوران" }] },
-        { label: "Alshaya", nav: "Growth Track", role: "Assistant Store Manager / Department Manager / Senior Sales Associate", company: "Alshaya Group", location: "Irbid, Jordan", period: "Nov 2015 - Mar 2019", description: "الانتقال من البيع المباشر إلى قيادة التنفيذ داخل المتجر.", highlights: ["Assistant Store Manager | Feb 2018 - Mar 2019", "Department Manager | Feb 2017 - Jan 2018", "Senior Sales Associate | Nov 2015 - Jan 2017", "ربط العرض التجاري بالمستهدف البيعي."], proofs: [{ value: "+20%", label: "رفع حركة الزوار" }, { value: "+12%", label: "تحسن أداء الفئة" }] },
+        { label: "إدارة متجر", nav: "Tala Store", role: "Store Manager", company: "Tala Store", location: "Irbid, Jordan", period: "Apr 2019 - Apr 2021", description: "إعادة هيكلة الفريق ورفع وضوح الأدوار والمساءلة اليومية داخل المتجر.", highlights: ["ربط التنفيذ اليومي بالمستهدفات وتحسين التأهيل والمتابعة."], proofs: [{ value: "+15%", label: "نمو الإيرادات" }, { value: "-35%", label: "خفض الدوران" }] },
+        { label: "التدرج القيادي", nav: "Alshaya - H&M", role: "Assistant Store Manager / Department Manager / Sales Associate", company: "Alshaya Group - H&M", location: "Irbid, Jordan", period: "Nov 2015 - Mar 2019", description: "تدرجت عبر ثلاثة أدوار من البيع المباشر إلى دعم قيادة متجر يضم نحو 25 موظفًا.", highlights: ["قيادة نحو 6 موظفين كمدير قسم وتغطية مهام مدير المتجر عند غيابه كـAssistant Store Manager.", "إدارة المستهدفات وATV وUPT والتحويل والتغطية وVM والعروض والإطلاقات والجرد."], proofs: [{ value: "مرتان", label: "موظف الشهر" }, { value: "+8%", label: "ATV" }, { value: "2 → 4", label: "UPT" }, { value: "5 أشهر", label: "تحقيق المستهدف" }] },
         { label: "Outdoor Sales", nav: "Al Qawasmeh", role: "Sales Representative (Outdoor Sales)", company: "Al Qawasmeh Co. for Household Items", location: "Irbid, Jordan", period: "Apr 2012 - Sep 2015", description: "قاعدة خبرتي البيعية الأولى: علاقات، متابعة، وتحويل الثقة إلى نتائج.", highlights: ["بناء قاعدة عملاء من الصفر عبر التوسع الميداني.", "تنمية الإيرادات بالبيع التكميلي وفهم احتياج العميل."] }
       ]
     },
     leadership: {
       kicker: "أسلوب القيادة",
       heading: "طريقة قيادة تمزج الانضباط، التدريب، والتحليل الجذري للمشكلة.",
-      description: "أتعامل مع القيادة كمسؤولية تشغيلية وتطويرية: وضوح توقعات، متابعة منتظمة، وفهم للسبب الجذري قبل الحكم على النتيجة.",
+      description: "أتعامل مع القيادة كعمل ميداني يبدأ من وضوح القرار وكسب قناعة الفريق، ثم المتابعة والتدريب داخل الفرع. الأرقام توجه السؤال، لكن أرض الواقع تشرح السبب.",
       principlesKicker: "فلسفة القيادة ومرتكزات العمل",
-      principles: ["عندما يتراجع أداء الفرع، لا أبدأ بسؤال من أخطأ، بل أين اختل النظام.", "أركز على الحلول بدل اللوم وأبني قراراتي على الأرقام لكن أفسرها بالواقع.", "الرقم ليس للعرض، بل لاتخاذ قرار أسرع، والمشكلة يجب أن تُفهم من جذورها.", "المعيار الحقيقي للقائد هو ما يصبح عليه الفريق بعده."],
+      principles: ["البيانات قبل القرار: أقرأ المؤشرات معًا ثم أتحقق منها ميدانيًا.", "القناعة قبل التنفيذ: أشرح لماذا نتغير حتى يملك الفريق القرار بدل أن ينفذه مؤقتًا.", "التطوير على أرض المبيعات، لا داخل القاعات فقط: ألاحظ السلوك وأدرّب عليه في لحظته.", "المبيعات هي النتيجة النهائية، وليست نقطة البداية؛ البداية من الناس والمنتج والتنفيذ.", "عندما يتراجع الأداء، أستخدم Five Whys لأبحث أين اختل النظام قبل أن أسأل من أخطأ.", "المعيار الحقيقي للقائد هو ما يصبح عليه الفريق بعده."],
       skillsKicker: "المهارات الأساسية",
       skills: ["Retail Operations", "P&L Awareness", "Branch Performance Analytics", "Revenue Growth Strategy", "Inventory Optimization", "Team Development", "Performance Management", "Five Whys Problem Solving", "Excel Dashboards", "Power BI", "Microsoft Dynamics 365", "AI Tools for Sales"]
     },
@@ -109,16 +111,16 @@ const siteContent = {
       kicker: "طريقة التفكير والعمل",
       heading: "كيف أفكر وأقود وأتعامل مع التطوير.",
       analyticalKicker: "التفكير التحليلي",
-      analyticalMethod: "أربط المؤشرات ببعضها بدل قراءتها منفصلة، وأضع العمر الوظيفي للموظف في الاعتبار عند تفسير الأداء.",
+      analyticalMethod: "لا أقرأ أي KPI منفردًا. أربط المبيعات بالزوار والتحويل وATV وUPT وتوفر المخزون وتوزيع الفريق، ثم أنزل للميدان لأرى ما لا يظهر في التقرير.",
       analyticalExamples: [
         { title: "المبيعات نازلة أكثر من الزوار", text: "هذا يعني أن جوهر المشكلة في قيمة العميل أو السلة، لا في حركة الدخول فقط." },
         { title: "التحويل ثابت لكن المبيعات نازلة", text: "هنا يصبح التركيز على متوسط الفاتورة وفعالية البيع التكميلي." }
       ],
       analyticalTools: ["Excel", "تقارير المقارنة", "تفكيك المؤشرات", "التحليل السنوي"],
       successKicker: "مفهوم النجاح",
-      successDefinition: "النجاح بالنسبة لي هو الجهد المبذول والانضباط اليومي، وليس فقط النتيجة النهائية.",
+      successDefinition: "النجاح ليس رقم شهر واحد؛ هو نظام يستطيع الفريق تكراره حتى في غياب المدير.",
       strengthsKicker: "نقاط القوة والتطور",
-      strengths: ["قراءة الأرقام وتحويلها لقرارات", "فهم عميق لعمليات التجزئة", "بناء فرق من الصفر", "الربط بين التحليل والتنفيذ"],
+      strengths: ["تحويل الأرقام إلى تنفيذ", "قيادة متعددة الفروع", "تطوير المدراء والصف الثاني", "استعادة أداء الفروع", "المخزون وVM", "بناء حلول تشغيلية"],
       challengeGrowth: "الصدق المهني جزء من شخصيتي، لذلك أعترف بالتحديات كجزء من التطور لا كنقطة ضعف نهائية.",
       challenges: [
         "أحيانًا أتبع حدسي حتى لو كان القرار غير مكتمل.",
@@ -130,7 +132,7 @@ const siteContent = {
         "بناء أنظمة تشغيل أقوى",
         "الاعتماد على البيانات بشكل أكبر",
         "تطوير فرق قيادية",
-        "تحقيق استقرار مالي وعائلي"
+        "توسيع الأثر التجاري والتشغيلي"
       ]
     },
     cases: {
@@ -138,10 +140,10 @@ const siteContent = {
       heading: "حالات عملية توضّح كيف تتحول الأرقام إلى قرارات وتنفيذ.",
       labels: { problem: "المشكلة", action: "الإجراء", insight: "القراءة", result: "النتيجة" },
       items: [
-        { title: "رفع ATV إقليميًا عبر برنامج تدريب موحد", problem: "وجود فرصة واضحة لزيادة قيمة السلة دون تغيير عدد الزوار.", action: "تصميم برنامج Cross-Selling منظم، وتطبيقه على 5 فروع مع متابعة يومية للالتزام والتنفيذ.", insight: "الموظف لا يحتاج فقط إلى هدف بيع، بل إلى سيناريو عملي متكرر ومقاس لرفع متوسط الفاتورة.", result: "تحقيق نمو 18% في ATV على مستوى المنطقة." },
-        { title: "معالجة نفاد المخزون كقضية ربحية لا لوجستية فقط", problem: "تأثير حالات الانقطاع على التحويل وفرص البيع.", action: "إعادة ضبط إدارة المخزون والمتابعة التشغيلية اليومية وربطها بجودة التنفيذ على الأرض.", insight: "الانقطاع ليس فقط نقص منتج، بل خسارة مباشرة في الثقة والبيع وفرص الإقفال.", result: "خفض Stockouts بنسبة 40%." },
-        { title: "إحياء الفروع المتعثرة خلال ربع واحد", problem: "وجود فروع منخفضة الأداء تحتاج إلى تدخل سريع وفعلي.", action: "إعادة هيكلة الطواقم، تحسين توزيع الأدوار، وضبط الـ product display بما يخدم هدف البيع.", insight: "الأداء الضعيف غالبًا يكون نتيجة تراكم تشغيلي، لا مشكلة فردية واحدة.", result: "تحويل الفروع المتعثرة إلى الأفضل أداءً خلال Quarter واحد، مع نمو 22% في Q1." },
-        { title: "بناء تقارير ولوحات أداء من الصفر", problem: "الأدوات القائمة لم تكن تعطي قراءة دقيقة بالسرعة التي تحتاجها الإدارة.", action: "تصميم Dashboards وأنظمة Daily Reporting مخصصة لمتابعة الأداء الإقليمي.", insight: "البيانات تصبح قوة فقط عندما تُعرض بشكل يجعل القرار يوميًا وليس شهريًا.", result: "اعتماد اللوحات من قبل القيادة لمتابعة الأداء الإقليمي بشكل مستمر." }
+        { title: "استعادة أداء نطاق الرياض", problem: "فروع متعثرة وتفاوت في ملكية المؤشرات والمساءلة اليومية.", action: "وضحت مسؤولية كل مدير، ربطت الزيارات الميدانية بمؤشرات الفرع، وعدّلت توزيع الفريق وطريقة عرض أفضل المنتجات والعروض.", insight: "ضعف المبيعات غالبًا نتيجة سلسلة من فجوات التنفيذ، وليس سببًا واحدًا أو موظفًا واحدًا.", result: "تحقيق نمو 22% في إيرادات Q1 ضمن نطاق الرياض." },
+        { title: "رفع قيمة العميل وحماية توفر المنتج", problem: "فرص بيع تضيع بسبب ضعف تنويع السلة وحالات نفاد المخزون.", action: "طبقت روتين cross-selling مع تدريب مدراء الفروع، وتابعت التوفر يوميًا ونسقت بين الفروع حسب الطلب.", insight: "ATV والمخزون ليسا ملفين منفصلين؛ لا يمكن للفريق توسيع السلة إذا لم يجد المنتج الصحيح في اللحظة الصحيحة.", result: "رفع ATV بنسبة 18% وخفض حالات نفاد المخزون 40%." },
+        { title: "بناء صف قيادي وتحسين الاستقرار", problem: "دوران مرتفع واعتماد كبير على عدد محدود من الأشخاص.", action: "بنيت onboarding أوضح، درّبت على الأرض، ومنحت أصحاب الإمكانات مسؤوليات تدريجية مع تقييم الجاهزية.", insight: "أفضل خطة تعاقب وظيفي تبدأ قبل شغور المنصب، عندما نجهز الشخص وهو ما يزال يتعلم.", result: "ترقية 4 مدراء فروع، خفض دوران الرياض من 60% إلى 20%، والحفاظ على صفر دوران في الجوف وعرعر." },
+        { title: "تحويل فجوة التقارير إلى ORA Cockpit", problem: "بيانات PDF وExcel متفرقة وبطيئة لا تمنح المدير قراءة تشغيلية موحدة.", action: "حددت متطلبات العمل ومنطق KPIs وربط الموظفين والفروع والمنتجات، ثم بنيت workflow يجمع SQL وD365 وJSON وواجهة تشغيل ثنائية اللغة.", insight: "قيمة التقنية ليست في كثرة الشاشات، بل في تقصير المسافة بين السؤال والقرار.", result: "مزامنة البيانات التشغيلية كل 15 دقيقة مع مسار منفصل للمبيعات الحية والساعة." }
       ]
     },
     projects: {
@@ -167,18 +169,20 @@ const siteContent = {
         eyebrow: "النظام التشغيلي",
         title: "ORA Cockpit",
         type: "منصة تشغيل ومتابعة أداء",
-        story: "بعد بياني، انتقلت نفس العقلية إلى العمل. بدأ Ora Cockpit كمساحة واحدة تجمع القراءة اليومية، المقارنة، الموظفين، الفروع، التارجت، والتقارير بدل التحليل اليدوي المتفرق.",
+        story: "بدأ ORA Cockpit من مشكلة ميدانية: تقارير PDF وExcel متفرقة لا تعطي مدير المنطقة قراءة سريعة وموحدة. حولت احتياج العمل إلى منطق KPIs وخرائط بيانات وworkflows ثم إلى منصة تشغيل فعلية للفروع والموظفين والمخزون والقرار اليومي.",
         impactTitle: "ما الذي يقدمه فعليًا",
         impacts: [
-          "يجمع المبيعات والزوار والفروع والموظفين في لوحة تشغيلية واحدة.",
-          "يختصر الوصول للرقم من ملفات متفرقة إلى قراءة مباشرة وسريعة.",
-          "يوحد التقارير والمقارنات وتقسيم التارجت داخل نظام قرار يومي.",
-          "يمنحني رؤية أوضح لأين الخلل وأين يجب أن يبدأ التدخل."
+          "يربط المبيعات والزوار والعمليات والتحويل وATV والمستهدفات في قراءة واحدة.",
+          "يغطي Employee 360 والمخزون وتوفر المنتج وproduct mix وmarket basket والفرص المفقودة.",
+          "يوحّد D365 وSQL وExcel master mapping وJSON ضمن workflow قابل للتحديث.",
+          "يحدّث بيانات الفروع والموظفين والمنتجات كل 15 دقيقة مع مسار مستقل للمبيعات الحية والساعة."
         ],
         modulesTitle: "المزايا التي يغطيها",
-        modules: ["لوحة KPI", "المعارض", "قيمة العميل", "المقارنات", "الموظفون", "تقسيمة التارجت", "العروض", "المنتجات", "التقارير", "المبيعات المباشرة"],
+        modules: ["KPI & LFL", "الفروع", "Employee 360", "تقسيم المستهدف", "المخزون", "Product Mix", "Market Basket", "الفرص المفقودة", "التقارير", "Live Sales"],
         techTitle: "الهوية التقنية",
-        tech: ["React", "TypeScript", "Vite", "Recharts", "Leaflet", "XLSX", "jsPDF"],
+        tech: ["SQL", "Dynamics 365 OAuth/OData", "Excel Mapping", "JSON Pipelines", "React", "TypeScript", "Vite", "GitHub Actions", "Vercel"],
+        linkLabel: "زيارة ORA Cockpit",
+        linkHref: "https://kha159-create.github.io/Ora-cockpit/",
         scene: {
           appLabel: "ORA Cockpit",
           appSubLabel: "Operations Intelligence Layer",
@@ -189,7 +193,12 @@ const siteContent = {
           ],
           panels: ["المبيعات", "الفروع", "الموظفون", "المنتجات", "التقارير", "العروض"]
         }
-      }
+      },
+      additionalKicker: "أدوات تطبيقية أخرى",
+      additional: [
+        { title: "Ramadan Shift Planner", type: "Workforce Planning", text: "أداة لتخطيط دوام عدة فروع، بما في ذلك الورديات التي تتجاوز منتصف الليل، والتغطية بالساعة، والقوالب القابلة للتعديل، وتصدير PDF." },
+        { title: "K.A. Cockpit", type: "Retail Prototype", text: "نموذج مبكر لإدارة أداء التجزئة باستخدام Firebase Authentication وFirestore والصلاحيات وEmployee 360 والتحليل المساعد." }
+      ]
     },
     credentials: {
       kicker: "الاعتمادات",
@@ -197,12 +206,12 @@ const siteContent = {
       educationKicker: "التعليم",
       education: [
         { degree: "بكالوريوس علوم الحاسوب (قيد الدراسة)", meta: "University of the People · Jan 2026 - Present", text: "أتوقع التخرج في 2029، مع توجه يعزز الدمج بين القيادة التشغيلية والفهم التقني لدي." },
-        { degree: "دبلوم تكنولوجيا حفر الآبار", meta: "Al-Balqa Applied University · Jun 2018 - Jan 2020", text: "خلفية أكاديمية عززت لدي الانضباط التقني والتعامل المنهجي مع الأنظمة والمشكلات." }
+        { degree: "الدرجة الجامعية المتوسطة في تكنولوجيا حفر الآبار", meta: "كلية الحصن الجامعية، جامعة البلقاء التطبيقية · 2021", text: "خلفية أكاديمية تقنية عززت التفكير المنهجي والانضباط في التعامل مع الأنظمة." }
       ],
       certificationsKicker: "الشهادات",
-      certifications: ["Advanced Leadership & Retail Market Management Training", "Building and Managing a High-Performing Sales Team · LinkedIn Learning", "Leadership: Practical Skills · LinkedIn Learning", "Certified Anti-Money Laundering Specialist (CAMLS)", "Fundamentals of Digital Marketing", "Occupational Safety & Health · صالح حتى Apr 2026"],
+      certifications: ["Building and Managing a High-Performing Sales Team · LinkedIn Learning", "Leadership: Practical Skills · LinkedIn Learning", "Certified Anti-Money Laundering Specialist (CAMLS)", "Fundamentals of Digital Marketing · Crown Prince Foundation"],
       languagesKicker: "اللغات",
-      languages: ["العربية (Native)", "الإنجليزية (Professional)", "الألمانية (Advanced)"]
+      languages: ["العربية (Native)", "الإنجليزية (Professional)", "الألمانية (Intermediate)"]
     },
     testimonials: {
       kicker: "أثر القيادة",
@@ -244,10 +253,10 @@ const siteContent = {
     },
     closing: {
       kicker: "الخلاصة",
-      heading: "أبحث عن أدوار تقدّر القيادة الميدانية، وتمنح مساحة لبناء فرق قوية وتحسين الأداء بشكل مستدام.",
-      text: "بعد أكثر من 13 عامًا في الميدان، أصبحت أؤمن أن أفضل أثر مهني لا يظهر فقط في النتائج، بل في الفريق الذي ينمو، والنظام الذي يتحسن، والثقة التي أتركها خلفي. هذا هو النوع من القيمة التي أحرص على تقديمها في كل مرحلة جديدة.",
+      heading: "أبحث عن مسؤولية أوسع، لا مجرد مسمى جديد.",
+      text: "بعد أكثر من 13 عامًا في الميدان، أصبحت أؤمن أن أفضل أثر مهني لا يظهر فقط في رقم المبيعات، بل في الفريق الذي ينمو، والمدير الذي يصبح جاهزًا للخطوة التالية، والنظام الذي يستمر بعد غياب صاحبه. هذه هي القيمة التي أقدمها لأي شركة تجزئة تبحث عن تنفيذ يومي أقوى ونمو يمكن استدامته.",
       actions: [
-        { label: "تحميل السيرة الذاتية", href: "https://drive.google.com/file/d/1ROJ1-H2Di0Ik-9wWcGZGUrFytWCkwlUc/view?usp=sharing" },
+        { label: "تحميل السيرة الذاتية", href: "assets/Khaleel_Alsani_CV.pdf" },
         { label: "واتساب", href: "https://wa.me/966567028690" },
         { label: "إيميل", href: "mailto:kha.als@outlook.com" },
         { label: "لينكدإن", href: "https://linkedin.com/in/khaleel-alsani" }
@@ -259,17 +268,17 @@ const siteContent = {
     lang: "en",
     dir: "ltr",
     documentTitle: "The Working Life | Khaleel Alsani",
-    metaDescription: "An executive bilingual profile for Khaleel Alsani built around retail performance, operational leadership, and measurable impact.",
+    metaDescription: "Khaleel Alsani's professional profile: 13+ years in multi-branch retail leadership, commercial performance, people development, stock execution, and retail analytics.",
     brandName: "Khaleel Alsani",
     brandSubtitle: "The Working Life",
     langToggleLabel: "EN / AR",
     nav: { story: "Story", journey: "Journey", leadership: "Leadership", cases: "Case Studies", credentials: "Credentials" },
     hero: {
-      kicker: "Regional Sales Leadership",
+      kicker: "Multi-Branch Retail Leadership",
       name: "Khaleel Alsani",
-      title: "Area Sales Manager | Northern Region, Saudi Arabia",
-      brandLine: "Field leadership with a digital mindset.",
-      summary: "I lead sales, operations, and team development with a habit of turning indicators into clearer daily decisions. I led 6 branches in Northern Saudi Arabia and delivered +18.3% growth with an 18% average-ticket uplift in Riyadh.",
+      title: "Area Manager | Multi-Branch Retail Operations",
+      brandLine: "Turning KPIs, people, and stock into daily sales execution.",
+      summary: "I bring 13+ years of retail experience across Saudi Arabia, the UAE, and Jordan, progressing from frontline sales to multi-branch leadership. I managed five Riyadh stores followed by six Northern Region branches, combining field presence, manager development, operating discipline, and data-led decision-making.",
       primaryAction: "View the Journey",
       secondaryAction: "See the Wins",
       contacts: [
@@ -278,22 +287,24 @@ const siteContent = {
         { label: "LinkedIn: khaleel-alsani", href: "https://linkedin.com/in/khaleel-alsani" },
       ],
       portraitKicker: "Executive Presence",
-      portraitRole: "Operations. Growth. Discipline.",
+      portraitRole: "People. Numbers. Execution.",
       badgeYearsValue: "13+",
       badgeYearsLabel: "Years",
       badgeBranchesValue: "6",
       badgeBranchesLabel: "Branches",
       orbitCities: ["Madinah", "Yanbu", "Arar", "Tabuk", "Al Jouf"],
       dossierKicker: "Executive Snapshot",
-      dossierTitle: "Operational leadership backed by measurable numbers",
+      dossierTitle: "Real scope, measurable outcomes, and leadership built on the floor",
       metrics: [
-        { value: "6", label: "Branches led across Madinah, Yanbu, Arar, Tabuk, and Al Jouf" },
-        { value: "Multi-Million SAR", label: "Sales and branch scope led in Riyadh during 2024" },
-        { value: "+18.3%", label: "Growth delivered within the Riyadh scope" },
-        { value: "+18%", label: "Average ticket improvement from live operating review" }
+        { value: "13+", label: "Years across Saudi Arabia, the UAE, and Jordan" },
+        { value: "5 + 6", label: "Stores in Riyadh followed by Northern Region branches" },
+        { value: "SAR 33M / 28.9M", label: "Annual sales portfolios led" },
+        { value: "625K+ / 116K+", label: "Annual visitors and transactions in the Northern portfolio" },
+        { value: "18.7%", label: "Conversion across the Northern portfolio" },
+        { value: "+18% / -40%", label: "ATV growth and fewer stockout incidents" }
       ],
       analysisKicker: "Analytical Lens",
-      analyticalLens: ["KPI Management", "ATV", "Visitors", "Conversion", "Employee Tenure", "Profitability"]
+      analyticalLens: ["Sales", "Footfall", "Conversion", "ATV & UPT", "Stock Availability", "Manager Development", "Commercial Awareness"]
     },
     achievements: {
       kicker: "",
@@ -302,34 +313,34 @@ const siteContent = {
     },
     overview: {
       kicker: "Profile",
-      heading: "An executive profile built around operations, sales leadership, and disciplined data-led improvement.",
-      quote: "I treat numbers as operating signals that need interpretation, not just results to display.",
+      heading: "A field-led retail operator combining commercial performance, people development, and operating discipline.",
+      quote: "Sales is the final outcome, not the starting point. The starting point is people, product availability, execution quality, and understanding what the numbers mean on the floor.",
       responsibilitiesKicker: "Core Responsibilities",
       responsibilities: [
-        "Lead branch performance with direct ownership of sales targets and operating quality.",
-        "Read employee tenure as part of performance analysis and training need.",
-        "Build clearer operational reporting when existing tools lack precision.",
-        "Coach store managers through practical, repeatable training."
+        "Translate targets and KPIs into clear daily action for every branch and manager.",
+        "Develop store managers on the sales floor and build a promotion-ready leadership bench.",
+        "Connect stock availability, staffing, visual execution, and customer experience to sales outcomes.",
+        "Build operating tools and reporting when existing systems do not support timely decisions."
       ]
     },
     positioning: {
       kicker: "Executive Profile",
       heading: "Why my profile stands out from the first read.",
       snapshotKicker: "Executive Snapshot",
-      snapshotLead: "A field-led leader whose progression from frontline sales to area responsibility reflects operational depth and disciplined execution.",
-      snapshotPills: ["Multi-Branch Leadership", "Retail Operations", "Team Development", "KPI Interpretation", "Commercial Awareness"],
+      snapshotLead: "I started in outdoor and frontline sales before moving into multi-branch leadership, so I read decisions through the customer, employee, store manager, and commercial outcome at the same time.",
+      snapshotPills: ["Multi-Branch Leadership", "Retail Operations", "Sales Execution", "Manager Development", "Stock & VM", "Retail Analytics"],
       snapshotStats: [
         { value: "13+", label: "Years" },
-        { value: "6", label: "Branches" },
-        { value: "Multi-Million SAR", label: "Riyadh 2024 scope" },
-        { value: "+18%", label: "Average ticket uplift" }
+        { value: "5 + 6", label: "Store portfolios" },
+        { value: "33M / 28.9M", label: "SAR annual sales" },
+        { value: "4", label: "Store Manager promotions" }
       ],
       hrNoticeKicker: "What Stands Out",
       hrNotice: [
-        "A clear path from frontline sales to multi-branch leadership.",
-        "Proven team development, not only target tracking.",
-        "Numeric thinking translated into execution and improvement.",
-        "Field presence combined with management discipline."
+        "A genuine progression from frontline sales to five Riyadh stores and six Northern Region branches.",
+        "Commercial scope of approximately SAR 33M in Riyadh and SAR 28.9M in the Northern Region.",
+        "Four internal promotions into Store Manager roles and measurable improvements in retention.",
+        "The ability to turn an operating gap into a working solution such as ORA Cockpit."
       ],
       teamLensKicker: "Team Development & Management",
       teamLensLead: "I treat team development as part of performance: clarify expectations, coach practically, and read each employee's stage before judging the result.",
@@ -343,21 +354,21 @@ const siteContent = {
       kicker: "Career Journey",
       heading: "A rising career across Saudi Arabia, the UAE, and Jordan.",
       entries: [
-        { label: "Now", nav: "Orange North", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Medina, KSA", period: "Feb 2025 - 2026", description: "Led six Northern Saudi branches with direct responsibility for performance and operating discipline.", highlights: ["Led a multi-branch scope across Madinah, Yanbu, Arar, Tabuk, and Al Jouf.", "Managed 50+ employees with practical coaching and follow-up."], proofs: [{ value: "+0.31", label: "Conversion uplift" }, { value: "-40%", label: "Stockouts" }] },
-        { label: "Before", nav: "Orange Riyadh", role: "Area Sales Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "Led multi-branch Riyadh operations and strengthened selling discipline.", highlights: ["Managed a multi-location Riyadh scope.", "Launched cross-selling that improved average ticket value by 18%."], proofs: [{ value: "Multi-Million", label: "Sales scope" }, { value: "+18.3%", label: "Growth" }, { value: "+18%", label: "Average ticket" }] },
-        { label: "Training", nav: "51Talk", role: "Sales Trainer & Team Leader", company: "51Talk", location: "Amman, Jordan", period: "Aug 2023 - Dec 2023", description: "Trained sales teams and built a faster onboarding path.", highlights: ["Turned sales friction points into trackable coaching modules."], proofs: [{ value: "+30%", label: "Conversion" }, { value: "-25%", label: "Onboarding time" }] },
+        { label: "Now", nav: "Orange North", role: "Area Manager", company: "Orange Bed & Bath", location: "Madinah, KSA", period: "Feb 2025 - Present", description: "Lead six branches and 40+ employees across Madinah, Yanbu, Tabuk, Arar, and Al Jouf, with commercial and operating oversight of approximately SAR 28.9M in annual sales.", highlights: ["Manage 625K+ visitors and 116K+ transactions at 18.7% conversion through KPI reviews and branch action plans.", "Sustained 18% ATV growth and reduced stockout incidents by 40% through coaching, availability routines, and cross-branch coordination.", "Promoted Store Managers for Al Noor and Alia, while maintaining zero turnover in Al Jouf and Arar and below 10% in Tabuk."], proofs: [{ value: "SAR 28.9M", label: "Annual sales" }, { value: "18.7%", label: "Conversion" }, { value: "+18%", label: "ATV" }, { value: "-40%", label: "Stockouts" }] },
+        { label: "Before", nav: "Orange Riyadh", role: "Area Manager", company: "Orange Bed & Bath", location: "Riyadh, KSA", period: "Dec 2023 - Feb 2025", description: "Managed five stores and 40+ employees across an approximately SAR 33M annual portfolio, focusing on performance recovery and daily accountability.", highlights: ["Delivered 22% Q1 revenue growth through clearer ownership, manager coaching, and stronger floor execution.", "Reduced staff turnover from 60% to 20% and extended average tenure from two to eight months.", "Promoted Store Managers for Riyadh Park and Riyadh Gallery and coordinated readiness for a new store opening."], proofs: [{ value: "SAR 33M", label: "Annual sales" }, { value: "+22%", label: "Q1 growth" }, { value: "60% → 20%", label: "Staff turnover" }] },
+        { label: "Training", nav: "51Talk", role: "Sales Trainer & Team Leader", company: "51Talk", location: "Amman, Jordan", period: "Aug 2023 - Dec 2023", description: "Led an assigned sales team and built practical onboarding, role-play, and objection-handling routines.", highlights: ["Achieved the team target within the first three months through daily follow-up and clear activity discipline."], proofs: [{ value: "3 months", label: "Team target achieved" }] },
         { label: "Finance", nav: "Al Ansari", role: "Financial Services Advisor", company: "Al Ansari Financial Services", location: "Dubai, UAE", period: "Aug 2021 - Jul 2023", description: "A fast financial environment built on accuracy, trust, and consistency.", highlights: ["Improved customer handling under pressure while protecting service quality."], proofs: [{ value: "Top 5%", label: "Sales performance" }] },
-        { label: "Store Turnaround", nav: "Tala Store", role: "Store Manager", company: "Tala Store", location: "Irbid, Jordan", period: "Apr 2019 - Apr 2021", description: "Reset team structure and execution quality.", highlights: ["Clarified roles and reconnected daily work to measurable targets."], proofs: [{ value: "Top 10", label: "National rank" }, { value: "+15%", label: "Sales growth" }, { value: "-35%", label: "Turnover" }] },
-        { label: "Alshaya", nav: "Growth Track", role: "Assistant Store Manager / Department Manager / Senior Sales Associate", company: "Alshaya Group", location: "Irbid, Jordan", period: "Nov 2015 - Mar 2019", description: "Moved from direct selling into store execution leadership.", highlights: ["Assistant Store Manager | Feb 2018 - Mar 2019", "Department Manager | Feb 2017 - Jan 2018", "Senior Sales Associate | Nov 2015 - Jan 2017", "Aligned merchandising with sales goals."], proofs: [{ value: "+20%", label: "Footfall" }, { value: "+12%", label: "Category performance" }] },
+        { label: "Store Management", nav: "Tala Store", role: "Store Manager", company: "Tala Store", location: "Irbid, Jordan", period: "Apr 2019 - Apr 2021", description: "Restructured the team and strengthened role clarity and daily accountability.", highlights: ["Connected daily execution to measurable targets while improving onboarding and follow-up."], proofs: [{ value: "+15%", label: "Revenue growth" }, { value: "-35%", label: "Turnover" }] },
+        { label: "Leadership Track", nav: "Alshaya - H&M", role: "Assistant Store Manager / Department Manager / Sales Associate", company: "Alshaya Group - H&M", location: "Irbid, Jordan", period: "Nov 2015 - Mar 2019", description: "Progressed through three roles from frontline sales to supporting a multi-department store of approximately 25 employees.", highlights: ["Led approximately six employees as Department Manager and covered Store Manager absences as Assistant Store Manager.", "Managed targets, ATV, UPT, conversion, coverage, VM, promotions, launches, and inventory-count readiness."], proofs: [{ value: "Twice", label: "Employee of the Month" }, { value: "+8%", label: "ATV" }, { value: "2 → 4", label: "UPT" }, { value: "5 months", label: "Target achieved" }] },
         { label: "Outdoor Sales", nav: "Al Qawasmeh", role: "Sales Representative (Outdoor Sales)", company: "Al Qawasmeh Co. for Household Items", location: "Irbid, Jordan", period: "Apr 2012 - Sep 2015", description: "The foundation of my sales discipline: prospecting, trust, and repeatable revenue.", highlights: ["Built a customer base from zero through field outreach.", "Generated additional revenue through upselling and cross-selling."] }
       ]
     },
     leadership: {
       kicker: "Leadership Style",
       heading: "A management style shaped by discipline, coaching, and root-cause thinking.",
-      description: "I see leadership as both operating and development work: clear expectations, regular follow-up, and root-cause understanding before judging the result.",
+      description: "I treat leadership as field work that starts with decision clarity and team buy-in, followed by coaching and follow-through inside the store. Numbers guide the question; the floor explains the cause.",
       principlesKicker: "Leadership Philosophy & Operating Principles",
-      principles: ["When branch performance declines, I do not begin with who failed. I begin with where the system broke.", "I focus on solutions instead of blame and build decisions on numbers interpreted through field reality.", "A number is for faster judgment, not display, and every problem must be understood at the root.", "A leader is measured by what the team becomes after them."],
+      principles: ["Data before decisions: I connect the indicators, then validate them on the floor.", "Buy-in before execution: I explain why we are changing so the team owns the decision instead of following it temporarily.", "Develop on the floor, not only in classrooms: observe the behaviour and coach it in the moment.", "Sales is the final outcome, not the starting point; the starting point is people, product, and execution.", "When performance declines, I use Five Whys to find where the system broke before asking who failed.", "A leader is measured by what the team becomes after them."],
       skillsKicker: "Core Skills",
       skills: ["Retail Operations", "P&L Awareness", "Branch Performance Analytics", "Revenue Growth Strategy", "Inventory Optimization", "Team Development", "Performance Management", "Five Whys Problem Solving", "Excel Dashboards", "Power BI", "Microsoft Dynamics 365", "AI Tools for Sales"]
     },
@@ -365,16 +376,16 @@ const siteContent = {
       kicker: "Mindset & Method",
       heading: "How I think, lead, and keep developing.",
       analyticalKicker: "Analytical Thinking",
-      analyticalMethod: "I connect indicators instead of reading them one by one, and I consider employee tenure when interpreting performance.",
+      analyticalMethod: "I never read one KPI in isolation. I connect sales, footfall, conversion, ATV, UPT, stock availability, and staffing, then go to the floor to see what the report cannot show.",
       analyticalExamples: [
         { title: "Sales fall faster than traffic", text: "The core issue is customer value or basket size, not only visits." },
         { title: "Conversion is stable but sales decline", text: "The focus shifts to average ticket value and cross-selling effectiveness." }
       ],
       analyticalTools: ["Excel", "Comparative Reports", "KPI Breakdown", "YoY Analysis"],
       successKicker: "Success Mindset",
-      successDefinition: "To me, success is the quality of the effort and the discipline behind it, not only the final outcome.",
+      successDefinition: "Success is not one month's number. It is a system the team can repeat even when the manager is absent.",
       strengthsKicker: "Strengths & Growth",
-      strengths: ["Turning numbers into decisions", "Deep understanding of retail operations", "Building teams from zero", "Connecting analysis with execution"],
+      strengths: ["Turning numbers into execution", "Multi-branch leadership", "Manager and bench development", "Store performance recovery", "Stock & VM", "Building operating solutions"],
       challengeGrowth: "Professional honesty matters to me, so I treat challenges as growth points, not things to polish away.",
       challenges: [
         "I sometimes follow instinct even when the full picture is not complete.",
@@ -386,7 +397,7 @@ const siteContent = {
         "Build stronger operating systems",
         "Lean further into data-driven execution",
         "Develop leadership benches",
-        "Create financial and family stability"
+        "Expand commercial and operating impact"
       ]
     },
     cases: {
@@ -394,10 +405,10 @@ const siteContent = {
       heading: "Examples of how numbers become decisions and execution.",
       labels: { problem: "Problem", action: "Action", insight: "Insight", result: "Result" },
       items: [
-        { title: "Raising regional ATV through structured training", problem: "There was a clear opportunity to increase basket value without relying only on higher traffic.", action: "Designed and rolled out a structured cross-selling training program across five branches with close follow-up.", insight: "Teams do not only need sales targets. They need repeatable behavioral scripts tied to measurable outcomes.", result: "Delivered an 18% lift in ATV across the region." },
-        { title: "Treating stockouts as a profitability issue, not only a supply issue", problem: "Inventory gaps were hurting conversion and lost sales opportunities.", action: "Reworked inventory follow-up and connected stock discipline directly to branch execution quality.", insight: "A stockout is not just a missing item. It is a trust loss and a missed close.", result: "Reduced stockouts by 40%." },
-        { title: "Turning around underperforming branches in one quarter", problem: "Several branches needed immediate and practical intervention to recover performance.", action: "Restructured staff allocation, tightened execution, and optimized product display around selling outcomes.", insight: "Weak branch performance is usually an operational accumulation problem, not one isolated issue.", result: "Turned weak branches into top performers with a 22% Q1 sales uplift." },
-        { title: "Building KPI reporting systems from scratch", problem: "Existing tools did not provide the speed and precision leadership needed for daily decisions.", action: "Built KPI dashboards and daily reporting systems tailored to regional needs.", insight: "Data becomes power only when it is shown in a way that makes action daily, not monthly.", result: "Leadership adopted the dashboards for ongoing regional performance tracking." }
+        { title: "Recovering the Riyadh portfolio", problem: "Underperforming stores and inconsistent ownership of daily KPIs and accountability.", action: "Clarified each manager's ownership, tied field visits to store KPIs, and adjusted staffing and the placement of best sellers and promotions.", insight: "Weak sales are usually the result of several execution gaps, not one cause or one employee.", result: "Delivered 22% Q1 revenue growth across the Riyadh portfolio." },
+        { title: "Growing customer value while protecting availability", problem: "Sales opportunities were being lost through weak basket diversification and stockout incidents.", action: "Introduced cross-selling routines with store-manager coaching, daily availability checks, and demand-led cross-branch coordination.", insight: "ATV and stock are not separate topics: a team cannot expand the basket without the right product at the right moment.", result: "Sustained 18% ATV growth and reduced stockout incidents by 40%." },
+        { title: "Building a leadership bench and improving stability", problem: "High turnover and over-reliance on a limited number of people.", action: "Built clearer onboarding, coached on the floor, and gave high-potential employees progressive responsibility with readiness reviews.", insight: "The best succession plan starts before a vacancy, while the next leader is still learning.", result: "Promoted four Store Managers, reduced Riyadh turnover from 60% to 20%, and maintained zero turnover in Al Jouf and Arar." },
+        { title: "Turning a reporting gap into ORA Cockpit", problem: "Scattered PDF and Excel data did not give area leadership one timely operating view.", action: "Defined business requirements, KPI logic, and employee, branch, and product mappings, then built a workflow across SQL, D365, JSON, and a bilingual operating interface.", insight: "Technology creates value by shortening the distance between a question and a decision, not by adding more screens.", result: "Operational datasets synchronise every 15 minutes, with separate live and hourly sales workflows." }
       ]
     },
     projects: {
@@ -423,18 +434,20 @@ const siteContent = {
         eyebrow: "Operating system",
         title: "ORA Cockpit",
         type: "Retail Operations & Performance Platform",
-        story: "After Bayani, the same mindset moved into work. Ora Cockpit became one daily operating space for targets, branches, people, reporting, and decisions instead of scattered manual analysis.",
+        story: "ORA Cockpit began with a field problem: scattered PDF and Excel reports that did not give area leadership one fast, coherent view. I translated the operating need into KPI logic, data mapping, workflows, and a working platform for branches, people, stock, and daily decisions.",
         impactTitle: "What it actually solves",
         impacts: [
-          "Brings sales, traffic, branches, and employees into one operational workspace.",
-          "Shortens the path from scattered files to direct, readable numbers.",
-          "Unifies reporting, comparisons, and target logic inside one daily system.",
-          "Makes it easier to see where the issue is and where intervention should start."
+          "Connects sales, traffic, transactions, conversion, ATV, and targets in one operating view.",
+          "Covers Employee 360, inventory, stock availability, product mix, market basket, and missed opportunities.",
+          "Unifies D365, SQL, Excel master mapping, and JSON inside an updateable workflow.",
+          "Synchronises branch, employee, and product data every 15 minutes with separate live and hourly sales workflows."
         ],
         modulesTitle: "What it covers",
-        modules: ["KPI Dashboard", "Stores", "Customer Value", "Comparisons", "Employees", "Target Split", "Offers", "Products", "Reports", "Live Sales"],
+        modules: ["KPI & LFL", "Branches", "Employee 360", "Target Allocation", "Inventory", "Product Mix", "Market Basket", "Missed Opportunities", "Reports", "Live Sales"],
         techTitle: "Technical identity",
-        tech: ["React", "TypeScript", "Vite", "Recharts", "Leaflet", "XLSX", "jsPDF"],
+        tech: ["SQL", "Dynamics 365 OAuth/OData", "Excel Mapping", "JSON Pipelines", "React", "TypeScript", "Vite", "GitHub Actions", "Vercel"],
+        linkLabel: "Visit ORA Cockpit",
+        linkHref: "https://kha159-create.github.io/Ora-cockpit/",
         scene: {
           appLabel: "ORA Cockpit",
           appSubLabel: "Operations Intelligence Layer",
@@ -445,7 +458,12 @@ const siteContent = {
           ],
           panels: ["Sales", "Branches", "Employees", "Products", "Reports", "Offers"]
         }
-      }
+      },
+      additionalKicker: "Additional Applied Tools",
+      additional: [
+        { title: "Ramadan Shift Planner", type: "Workforce Planning", text: "A multi-branch staffing tool for cross-midnight shifts, hourly coverage, editable templates, local persistence, and PDF schedule exports." },
+        { title: "K.A. Cockpit", type: "Retail Prototype", text: "An earlier retail performance prototype using Firebase Authentication, Firestore, role-based workflows, Employee 360, and assisted analysis." }
+      ]
     },
     credentials: {
       kicker: "Credentials",
@@ -453,12 +471,12 @@ const siteContent = {
       educationKicker: "Education",
       education: [
         { degree: "BSc Computer Science (In Progress)", meta: "University of the People · Jan 2026 - Present", text: "Expected graduation in 2029, strengthening the bridge between operational leadership and technical thinking." },
-        { degree: "Diploma in Drilling Well Technology", meta: "Al-Balqa Applied University · Jun 2018 - Jan 2020", text: "A technical academic foundation that reinforced structured thinking and system discipline." }
+        { degree: "Intermediate University Degree in Well Drilling Technology", meta: "Al-Huson University College, Al-Balqa Applied University · 2021", text: "A technical academic foundation that reinforced structured thinking and system discipline." }
       ],
       certificationsKicker: "Certifications",
-      certifications: ["Advanced Leadership & Retail Market Management Training", "Building and Managing a High-Performing Sales Team · LinkedIn Learning", "Leadership: Practical Skills · LinkedIn Learning", "Certified Anti-Money Laundering Specialist (CAMLS)", "Fundamentals of Digital Marketing", "Occupational Safety & Health · Valid to Apr 2026"],
+      certifications: ["Building and Managing a High-Performing Sales Team · LinkedIn Learning", "Leadership: Practical Skills · LinkedIn Learning", "Certified Anti-Money Laundering Specialist (CAMLS)", "Fundamentals of Digital Marketing · Crown Prince Foundation"],
       languagesKicker: "Languages",
-      languages: ["Arabic (Native)", "English (Professional)", "German (Advanced)"]
+      languages: ["Arabic (Native)", "English (Professional)", "German (Intermediate)"]
     },
     testimonials: {
       kicker: "Leadership Impact",
@@ -500,10 +518,10 @@ const siteContent = {
     },
     closing: {
       kicker: "Closing Statement",
-      heading: "I am interested in roles that value field leadership, strong teams, and sustainable performance improvement.",
-      text: "More than 13 years in the field taught me that professional value is not only reflected in results, but in the team that grows, the system that improves, and the trust a leader leaves behind. That is the kind of value I aim to bring in every new role.",
+      heading: "I am looking for wider responsibility, not simply a new title.",
+      text: "More than 13 years in the field taught me that professional value is not only reflected in a sales number, but in the team that grows, the manager who becomes ready for the next step, and the system that keeps working without its creator. That is the value I bring to retailers seeking stronger daily execution and sustainable growth.",
       actions: [
-        { label: "Download CV", href: "https://drive.google.com/file/d/1ROJ1-H2Di0Ik-9wWcGZGUrFytWCkwlUc/view?usp=sharing" },
+        { label: "Download CV", href: "assets/Khaleel_Alsani_CV.pdf" },
         { label: "WhatsApp", href: "https://wa.me/966567028690" },
         { label: "Email", href: "mailto:kha.als@outlook.com" },
         { label: "LinkedIn", href: "https://linkedin.com/in/khaleel-alsani" }
@@ -1211,6 +1229,18 @@ function renderProjects(content) {
     .map((item) => `<span class="cockpit-panel-chip">${item}</span>`)
     .join("");
 
+  const additionalProjects = (content.additional || [])
+    .map(
+      (item) => `
+        <article class="supporting-project-card">
+          <span>${item.type}</span>
+          <h4>${item.title}</h4>
+          <p>${item.text}</p>
+        </article>
+      `
+    )
+    .join("");
+
   const wrapper = document.createElement("div");
   wrapper.className = "systems-story";
   wrapper.innerHTML = `
@@ -1269,6 +1299,7 @@ function renderProjects(content) {
             <h4>${content.flagship.techTitle}</h4>
             <div class="tech-list">${flagshipTech}</div>
           </div>
+          <a class="button button-primary system-link" href="${content.flagship.linkHref}" target="_blank" rel="noreferrer">${content.flagship.linkLabel}</a>
         </div>
 
         <div class="cockpit-scene" aria-hidden="true">
@@ -1315,6 +1346,12 @@ function renderProjects(content) {
         </div>
       </article>
     </div>
+    ${additionalProjects ? `
+      <div class="supporting-projects">
+        <p class="system-eyebrow">${content.additionalKicker}</p>
+        <div class="supporting-project-grid">${additionalProjects}</div>
+      </div>
+    ` : ""}
   `;
 
   elements.projectList.appendChild(wrapper);
