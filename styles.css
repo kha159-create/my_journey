@@ -963,6 +963,13 @@ body[data-lang="en"] .portrait-caption {
   font-weight: 700;
 }
 
+body[data-lang="ar"] .metric-value,
+body[data-lang="ar"] .positioning-stat strong,
+body[data-lang="ar"] .timeline-proof-card strong {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
 .metric-label {
   display: block;
   margin-top: 0.35rem;
