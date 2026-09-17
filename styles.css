@@ -13,3 +13,6 @@ html[lang="en"] [data-lang="en"]{display:revert!important}
 .hero .portrait-stage{animation-delay:.12s}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.hero .reveal{animation:none}}
+
+/* Keep Latin metrics and dates in their intended reading order inside RTL pages. */
+.hero-proof strong,.metric-float strong,.case-top strong,.scale-grid strong,.timeline-date span,.cockpit strong{direction:ltr;unicode-bidi:isolate;text-align:start}
