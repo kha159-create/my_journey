@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kha159-create.github.io/my_journey/sitemap.xml
