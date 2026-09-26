@@ -208,3 +208,10 @@ h3{font-size:clamp(.96rem,1.08vw,1.1rem)}
   .contact-actions{align-items:flex-start}
   .footer-end{width:100%;justify-content:space-between}
 }
+
+@media(prefers-reduced-motion:reduce){
+  .signals>span,
+  .signals .geometry,
+  .decision-core,
+  .social-icons a{transition:none}
+}
