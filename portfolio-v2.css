@@ -153,6 +153,21 @@ h3{font-size:clamp(.96rem,1.08vw,1.1rem)}
 .decision-card[data-state=clear] .signals .geometry{opacity:1;transform:scale(1) rotate(0)}
 .decision-card[data-state=clear] .decision-core{opacity:1;transform:translate(-50%,-50%) scale(1)}
 
+/* Animated data paths: every signal feeds the same clarity core. */
+.decision-card .signals>span::after{content:"";position:absolute;z-index:-1;left:50%;top:50%;width:var(--ray,150px);height:1px;opacity:0;transform:rotate(var(--ray-angle,0deg)) scaleX(.2);transform-origin:0 50%;background:linear-gradient(90deg,rgba(105,198,200,.16),rgba(105,238,210,.92) 45%,rgba(105,198,200,.18) 70%);background-size:32px 1px;box-shadow:0 0 8px rgba(105,238,210,.42);transition:opacity .45s ease,transform .8s cubic-bezier(.2,.8,.2,1);animation:dataPath 1.8s linear infinite}
+.decision-card[data-state=clear] .signals>span::after{opacity:.78;transform:rotate(var(--ray-angle,0deg)) scaleX(1)}
+.signals>span:nth-of-type(1){--ray:225px;--ray-angle:75deg}
+.signals>span:nth-of-type(2){--ray:195px;--ray-angle:145deg}
+.signals>span:nth-of-type(3){--ray:180px;--ray-angle:200deg}
+.signals>span:nth-of-type(4){--ray:190px;--ray-angle:-76deg}
+.signals>span:nth-of-type(5){--ray:235px;--ray-angle:-20deg}
+.signals>span:nth-of-type(6){--ray:255px;--ray-angle:30deg}
+.signals>span:nth-of-type(7){--ray:135px;--ray-angle:155deg}
+.signals>span:nth-of-type(8){--ray:225px;--ray-angle:12deg}
+.signals>span:nth-of-type(9){--ray:175px;--ray-angle:-42deg}
+.signals>span:nth-of-type(10){--ray:145px;--ray-angle:-126deg}
+@keyframes dataPath{to{background-position:32px 0}}
+
 .impact-group{gap:29px;padding:23px 0}
 .group-metrics>div{padding:15px}
 .group-metrics strong{font-size:clamp(1.25rem,1.75vw,1.72rem)}
@@ -206,6 +221,12 @@ h3{font-size:clamp(.96rem,1.08vw,1.1rem)}
   .signals>span{padding:6px 8px}
 }
 @media(max-width:760px){
+  html{scroll-padding-top:118px}
+  .header-inner{height:auto;min-height:72px;flex-wrap:wrap;row-gap:0;padding-block:9px 7px}
+  .brand{order:1}
+  .header-actions{order:2}
+  .desktop-nav{display:flex;order:3;width:100%;align-items:center;justify-content:space-between;gap:10px;padding:8px 2px 1px;border-top:1px solid rgba(255,255,255,.08);overflow:hidden;color:#bfc9cf;font-size:.64rem;white-space:nowrap}
+  .desktop-nav a{flex:0 0 auto}
   body{font-size:.86rem}
   .section{padding:52px 0}
   .hero{width:100%;min-width:0;grid-template-columns:minmax(0,1fr);padding:36px 0 46px;gap:38px}
@@ -236,6 +257,16 @@ h3{font-size:clamp(.96rem,1.08vw,1.1rem)}
   .decision-card[data-state=clear] .signals>span:nth-of-type(8){left:55%;top:88%}
   .decision-card[data-state=clear] .signals>span:nth-of-type(9){left:4%;top:46%}
   .decision-card[data-state=clear] .signals>span:nth-of-type(10){left:72%;top:46%}
+  .signals>span:nth-of-type(1){--ray:150px;--ray-angle:30deg}
+  .signals>span:nth-of-type(2){--ray:135px;--ray-angle:140deg}
+  .signals>span:nth-of-type(3){--ray:150px;--ray-angle:20deg}
+  .signals>span:nth-of-type(4){--ray:120px;--ray-angle:160deg}
+  .signals>span:nth-of-type(5){--ray:150px;--ray-angle:-25deg}
+  .signals>span:nth-of-type(6){--ray:130px;--ray-angle:-150deg}
+  .signals>span:nth-of-type(7){--ray:170px;--ray-angle:-35deg}
+  .signals>span:nth-of-type(8){--ray:150px;--ray-angle:-130deg}
+  .signals>span:nth-of-type(9){--ray:145px;--ray-angle:0deg}
+  .signals>span:nth-of-type(10){--ray:120px;--ray-angle:180deg}
   .hero-proof{width:100%;max-width:100%;grid-template-columns:repeat(3,minmax(0,1fr))}
   .hero-proof div{min-width:0;padding:14px 8px;text-align:center}
   .hero-proof div+div{padding-inline:8px}
