@@ -85,6 +85,7 @@ h3{font-size:clamp(1.02rem,1.25vw,1.22rem);line-height:1.24}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.signals path,.signal-bar>div{animation:none}}
 
 /* V3 — compact scale and integrated decision lab */
+html,body{max-width:100%;overflow-x:clip}
 body{font-size:.89rem}
 h1{font-size:clamp(2.25rem,3.45vw,3.35rem);margin-bottom:0}
 h2{font-size:clamp(1.55rem,2.25vw,2.25rem)}
@@ -177,6 +178,13 @@ h3{font-size:clamp(.96rem,1.08vw,1.1rem)}
 .footer-end{display:flex;align-items:center;gap:18px}
 .site-footer{padding:24px 0}
 
+/* Soft transitions between dark and light editorial sections. */
+.method,.journey{position:relative;isolation:isolate}
+.method:before,.journey:before,.method:after,.journey:after{content:"";position:absolute;z-index:1;left:0;right:0;height:64px;pointer-events:none}
+.method:before,.journey:before{top:-63px;background:linear-gradient(180deg,rgba(244,241,233,0),var(--paper))}
+.method:after,.journey:after{bottom:-63px;background:linear-gradient(180deg,var(--paper),rgba(244,241,233,0))}
+.method>*,.journey>*{position:relative;z-index:2}
+
 @media(max-width:1040px){
   .hero{grid-template-columns:1fr .9fr;gap:34px}
   .hero-heading-row{grid-template-columns:1fr 118px;gap:18px}
@@ -197,7 +205,7 @@ h3{font-size:clamp(.96rem,1.08vw,1.1rem)}
   .hero h1{font-size:clamp(1.72rem,7.2vw,2.28rem)}
   .hero-lead{margin-top:18px;font-size:.85rem}
   .hero-visual,.decision-card{min-height:510px}
-  .decision-card{width:100%;max-width:100%;overflow:hidden}
+  .decision-card{width:100%;max-width:100%;transform:none;overflow:hidden}
   .decision-head{padding-inline:3px}
   .signals{inset:30px 0 58px;overflow:hidden}
   .signals>span{gap:4px;max-width:46%;padding:5px 7px;font-size:.38rem}
@@ -215,6 +223,14 @@ h3{font-size:clamp(.96rem,1.08vw,1.1rem)}
   .decision-card[data-state=clear] .signals>span:nth-of-type(8){left:55%;top:88%}
   .decision-card[data-state=clear] .signals>span:nth-of-type(9){left:4%;top:46%}
   .decision-card[data-state=clear] .signals>span:nth-of-type(10){left:72%;top:46%}
+  .hero-proof{width:100%;max-width:100%;grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hero-proof div{min-width:0;padding:14px 8px;text-align:center}
+  .hero-proof div+div{padding-inline:8px}
+  .hero-proof span{overflow-wrap:anywhere;line-height:1.45}
+  .system-case,.system-ui,.project-case,.group-metrics,.contact{min-width:0;max-width:100%}
+  .method:before,.journey:before,.method:after,.journey:after{height:42px}
+  .method:before,.journey:before{top:-41px}
+  .method:after,.journey:after{bottom:-41px}
   .group-metrics>div{padding:13px 15px}
   .project-case>header{padding:17px 17px 0}
   .case-summary{padding:11px 17px 16px}
