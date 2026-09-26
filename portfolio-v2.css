@@ -187,19 +187,33 @@ h3{font-size:clamp(.96rem,1.08vw,1.1rem)}
 @media(max-width:760px){
   body{font-size:.86rem}
   .section{padding:52px 0}
-  .hero{padding:36px 0 46px;gap:30px}
+  .hero{width:100%;min-width:0;grid-template-columns:minmax(0,1fr);padding:36px 0 46px;gap:38px}
+  .hero-copy{order:1;width:100%;min-width:0;max-width:none}
+  .hero-visual{order:2;width:100%;min-width:0}
   .hero-heading-row{grid-template-columns:minmax(0,1fr) 96px;gap:14px}
   .hero-portrait{width:90px}
   .social-icons a{width:28px;height:28px}
   .social-icons svg{width:12px;height:12px}
   .hero h1{font-size:clamp(1.72rem,7.2vw,2.28rem)}
   .hero-lead{margin-top:18px;font-size:.85rem}
-  .hero-visual,.decision-card{min-height:440px}
-  .signals{inset:30px 0 58px}
+  .hero-visual,.decision-card{min-height:510px}
+  .decision-card{width:100%;max-width:100%;overflow:hidden}
+  .decision-head{padding-inline:3px}
+  .signals{inset:30px 0 58px;overflow:hidden}
   .signals>span{gap:4px;padding:5px 7px;font-size:.38rem}
   .signals>span em{font-size:.58rem}
   .decision-core{width:112px}
   .decision-core strong{font-size:.82rem}
+  .decision-card[data-state=clear] .signals>span:nth-of-type(1){left:3%;top:3%}
+  .decision-card[data-state=clear] .signals>span:nth-of-type(2){left:58%;top:3%}
+  .decision-card[data-state=clear] .signals>span:nth-of-type(3){left:3%;top:24%}
+  .decision-card[data-state=clear] .signals>span:nth-of-type(4){left:70%;top:24%}
+  .decision-card[data-state=clear] .signals>span:nth-of-type(5){left:3%;top:68%}
+  .decision-card[data-state=clear] .signals>span:nth-of-type(6){left:64%;top:68%}
+  .decision-card[data-state=clear] .signals>span:nth-of-type(7){left:3%;top:88%}
+  .decision-card[data-state=clear] .signals>span:nth-of-type(8){left:55%;top:88%}
+  .decision-card[data-state=clear] .signals>span:nth-of-type(9){left:4%;top:46%}
+  .decision-card[data-state=clear] .signals>span:nth-of-type(10){left:72%;top:46%}
   .group-metrics>div{padding:13px 15px}
   .project-case>header{padding:17px 17px 0}
   .case-summary{padding:11px 17px 16px}
