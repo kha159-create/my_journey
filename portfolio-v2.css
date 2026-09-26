@@ -200,7 +200,8 @@ h3{font-size:clamp(.96rem,1.08vw,1.1rem)}
   .decision-card{width:100%;max-width:100%;overflow:hidden}
   .decision-head{padding-inline:3px}
   .signals{inset:30px 0 58px;overflow:hidden}
-  .signals>span{gap:4px;padding:5px 7px;font-size:.38rem}
+  .signals>span{gap:4px;max-width:46%;padding:5px 7px;font-size:.38rem}
+  .signals>span:nth-of-type(7){left:68%}
   .signals>span em{font-size:.58rem}
   .decision-core{width:112px}
   .decision-core strong{font-size:.82rem}
