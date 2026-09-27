@@ -1,16 +1,16 @@
 // Service Worker for Khaleel Alsani Portfolio PWA
 const CACHE_NAME = 'khaleel-portfolio-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/portfolio-v2.css',
-  '/portfolio-v2.js',
-  '/manifest.webmanifest',
-  '/favicon.svg',
-  '/apple-touch-icon.png',
-  '/icon-192.png',
-  '/icon-512.png',
-  '/khaleel-alsani.webp'
+  './',
+  'index.html',
+  'portfolio-v2.css',
+  'portfolio-v2.js',
+  'manifest.webmanifest',
+  'favicon.svg',
+  'apple-touch-icon.png',
+  'icon-192.png',
+  'icon-512.png',
+  'khaleel-alsani.webp'
 ];
 
 self.addEventListener('install', (event) => {
@@ -54,7 +54,7 @@ self.addEventListener('fetch', (event) => {
       }
       return fetch(event.request).catch(() => {
         if (event.request.destination === 'document') {
-          return caches.match('/index.html');
+          return caches.match('index.html');
         }
       });
     })
