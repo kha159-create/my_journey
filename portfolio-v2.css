@@ -2434,6 +2434,17 @@ html[lang="en"] [data-lang="en"] {
    RESPONSIVE DESIGN
    ═══════════════════════════════════════════════════════════════════════ */
 @media (max-width: 1040px) {
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+  .section-head p.section-desc {
+    max-width: 100%;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -2477,6 +2488,12 @@ html[lang="en"] [data-lang="en"] {
 }
 
 @media (max-width: 768px) {
+  .project-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
   /* ── Mobile Typography Discipline (Slightly smaller, tighter and cuter on mobile) ── */
   body {
     font-size: 0.88rem !important;
@@ -2628,6 +2645,12 @@ html[lang="en"] [data-lang="en"] {
 }
 
 @media (max-width: 480px) {
+  .credentials-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
   h1, .hero-h1 {
     font-size: 1.55rem !important;
   }
