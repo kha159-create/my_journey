@@ -157,7 +157,7 @@ img {
 }
 
 .section {
-  padding: 96px 0;
+  padding: 48px 0;
   position: relative;
 }
 
@@ -493,36 +493,50 @@ h3 {
   flex-direction: column;
 }
 
-.hero-social-strip {
+/* Floating Social Icons Bar (Positioned in corner opposite to face) */
+.hero-social-strip-floating {
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Default for RTL (AR) since face is on the left */
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 8px;
+  z-index: 1000;
+  background: rgba(10, 14, 20, 0.8);
+  backdrop-filter: blur(12px);
+  padding: 5px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--line-dim);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-social-strip a {
+/* In English, his face is on the right, so opposite corner is top-left */
+html[lang="en"] .hero-social-strip-floating {
+  right: auto;
+  left: 20px;
+}
+
+.hero-social-strip-floating a {
   display: grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--line-dim);
-  color: var(--text-slate);
+  background: transparent;
+  color: var(--text-dim);
   transition: all 0.2s ease;
 }
 
-.hero-social-strip a:hover {
-  background: #ffffff;
-  color: #030406;
-  border-color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
+.hero-social-strip-floating a:hover {
+  background: var(--text-white);
+  color: var(--bg-void);
+  transform: scale(1.08);
 }
 
-.hero-social-strip svg {
-  width: 16px;
-  height: 16px;
+.hero-social-strip-floating svg {
+  width: 14px;
+  height: 14px;
   fill: currentColor;
 }
 
@@ -672,11 +686,6 @@ h3 {
   overflow: hidden;
 }
 
-html[lang="en"] .hero-portrait-layer {
-  left: auto;
-  right: 0;
-}
-
 .hero-portrait-img {
   width: 100%;
   height: 100%;
@@ -691,15 +700,6 @@ html[lang="en"] .hero-portrait-layer {
     linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, transparent 100%);
   -webkit-mask-composite: source-in;
   mask-composite: intersect;
-}
-
-html[lang="en"] .hero-portrait-img {
-  -webkit-mask-image: 
-    linear-gradient(to left, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.45) 85%, transparent 100%),
-    linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, transparent 100%);
-  mask-image: 
-    linear-gradient(to left, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.45) 85%, transparent 100%),
-    linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, transparent 100%);
 }
 
 /* Ambient Vignettes and Seamless Screen Blends */
@@ -720,10 +720,6 @@ html[lang="en"] .hero-portrait-img {
   pointer-events: none;
 }
 
-html[lang="en"] .hero-text-protection-gradient {
-  background: linear-gradient(to right, #030406 35%, rgba(3, 4, 6, 0.85) 60%, rgba(3, 4, 6, 0.15) 82%, transparent 100%);
-}
-
 /* Reference Image: Dot Matrix Accents */
 .hero-dots-top {
   position: absolute;
@@ -732,21 +728,11 @@ html[lang="en"] .hero-text-protection-gradient {
   left: auto;
 }
 
-html[lang="en"] .hero-dots-top {
-  right: auto;
-  left: 35px;
-}
-
 .hero-dots-bottom {
   position: absolute;
   bottom: 50px;
   right: 48%;
   left: auto;
-}
-
-html[lang="en"] .hero-dots-bottom {
-  right: auto;
-  left: 48%;
 }
 
 .hero-content-wrapper {
@@ -762,11 +748,6 @@ html[lang="en"] .hero-dots-bottom {
   max-width: 650px;
   margin-right: 0;
   margin-left: auto; /* In RTL: keeps text on the right side */
-}
-
-html[lang="en"] .hero-copy {
-  margin-right: auto;
-  margin-left: 0; /* In LTR: keeps text on the left side */
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -2496,48 +2477,56 @@ html[lang="en"] [data-lang="en"] {
 }
 
 @media (max-width: 768px) {
-  /* ── Mobile Typography Discipline (Clean, proportional, not oversized) ── */
+  /* ── Mobile Typography Discipline (Slightly smaller, tighter and cuter on mobile) ── */
+  body {
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+  }
   h1, .hero-h1 {
-    font-size: clamp(1.55rem, 6.2vw, 1.95rem) !important;
-    line-height: 1.32 !important;
-    margin-bottom: 16px;
+    font-size: clamp(1.3rem, 5.2vw, 1.55rem) !important;
+    line-height: 1.28 !important;
+    margin-bottom: 12px;
   }
   h2, .section-head h2 {
-    font-size: clamp(1.25rem, 4.8vw, 1.5rem) !important;
-    line-height: 1.35 !important;
+    font-size: clamp(1.1rem, 4.2vw, 1.28rem) !important;
+    line-height: 1.32 !important;
   }
   h3 {
-    font-size: 1.08rem !important;
-    line-height: 1.4 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.35 !important;
   }
   .hero-lead {
-    font-size: 0.92rem !important;
-    line-height: 1.7 !important;
-    margin-bottom: 24px;
+    font-size: 0.84rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px;
   }
   .about-lead-text {
-    font-size: 0.94rem !important;
-    line-height: 1.75 !important;
+    font-size: 0.86rem !important;
+    line-height: 1.65 !important;
   }
   .proof-card strong {
-    font-size: 1.35rem !important;
+    font-size: 1.15rem !important;
   }
   .impact-stat-row strong {
-    font-size: 1.25rem !important;
-  }
-  .cred-title {
     font-size: 1.1rem !important;
   }
+  .cred-title {
+    font-size: 0.98rem !important;
+  }
   .contact-banner h2 {
-    font-size: 1.3rem !important;
-    line-height: 1.35 !important;
+    font-size: 1.15rem !important;
+    line-height: 1.3 !important;
+  }
+  p, span, li, small, .speech-box, .method-card p, .timeline-item p, .gov-action-card p, .kpi-subtext {
+    font-size: 0.84rem !important;
+    line-height: 1.6 !important;
   }
 
   .shell {
     width: min(calc(100% - 32px), var(--max-width));
   }
   .section {
-    padding: 60px 0;
+    padding: 32px 0;
   }
   .desktop-nav {
     display: none;
@@ -2801,16 +2790,16 @@ html[lang="en"] .cv-button-bottom {
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
-/* English Portrait Mobile Compatibility Fix to prevent image stretching */
+/* Portrait Mobile Compatibility Fix to prevent image stretching */
 @media (max-width: 1040px) {
-  html[lang="en"] .hero-portrait-layer {
+  .hero-portrait-layer {
     left: 0 !important;
     right: 0 !important;
     width: 100% !important;
     height: 100% !important;
   }
   
-  html[lang="en"] .hero-portrait-img {
+  .hero-portrait-img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
