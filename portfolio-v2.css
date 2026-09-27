@@ -83,6 +83,9 @@ html {
   scroll-padding-top: 88px;
   background-color: var(--bg-void);
   color: var(--text-white);
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -94,6 +97,8 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -636,11 +641,11 @@ h3 {
 .hero-cinematic {
   position: relative;
   width: 100%;
-  min-height: 84vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: 110px 0 60px;
+  padding: 100px 0 50px;
   background-color: var(--bg-void);
 }
 
@@ -2544,7 +2549,7 @@ html[lang="en"] [data-lang="en"] {
   /* ── Mobile Hero: Crisp face visible at the top, fading beautifully downwards ── */
   .hero-cinematic {
     min-height: auto;
-    padding: 110px 0 50px;
+    padding: 85px 0 35px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -2567,7 +2572,7 @@ html[lang="en"] [data-lang="en"] {
   .hero-copy {
     position: relative;
     z-index: 10;
-    margin-top: 230px; /* Pushes text below his face on mobile so both face and text are completely visible and clear */
+    margin-top: 150px; /* Pushes text below his face on mobile so both face and text are completely visible and clear */
     max-width: 100%;
   }
 
