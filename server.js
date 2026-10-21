@@ -8,25 +8,39 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static assets from the current directory at root
-app.use(express.static(__dirname));
+// Set strict anti-cache headers for HTML, JS, CSS, and Service Worker so phones always fetch live files
+const staticOptions = {
+  etag: true,
+  lastModified: true,
+  setHeaders: (res, filePath) => {
+    if (
+      filePath.endsWith('.html') ||
+      filePath.endsWith('.js') ||
+      filePath.endsWith('.css') ||
+      filePath.endsWith('sw.js') ||
+      filePath.endsWith('.json') ||
+      filePath.endsWith('.webmanifest')
+    ) {
+      res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+      res.setHeader('Pragma', 'no-cache');
+      res.setHeader('Expires', '0');
+    }
+  }
+};
 
-// Also serve static assets with /my_journey prefix for GitHub Pages path compatibility
-app.use('/my_journey', express.static(__dirname));
+app.use(express.static(__dirname, staticOptions));
+app.use('/my_journey', express.static(__dirname, staticOptions));
 
-// Route handlers for entry points
-app.get('/', (req, res) => {
+const sendIndex = (req, res) => {
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
   res.sendFile(path.join(__dirname, 'index.html'));
-});
+};
 
-app.get('/my_journey', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-// Fallback for HTML5 navigation
-app.use((req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
+app.get('/', sendIndex);
+app.get('/my_journey', sendIndex);
+app.use(sendIndex);
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running at http://0.0.0.0:${PORT}`);

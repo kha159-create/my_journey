@@ -1,24 +1,7 @@
 // Service Worker for Khaleel Alsani Portfolio PWA
-const CACHE_NAME = 'khaleel-portfolio-v2';
-const ASSETS = [
-  './',
-  'index.html',
-  'portfolio-v2.css',
-  'portfolio-v2.js',
-  'manifest.webmanifest',
-  'favicon.svg',
-  'apple-touch-icon.png',
-  'icon-192.png',
-  'icon-512.png',
-  'khaleel-alsani.webp'
-];
+const CACHE_NAME = 'khaleel-portfolio-v20261021-force';
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS).catch(() => {});
-    })
-  );
   self.skipWaiting();
 });
 
@@ -27,9 +10,7 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((keys) => {
       return Promise.all(
         keys.map((key) => {
-          if (key !== CACHE_NAME) {
-            return caches.delete(key);
-          }
+          return caches.delete(key);
         })
       );
     })
@@ -37,26 +18,29 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
+// Network-first strategy: Always fetch live content from the server first!
 self.addEventListener('fetch', (event) => {
-  // Only handle GET requests
   if (event.request.method !== 'GET') return;
 
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        // Fetch in background to update cache
-        fetch(event.request).then((networkResponse) => {
-          if (networkResponse && networkResponse.status === 200) {
-            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, networkResponse));
-          }
-        }).catch(() => {});
-        return cachedResponse;
-      }
-      return fetch(event.request).catch(() => {
-        if (event.request.destination === 'document') {
-          return caches.match('index.html');
+    fetch(event.request)
+      .then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200) {
+          const responseToCache = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseToCache);
+          });
         }
-      });
-    })
+        return networkResponse;
+      })
+      .catch(() => {
+        // Fallback to cache only if device is offline
+        return caches.match(event.request).then((cachedResponse) => {
+          if (cachedResponse) return cachedResponse;
+          if (event.request.destination === 'document') {
+            return caches.match('index.html');
+          }
+        });
+      })
   );
 });
