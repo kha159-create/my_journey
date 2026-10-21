@@ -1,5 +1,5 @@
 // Service Worker for Khaleel Alsani Portfolio PWA
-const CACHE_NAME = 'khaleel-portfolio-v1';
+const CACHE_NAME = 'khaleel-portfolio-v2';
 const ASSETS = [
   './',
   'index.html',

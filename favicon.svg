@@ -1,46 +1,42 @@
-
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
-      <stop offset="0%" stop-color="#141c2b" />
-      <stop offset="55%" stop-color="#080c14" />
-      <stop offset="100%" stop-color="#020306" />
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#0E1E38" />
+      <stop offset="50%" stop-color="#081120" />
+      <stop offset="100%" stop-color="#03070E" />
     </radialGradient>
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fdf3d6" />
-      <stop offset="35%" stop-color="#e2ba6d" />
-      <stop offset="70%" stop-color="#b68936" />
-      <stop offset="100%" stop-color="#e8c782" />
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="48%">
+      <stop offset="0%" stop-color="rgba(6, 182, 212, 0.4)" />
+      <stop offset="60%" stop-color="rgba(14, 116, 144, 0.15)" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <linearGradient id="emblemBorderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E7490" />
+      <stop offset="50%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#38BDF8" />
     </linearGradient>
-    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f6dfa9" />
-      <stop offset="50%" stop-color="#9d7426" />
-      <stop offset="100%" stop-color="#f2d79d" />
+    <linearGradient id="silverTitleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="10" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
   </defs>
 
-  <!-- Background -->
+  <!-- Luxury App Icon Squircle Background -->
   <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
-
-  <!-- Outer ambient ring -->
-  <circle cx="256" cy="256" r="206" fill="none" stroke="url(#ringGrad)" stroke-width="2.5" opacity="0.35" />
+  <rect width="508" height="508" x="2" y="2" rx="110" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2" />
   
-  <!-- Main luxury geometric ring -->
-  <circle cx="256" cy="256" r="192" fill="none" stroke="url(#ringGrad)" stroke-width="6" />
+  <!-- Subtle Ambient Glow -->
+  <circle cx="256" cy="256" r="200" fill="url(#glowGrad)" />
 
-  <!-- Inner accent ring -->
-  <circle cx="256" cy="256" r="176" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.15" />
-
-  <!-- Monogram KA with refined geometric styling -->
-  <g filter="url(#glow)">
-    <text x="256" y="296" text-anchor="middle" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="142" font-weight="800" letter-spacing="10" fill="url(#goldGrad)">KA</text>
+  <!-- Monogram Logo Centered and Scaled -->
+  <g transform="translate(256, 256) scale(8.6) translate(-26, -26)">
+    <!-- Hexagonal Base Shield -->
+    <polygon points="26,3 46,14.5 46,37.5 26,49 6,37.5 6,14.5" stroke="url(#emblemBorderGlow)" stroke-width="2.2" fill="rgba(14, 116, 144, 0.22)" />
+    <polygon points="26,7 42,16.5 42,35.5 26,45 10,35.5 10,16.5" stroke="rgba(255, 255, 255, 0.32)" stroke-width="1.2" fill="none" />
+    
+    <!-- Calligraphic 'خ / KA' Monogram Core -->
+    <path d="M18 20C18 20 22 17 28 17C32 17 35 19 35 23C35 27 30 29 26 31C21 33 17 35 17 38C17 41 21 42 27 42C32 42 35 40 35 40" stroke="url(#silverTitleGrad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="28" cy="12" r="2.4" fill="#38BDF8" />
   </g>
-
-  <!-- Subtitle pill -->
-  <rect x="180" y="338" width="152" height="24" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(226,186,109,0.3)" stroke-width="1"/>
-  <text x="256" y="354" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="4" fill="#d9b672">RETAIL OPS</text>
 </svg>

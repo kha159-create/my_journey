@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#04070d">
+  <meta name="theme-color" content="#FAF7F2">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -20,11 +20,11 @@
   <meta name="twitter:card" content="summary_large_image">
   
   <!-- Add to Home Screen, Favicons & Web App Manifest -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=2">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2">
+  <link rel="manifest" href="manifest.webmanifest?v=2">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,8 +62,96 @@
     <span data-lang="en">Skip to content</span>
   </a>
 
-  <!-- Floating Circle Language Toggle -->
-  <button class="lang-toggle-floating lang-toggle" type="button" aria-label="Switch language">EN</button>
+  <!-- Executive Sticky Header with Monogram Insignia Logo -->
+  <header class="site-header" id="siteHeader">
+    <div class="shell header-inner">
+      <!-- Brand Logo & Identity Lockup -->
+      <a class="header-brand" href="#top" aria-label="Khaleel Alsani Home">
+        <div class="header-emblem" aria-hidden="true">
+          <svg viewBox="0 0 52 52" class="header-emblem-svg" fill="none">
+            <defs>
+              <linearGradient id="hdrEmblemGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0E7490" />
+                <stop offset="50%" stop-color="#06B6D4" />
+                <stop offset="100%" stop-color="#38BDF8" />
+              </linearGradient>
+              <linearGradient id="hdrSilverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFFFFF" />
+                <stop offset="55%" stop-color="#E2E8F0" />
+                <stop offset="100%" stop-color="#94A3B8" />
+              </linearGradient>
+            </defs>
+            <polygon points="26,3 46,14.5 46,37.5 26,49 6,37.5 6,14.5" stroke="url(#hdrEmblemGlow)" stroke-width="2.2" fill="rgba(14, 116, 144, 0.18)" />
+            <polygon points="26,7 42,16.5 42,35.5 26,45 10,35.5 10,16.5" stroke="rgba(255, 255, 255, 0.28)" stroke-width="1.2" fill="none" />
+            <path d="M18 20C18 20 22 17 28 17C32 17 35 19 35 23C35 27 30 29 26 31C21 33 17 35 17 38C17 41 21 42 27 42C32 42 35 40 35 40" stroke="url(#hdrSilverGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="28" cy="12" r="2.2" fill="#38BDF8" />
+          </svg>
+        </div>
+        <div class="header-brand-copy">
+          <div class="header-brand-names">
+            <span class="header-name-ar">خـلـيـل الـصـانـع</span>
+            <span class="header-name-divider">/</span>
+            <span class="header-name-en">KHALEEL ALSANI</span>
+          </div>
+          <span class="header-brand-sub">
+            <span class="pulse-dot-cyan"></span>
+            <span data-lang="ar">القيادة التشغيلية والتجزئة</span>
+            <span data-lang="en">Retail Ops Leadership</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#matrix">
+          <span data-lang="ar">رادار المنظومة</span>
+          <span data-lang="en">Decision Radar</span>
+        </a>
+        <a href="#about">
+          <span data-lang="ar">المنهجية</span>
+          <span data-lang="en">Methodology</span>
+        </a>
+        <a href="#impact">
+          <span data-lang="ar">الأثر الميداني</span>
+          <span data-lang="en">Field Impact</span>
+        </a>
+        <a href="#journey">
+          <span data-lang="ar">المسيرة المهنية</span>
+          <span data-lang="en">Career</span>
+        </a>
+        <a href="#projects">
+          <span data-lang="ar">المشاريع</span>
+          <span data-lang="en">Systems</span>
+        </a>
+      </nav>
+
+      <!-- Header Actions: Socials + Language + CV Button -->
+      <div class="header-actions">
+        <!-- Quick Social Shortcuts -->
+        <div class="header-social-links">
+          <a href="https://linkedin.com/in/khaleel-alsani" target="_blank" rel="noreferrer" class="header-social-icon" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M6.5 8.3H3.2V19h3.3V8.3ZM4.8 3A1.9 1.9 0 1 0 4.8 6.8 1.9 1.9 0 0 0 4.8 3ZM20.8 12.9c0-3.2-1.7-4.8-4.1-4.8-1.9 0-2.8 1-3.2 1.8V8.3h-3.3V19h3.3v-5.3c0-1.4.3-2.8 2.1-2.8 1.8 0 1.8 1.7 1.8 2.9V19h3.4v-6.1Z"/></svg>
+          </a>
+          <a href="https://wa.me/966567028690" target="_blank" rel="noreferrer" class="header-social-icon" aria-label="WhatsApp" title="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M12 2a9.7 9.7 0 0 0-8.4 14.6L2.3 22l5.6-1.5A9.8 9.8 0 1 0 12 2Zm0 17.8c-1.4 0-2.8-.4-4-1.1l-.3-.2-3.3.9.9-3.2-.2-.3A7.8 7.8 0 1 1 12 19.8Zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.2-.2-.4-.3Z"/></svg>
+          </a>
+        </div>
+
+        <!-- Language Switcher Button -->
+        <button class="header-lang-btn lang-toggle" type="button" aria-label="Switch language">
+          <span class="lang-globe-icon">🌐</span>
+          <span class="lang-btn-text">عربي</span>
+        </button>
+
+        <!-- Direct Verified CV Download -->
+        <a class="header-cv-btn" href="Khaleel-Alsani-CV-2026.pdf" download>
+          <span>↓</span>
+          <span data-lang="ar">السيرة الذاتية</span>
+          <span data-lang="en">CV (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </header>
 
   <main id="main">
     <!-- Hero Section (Cinematic Full-Width Canvas: Photo on Left seamlessly blending across hero width) -->
@@ -84,18 +172,6 @@
       <div class="shell hero-content-wrapper">
         <!-- Hero Text & Narrative positioned beside the portrait -->
         <div class="hero-copy reveal">
-          <!-- Floating Social Icons Bar (Positioned in corner opposite to face) -->
-          <div class="hero-social-strip-floating" aria-label="Contact channels">
-            <a href="https://linkedin.com/in/khaleel-alsani" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">
-              <svg viewBox="0 0 24 24"><path d="M6.5 8.3H3.2V19h3.3V8.3ZM4.8 3A1.9 1.9 0 1 0 4.8 6.8 1.9 1.9 0 0 0 4.8 3ZM20.8 12.9c0-3.2-1.7-4.8-4.1-4.8-1.9 0-2.8 1-3.2 1.8V8.3h-3.3V19h3.3v-5.3c0-1.4.3-2.8 2.1-2.8 1.8 0 1.8 1.7 1.8 2.9V19h3.4v-6.1Z"/></svg>
-            </a>
-            <a href="mailto:kha.als@outlook.com" aria-label="Email" title="Email">
-              <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm9 7.1L18.7 7H5.3l6.7 5.1Zm0 2.5L5 9.3V17h14V9.3l-7 5.3Z"/></svg>
-            </a>
-            <a href="https://wa.me/966567028690" target="_blank" rel="noreferrer" aria-label="WhatsApp" title="WhatsApp">
-              <svg viewBox="0 0 24 24"><path d="M12 2a9.7 9.7 0 0 0-8.4 14.6L2.3 22l5.6-1.5A9.8 9.8 0 1 0 12 2Zm0 17.8c-1.4 0-2.8-.4-4-1.1l-.3-.2-3.3.9.9-3.2-.2-.3A7.8 7.8 0 1 1 12 19.8Zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.2-.2-.4-.3Z"/></svg>
-            </a>
-          </div>
 
           <h1 class="hero-h1">
             <span data-lang="ar">أقود الأداء.<br>أطوّر الناس.<br><span class="silver-gradient">وأبني أنظمة القرار.</span></span>
@@ -114,32 +190,37 @@
               <span data-lang="en">See Field Impact</span>
               <span>↗</span>
             </a>
-            <a class="btn-secondary-white" href="#about">
+            <a class="btn-secondary-white" href="Khaleel-Alsani-CV-2026.pdf" download>
+              <span data-lang="ar">تحميل السيرة الذاتية</span>
+              <span data-lang="en">Download Updated CV</span>
+              <span>↓</span>
+            </a>
+            <a class="btn-ghost-link" href="#about" style="display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--teal-primary); font-size: 0.86rem; padding: 0 10px;">
               <span data-lang="ar">عن مسيرتي</span>
               <span data-lang="en">About Me</span>
             </a>
           </div>
 
-          <!-- Proof Counters -->
+          <!-- Proof Counters: Real Verified Data from Updated CV -->
           <div class="hero-proof">
             <div class="proof-card">
               <strong dir="ltr">13+</strong>
-              <span data-lang="ar">سنة خبرة قيادية</span>
-              <span data-lang="en">years leadership</span>
+              <span data-lang="ar">سنة خبرة قيادية وتجزئة</span>
+              <span data-lang="en">years leadership & retail</span>
             </div>
             <div class="proof-card">
-              <strong dir="ltr">10+</strong>
-              <span data-lang="ar">مواقع وشبكات فروع</span>
-              <span data-lang="en">branch networks managed</span>
+              <strong dir="ltr">11</strong>
+              <span data-lang="ar">فرعاً مُداراً (الرياض والشمال)</span>
+              <span data-lang="en">branches (Riyadh & North)</span>
             </div>
             <div class="proof-card">
-              <strong dir="ltr">40+</strong>
-              <span data-lang="ar">عضو فريق ميداني</span>
-              <span data-lang="en">team members</span>
+              <strong dir="ltr">80+</strong>
+              <span data-lang="ar">كادر ميداني مُطوَّر</span>
+              <span data-lang="en">team members developed</span>
             </div>
             <div class="proof-card">
-              <strong dir="ltr">33M+</strong>
-              <span data-lang="ar">ر.س نطاق الأرباح والتشغيل</span>
+              <strong dir="ltr">61.9M</strong>
+              <span data-lang="ar">ر.س نطاق الـ P&L المباشر</span>
               <span data-lang="en">SAR operating P&L scope</span>
             </div>
           </div>
@@ -147,41 +228,418 @@
       </div>
     </section>
 
-    <!-- SECTION: OPERATIONAL DECISION RADAR (Seamlessly Embedded Telemetry without borders) -->
+    <!-- SECTION: OPERATIONAL DECISION RADAR & MULTI-VIEW SUITE -->
     <section class="section shell" id="matrix" style="padding-top: 40px !important; margin-top: 0 !important;">
-      <div class="section-head reveal" style="border-bottom: none; margin-bottom: 14px; padding-bottom: 0;">
+      <div class="section-head reveal" style="border-bottom: none; margin-bottom: 16px; padding-bottom: 0;">
         <div>
-          <p class="eyebrow" style="font-size: 0.68rem; letter-spacing: 0.15em;">DECISION TELEMETRY RADAR</p>
+          <p class="eyebrow" style="font-size: 0.68rem; letter-spacing: 0.15em;">DECISION & OPERATIONAL RADAR</p>
           <h2 style="font-size: clamp(1.4rem, 4.5vw, 1.85rem) !important; line-height: 1.25 !important; margin-top: 4px;">
-            <span data-lang="ar">رادار منظومة القرار التشغيلي<br><span class="silver-gradient">من إشارات الفروع المبعثرة إلى تزامن تنفيذي محكم.</span></span>
-            <span data-lang="en">Operational Decision Radar<br><span class="silver-gradient">From Scattered Branch Signals to Unified Execution.</span></span>
+            <span data-lang="ar">رادار منظومة القرار التشغيلي<br><span class="silver-gradient">من إشارات الفروع الميدانية إلى مواءمة تنفيذية شاملة.</span></span>
+            <span data-lang="en">Operational Decision Radar<br><span class="silver-gradient">From Branch Telemetry to Unified Leadership.</span></span>
           </h2>
         </div>
       </div>
 
-      <div class="matrix-radar-stage-full reveal">
-        <!-- Pure Geometric Telemetry Canvas (Always visible & animated) -->
-        <canvas id="commandMatrixCanvas"></canvas>
+      <!-- Professional View Mode Switcher -->
+      <div class="radar-view-selector reveal" role="tablist" aria-label="Visual Modes">
+        <button type="button" class="radar-view-tab active" data-view="spider" role="tab" aria-selected="true" id="tabSpider">
+          <span class="tab-icon">🕸️</span>
+          <span data-lang="ar">رادار المنظومة</span>
+          <span data-lang="en">Spider Radar</span>
+        </button>
+        <button type="button" class="radar-view-tab" data-view="matrix" role="tab" aria-selected="false" id="tabMatrix">
+          <span class="tab-icon">📊</span>
+          <span data-lang="ar">مصفوفة المحاور</span>
+          <span data-lang="en">KPI Matrix</span>
+        </button>
+        <button type="button" class="radar-view-tab" data-view="benchmark" role="tab" aria-selected="false" id="tabBenchmark">
+          <span class="tab-icon">⚖️</span>
+          <span data-lang="ar">المقارنة المعيارية</span>
+          <span data-lang="en">Benchmark</span>
+        </button>
+      </div>
 
-        <!-- Interactive Single On-Floor Impact Trigger Button -->
-        <div class="visual-control-dock">
-          <button class="impact-trigger-btn" id="btnImpactToggle" type="button" aria-label="See My On-Floor Impact">
-            <span class="impact-btn-icon">⚡</span>
-            <span class="impact-btn-text">
-              <span data-lang="ar" class="state-idle-text">اضغط لترى أثر وجودي الميداني</span>
-              <span data-lang="ar" class="state-active-text" style="display: none;">أنت تشاهد أثر وجودي الميداني (انقر للتشتيت)</span>
-              <span data-lang="en" class="state-idle-text">Click to See My On-Floor Impact</span>
-              <span data-lang="en" class="state-active-text" style="display: none;">You are viewing my field impact (Click to reset)</span>
+      <div class="matrix-radar-stage-full reveal">
+        <!-- MODE 1: Interactive Spider / Radar Chart Canvas -->
+        <div class="radar-view-pane active" id="viewSpider">
+          <canvas id="commandMatrixCanvas"></canvas>
+
+          <!-- Compact, Sleek Control Dock -->
+          <div class="visual-control-dock">
+            <div class="dock-actions-row">
+              <div class="dock-status-pill">
+                <span class="status-pulse"></span>
+                <span data-lang="ar">تزامن 11 فرعاً (SAR 61.9M)</span>
+                <span data-lang="en">11 Branches Telemetry (SAR 61.9M)</span>
+              </div>
+              <button class="impact-trigger-btn compact" id="btnImpactToggle" type="button" aria-label="Toggle Field Alignment">
+                <span class="impact-btn-icon">⚡</span>
+                <span class="impact-btn-text">
+                  <span data-lang="ar" class="state-idle-text">محاذاة المنظومة</span>
+                  <span data-lang="ar" class="state-active-text" style="display: none;">توزيع الإشارات</span>
+                  <span data-lang="en" class="state-idle-text">Align Signals</span>
+                  <span data-lang="en" class="state-active-text" style="display: none;">Scatter Signals</span>
+                </span>
+              </button>
+            </div>
+            <span class="visual-hint-text">
+              <span data-lang="ar">انقر على أي مؤشر لاستكشاف أثر التدخل الميداني</span>
+              <span data-lang="en">Click any metric node to inspect on-floor intervention</span>
             </span>
-          </button>
-          <span class="visual-hint-text" style="text-shadow: 0 1px 4px rgba(0,0,0,0.9); margin-top: 5px;">
-            <span data-lang="ar">انقر لتجميع الإشارات ومواءمة الفروع، واضغط على أي عقدة لاستكشاف أثر التدخل</span>
-            <span data-lang="en">Click to align branch signals, and select any metric node to view on-floor intervention</span>
-          </span>
+          </div>
+        </div>
+
+        <!-- MODE 2: Executive KPI Matrix Grid -->
+        <div class="radar-view-pane" id="viewMatrix">
+          <div class="radar-matrix-container">
+            <div class="radar-matrix-grid">
+              <!-- S1 -->
+              <div class="radar-kpi-card" data-node="S1">
+                <div class="kpi-card-head">
+                  <span class="kpi-card-icon">👥</span>
+                  <span class="kpi-card-tag">625K+ Visitors</span>
+                </div>
+                <h4 class="kpi-card-value">625,000+</h4>
+                <div class="kpi-card-title" data-lang="ar">حركة الزوار والتدفق</div>
+                <div class="kpi-card-title" data-lang="en">Footfall Traffic</div>
+                <p class="kpi-card-desc" data-lang="ar">ربط فترات الذروة بجدولة الموظفين الميدانيين وتغطية المعارض بنظام Shift Rota ذكي.</p>
+                <p class="kpi-card-desc" data-lang="en">Smart shift rota matching customer rush hours with active sales consultants.</p>
+                <span class="kpi-card-action">
+                  <span data-lang="ar">استعراض الأثر</span>
+                  <span data-lang="en">View Impact</span>
+                  <span>↗</span>
+                </span>
+              </div>
+
+              <!-- S2 -->
+              <div class="radar-kpi-card" data-node="S2">
+                <div class="kpi-card-head">
+                  <span class="kpi-card-icon">🎯</span>
+                  <span class="kpi-card-tag">18.7% Ratio</span>
+                </div>
+                <h4 class="kpi-card-value">18.7%</h4>
+                <div class="kpi-card-title" data-lang="ar">معدل التحويل (Conversion)</div>
+                <div class="kpi-card-title" data-lang="en">Conversion Rate</div>
+                <p class="kpi-card-desc" data-lang="ar">كوتشينج لحظي على أرض المعرض وتفكيك الأهداف اليومية إلى أهداف ساعية لكل مستشار.</p>
+                <p class="kpi-card-desc" data-lang="en">Hourly floor goals and instant coaching converting browser traffic into buyers.</p>
+                <span class="kpi-card-action">
+                  <span data-lang="ar">استعراض الأثر</span>
+                  <span data-lang="en">View Impact</span>
+                  <span>↗</span>
+                </span>
+              </div>
+
+              <!-- S3 -->
+              <div class="radar-kpi-card" data-node="S3">
+                <div class="kpi-card-head">
+                  <span class="kpi-card-icon">🛍️</span>
+                  <span class="kpi-card-tag">+18% LFL ATV</span>
+                </div>
+                <h4 class="kpi-card-value">+18%</h4>
+                <div class="kpi-card-title" data-lang="ar">متوسط قيمة السلة (ATV)</div>
+                <div class="kpi-card-title" data-lang="en">Average Basket Value</div>
+                <p class="kpi-card-desc" data-lang="ar">استراتيجية عرض المنتجات المترابطة وتدريب الفرق على البيع الإضافي والمتقاطع.</p>
+                <p class="kpi-card-desc" data-lang="en">Product affinity styling and cross-selling training lifting average transaction value.</p>
+                <span class="kpi-card-action">
+                  <span data-lang="ar">استعراض الأثر</span>
+                  <span data-lang="en">View Impact</span>
+                  <span>↗</span>
+                </span>
+              </div>
+
+              <!-- S4 -->
+              <div class="radar-kpi-card" data-node="S4">
+                <div class="kpi-card-head">
+                  <span class="kpi-card-icon">📦</span>
+                  <span class="kpi-card-tag">UPT 2 → 4</span>
+                </div>
+                <h4 class="kpi-card-value">2 → 4</h4>
+                <div class="kpi-card-title" data-lang="ar">قطع المعاملة (UPT)</div>
+                <div class="kpi-card-title" data-lang="en">Units Per Transaction</div>
+                <p class="kpi-card-desc" data-lang="ar">مضاعفة عدد القطع لكل عميل عبر باقات المتممات والإكسسوارات عالية الهامش.</p>
+                <p class="kpi-card-desc" data-lang="en">Doubling basket units from 2 to 4 through visual add-on packaging routines.</p>
+                <span class="kpi-card-action">
+                  <span data-lang="ar">استعراض الأثر</span>
+                  <span data-lang="en">View Impact</span>
+                  <span>↗</span>
+                </span>
+              </div>
+
+              <!-- S5 -->
+              <div class="radar-kpi-card" data-node="S5">
+                <div class="kpi-card-head">
+                  <span class="kpi-card-icon">🛡️</span>
+                  <span class="kpi-card-tag">−40% Stockouts</span>
+                </div>
+                <h4 class="kpi-card-value">−40%</h4>
+                <div class="kpi-card-title" data-lang="ar">تقليص نفاد السلع (Stockouts)</div>
+                <div class="kpi-card-title" data-lang="en">Inventory Stockout Slash</div>
+                <p class="kpi-card-desc" data-lang="ar">تحليل سرعة التصريف (Sell-Through) والمناقلة الذكية السريعة بين الفروع خلال 24 ساعة.</p>
+                <p class="kpi-card-desc" data-lang="en">Sell-through tracking and 24h inter-store stock rebalancing protecting best-sellers.</p>
+                <span class="kpi-card-action">
+                  <span data-lang="ar">استعراض الأثر</span>
+                  <span data-lang="en">View Impact</span>
+                  <span>↗</span>
+                </span>
+              </div>
+
+              <!-- S6 -->
+              <div class="radar-kpi-card" data-node="S6">
+                <div class="kpi-card-head">
+                  <span class="kpi-card-icon">🤝</span>
+                  <span class="kpi-card-tag">60% → 20%</span>
+                </div>
+                <h4 class="kpi-card-value">60% → 20%</h4>
+                <div class="kpi-card-title" data-lang="ar">خفض دوران الموظفين</div>
+                <div class="kpi-card-title" data-lang="en">Employee Retention</div>
+                <p class="kpi-card-desc" data-lang="ar">تهيئة مهنية ومتابعة شخصية 1:1، وتمديد الاستقرار إلى 8 أشهر، وتثبيت 0% تسرب بالجوف وعرعر.</p>
+                <p class="kpi-card-desc" data-lang="en">Onboarding and 1:1 coaching cutting turnover to 20% with zero churn in Jouf/Arar.</p>
+                <span class="kpi-card-action">
+                  <span data-lang="ar">استعراض الأثر</span>
+                  <span data-lang="en">View Impact</span>
+                  <span>↗</span>
+                </span>
+              </div>
+
+              <!-- S7 -->
+              <div class="radar-kpi-card" data-node="S7">
+                <div class="kpi-card-head">
+                  <span class="kpi-card-icon">💰</span>
+                  <span class="kpi-card-tag">SAR 61.9M Total</span>
+                </div>
+                <h4 class="kpi-card-value">61.9M SAR</h4>
+                <div class="kpi-card-title" data-lang="ar">المسؤولية المالية والـ P&L</div>
+                <div class="kpi-card-title" data-lang="en">P&L & Revenue Scope</div>
+                <p class="kpi-card-desc" data-lang="ar">حوكمة 11 فرعاً (33M الرياض + 28.9M الشمال) مع تحقيق +22% نمو LFL في الربع الأول.</p>
+                <p class="kpi-card-desc" data-lang="en">Total P&L governance across 11 stores with +22% Q1 LFL revenue momentum.</p>
+                <span class="kpi-card-action">
+                  <span data-lang="ar">استعراض الأثر</span>
+                  <span data-lang="en">View Impact</span>
+                  <span>↗</span>
+                </span>
+              </div>
+
+              <!-- S8 -->
+              <div class="radar-kpi-card" data-node="S8">
+                <div class="kpi-card-head">
+                  <span class="kpi-card-icon">⚡</span>
+                  <span class="kpi-card-tag">15-Min Live Sync</span>
+                </div>
+                <h4 class="kpi-card-value">15 Min</h4>
+                <div class="kpi-card-title" data-lang="ar">ذكاء الـ ERP (ORA Cockpit)</div>
+                <div class="kpi-card-title" data-lang="en">ERP Operations Sync</div>
+                <p class="kpi-card-desc" data-lang="ar">ربط Dynamics 365 ولوحات SQL حية لتقليص التحليل اليدوي وأتمتة 80% من التقارير.</p>
+                <p class="kpi-card-desc" data-lang="en">Dynamics 365 live sync and automated SQL reporting eliminating manual Excel drag.</p>
+                <span class="kpi-card-action">
+                  <span data-lang="ar">استعراض الأثر</span>
+                  <span data-lang="en">View Impact</span>
+                  <span>↗</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODE 3: Operational Benchmark Bars -->
+        <div class="radar-view-pane" id="viewBenchmark">
+          <div class="radar-benchmark-container">
+            <div class="benchmark-intro">
+              <p data-lang="ar">مقارنة معيارية: المعدلات السائدة في قطاع التجزئة مقابل النتائج الفعلية الموثقة لخليل الصانع</p>
+              <p data-lang="en">Benchmark Comparison: Standard Retail Industry Averages vs. Khaleel Alsani's Documented Achievements</p>
+            </div>
+
+            <div class="radar-benchmark-grid">
+              <!-- Benchmark 1: Conversion Rate -->
+              <div class="benchmark-card">
+                <div class="benchmark-header">
+                  <h4 class="benchmark-title" data-lang="ar">معدل التحويل (Conversion Rate)</h4>
+                  <h4 class="benchmark-title" data-lang="en">Conversion Rate</h4>
+                  <span class="benchmark-delta-badge">+70% تفوق</span>
+                </div>
+                <div class="benchmark-bars-wrapper">
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">متوسط قطاع التجزئة</span>
+                      <span class="label-name" data-lang="en">Industry Baseline</span>
+                      <span class="label-val">11.0%</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill standard" style="width: 55%;"></div>
+                    </div>
+                  </div>
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">إنجاز خليل الصانع الميداني</span>
+                      <span class="label-name" data-lang="en">Khaleel Alsani Achieved</span>
+                      <span class="label-val" style="color: var(--teal-primary);">18.7%</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill khaleel" style="width: 93.5%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Benchmark 2: Basket Units (UPT) -->
+              <div class="benchmark-card">
+                <div class="benchmark-header">
+                  <h4 class="benchmark-title" data-lang="ar">قطع المعاملة (Units Per Transaction)</h4>
+                  <h4 class="benchmark-title" data-lang="en">Units Per Transaction (UPT)</h4>
+                  <span class="benchmark-delta-badge">2x تضاعف</span>
+                </div>
+                <div class="benchmark-bars-wrapper">
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">المعدل الطبيعي بالمعارض</span>
+                      <span class="label-name" data-lang="en">Retail Baseline</span>
+                      <span class="label-val">1.8 UPT</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill standard" style="width: 45%;"></div>
+                    </div>
+                  </div>
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">إنجاز خليل الصانع الميداني</span>
+                      <span class="label-name" data-lang="en">Khaleel Alsani Achieved</span>
+                      <span class="label-val" style="color: var(--teal-primary);">4.0 UPT</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill khaleel" style="width: 100%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Benchmark 3: Stockout Rate -->
+              <div class="benchmark-card">
+                <div class="benchmark-header">
+                  <h4 class="benchmark-title" data-lang="ar">نسبة نفاد السلع الأكثر طلباً (Stockouts)</h4>
+                  <h4 class="benchmark-title" data-lang="en">Best-Seller Stockout Rate</h4>
+                  <span class="benchmark-delta-badge">−40% تقليص</span>
+                </div>
+                <div class="benchmark-bars-wrapper">
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">معدل الفاقد السابق</span>
+                      <span class="label-name" data-lang="en">Prior Baseline</span>
+                      <span class="label-val">14.0%</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill standard" style="width: 70%;"></div>
+                    </div>
+                  </div>
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">بعد تطبيق حوكمة خليل</span>
+                      <span class="label-name" data-lang="en">Under Khaleel Governance</span>
+                      <span class="label-val" style="color: var(--teal-primary);">4.2%</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill khaleel" style="width: 28%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Benchmark 4: Staff Turnover -->
+              <div class="benchmark-card">
+                <div class="benchmark-header">
+                  <h4 class="benchmark-title" data-lang="ar">دوران الموظفين السنوي (Staff Turnover)</h4>
+                  <h4 class="benchmark-title" data-lang="en">Annual Staff Turnover</h4>
+                  <span class="benchmark-delta-badge">−67% انخفاض</span>
+                </div>
+                <div class="benchmark-bars-wrapper">
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">معدل التجزئة المعتاد (قبل التدخل)</span>
+                      <span class="label-name" data-lang="en">Industry Average (Before)</span>
+                      <span class="label-val">60.0%</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill standard" style="width: 85%;"></div>
+                    </div>
+                  </div>
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">بعد برنامج التأهيل والدمج</span>
+                      <span class="label-name" data-lang="en">After Structured Onboarding</span>
+                      <span class="label-val" style="color: var(--teal-primary);">20.0% (0% بالجوف وعرعر)</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill khaleel" style="width: 28%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Benchmark 5: LFL Growth -->
+              <div class="benchmark-card">
+                <div class="benchmark-header">
+                  <h4 class="benchmark-title" data-lang="ar">نمو مبيعات الربع الأول (Q1 LFL Growth)</h4>
+                  <h4 class="benchmark-title" data-lang="en">Q1 LFL Sales Surge</h4>
+                  <span class="benchmark-delta-badge">+22% تسارع</span>
+                </div>
+                <div class="benchmark-bars-wrapper">
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">النمو العام للسوق</span>
+                      <span class="label-name" data-lang="en">Market Baseline</span>
+                      <span class="label-val">+3.5%</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill standard" style="width: 25%;"></div>
+                    </div>
+                  </div>
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">إنجاز فروع الرياض بقيادة خليل</span>
+                      <span class="label-name" data-lang="en">Riyadh Stores Under Khaleel</span>
+                      <span class="label-val" style="color: var(--teal-primary);">+22.0%</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill khaleel" style="width: 95%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Benchmark 6: Reporting Cadence -->
+              <div class="benchmark-card">
+                <div class="benchmark-header">
+                  <h4 class="benchmark-title" data-lang="ar">تحديث التقارير التشغيلية (Reporting Delay)</h4>
+                  <h4 class="benchmark-title" data-lang="en">Reporting Sync Speed</h4>
+                  <span class="benchmark-delta-badge">لحظي مباشر</span>
+                </div>
+                <div class="benchmark-bars-wrapper">
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">ملفات إكسل التقليدية</span>
+                      <span class="label-name" data-lang="en">Traditional Manual Excel</span>
+                      <span class="label-val">أسبوعي / شهري</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill standard" style="width: 30%;"></div>
+                    </div>
+                  </div>
+                  <div class="benchmark-row">
+                    <div class="benchmark-labels">
+                      <span class="label-name" data-lang="ar">منصة ORA Cockpit المطورة</span>
+                      <span class="label-name" data-lang="en">ORA Cockpit (Khaleel Build)</span>
+                      <span class="label-val" style="color: var(--teal-primary);">كل 15 دقيقة تلقائياً</span>
+                    </div>
+                    <div class="benchmark-track">
+                      <div class="benchmark-fill khaleel" style="width: 98%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Interactive Metric Spotlight Panel (Revealed when clicking nodes) -->
+      <!-- Interactive Metric Spotlight Panel (Revealed when clicking nodes or matrix cards) -->
       <div class="metric-spotlight-panel" id="metricSpotlight" style="display: none;">
         <div class="spotlight-header">
           <div class="spotlight-title-group">
@@ -260,13 +718,46 @@
                 </div>
               </div>
             </div>
+
+            <!-- Education & Certifications from Updated CV -->
+            <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line-dim);">
+              <span class="cred-badge" style="margin-bottom: 12px; display: inline-block;">EDUCATION & CERTIFICATIONS</span>
+              <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.82rem;">
+                <div style="display: flex; align-items: flex-start; gap: 8px;">
+                  <span style="color: var(--teal-primary); font-size: 0.95rem;">🎓</span>
+                  <div>
+                    <strong style="color: #0F172A; display: block;">BSc Computer Science (In Progress · Expected 2029)</strong>
+                    <span style="color: var(--text-muted); font-size: 0.76rem;">University of the People · Jan 2026 – Present</span>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 8px;">
+                  <span style="color: var(--teal-primary); font-size: 0.95rem;">🏛️</span>
+                  <div>
+                    <strong style="color: #0F172A; display: block;" data-lang="ar">دبلوم هندسة تكنولوجيا الحفر (برنامج هندسي)</strong>
+                    <strong style="color: #0F172A; display: block;" data-lang="en">Diploma in Well Drilling Technology (Engineering)</strong>
+                    <span style="color: var(--text-muted); font-size: 0.76rem;">Al-Balqa Applied University, Jordan · 2021</span>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 8px;">
+                  <span style="color: var(--teal-primary); font-size: 0.95rem;">📜</span>
+                  <div>
+                    <strong style="color: #0F172A; display: block;">Building & Managing High-Performing Sales Teams</strong>
+                    <span style="color: var(--text-muted); font-size: 0.76rem;">LinkedIn Learning (2023) · CAMLS Compliance (Al Ansari)</span>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-top: 4px; flex-wrap: wrap;">
+                  <span style="font-size: 0.74rem; font-weight: 700; color: var(--teal-primary); background: rgba(14, 116, 144, 0.08); padding: 2px 10px; border-radius: 20px; border: 1px solid rgba(14, 116, 144, 0.2);">🌍 Open to relocation: KSA, GCC & Jordan</span>
+                  <span style="font-size: 0.74rem; font-weight: 700; color: var(--teal-primary); background: rgba(14, 116, 144, 0.08); padding: 2px 10px; border-radius: 20px; border: 1px solid rgba(14, 116, 144, 0.2);">🗣️ Arabic (Native) · English · German</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Right Column: Narrative & Detailed Executive Metadata -->
         <div class="about-content reveal">
           <!-- Management Philosophy Block (Sleek Executive Leadership Philosophy Layout) -->
-          <div class="management-philosophy-card reveal" style="margin-top: 0; padding: 24px; border-radius: var(--radius-lg); background: rgba(255, 255, 255, 0.02); border: 1px solid var(--line-dim);">
+          <div class="management-philosophy-card reveal">
             <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
               <span style="font-size: 1.25rem;">⚖️</span>
               <h3 style="font-size: 1.15rem; margin: 0; font-weight: 800; letter-spacing: 0.05em; color: var(--gold-primary);">
@@ -274,37 +765,48 @@
                 <span data-lang="en">LEADERSHIP PHILOSOPHY</span>
               </h3>
             </div>
-            <div class="philosophy-quotes" style="display: flex; flex-direction: column; gap: 20px;">
-              <div class="philosophy-quote-item" style="border-inline-start: 3px solid var(--gold-primary); padding-inline-start: 16px;">
+            <div class="philosophy-quotes">
+              <div class="philosophy-quote-item" style="border-inline-start-color: var(--gold-primary);">
                 <h4 style="margin: 0 0 6px 0; font-size: 0.92rem; font-weight: 700; color: var(--text-white);">
                   <span data-lang="ar">1. التشخيص قبل اتخاذ القرار</span>
                   <span data-lang="en">Diagnose before acting</span>
                 </h4>
-                <p style="margin: 0; font-size: 0.85rem; line-height: 1.6; color: var(--text-dim);">
+                <p style="margin: 0; font-size: 0.85rem; line-height: 1.6; color: var(--text-slate);">
                   <span data-lang="ar">استخدام بيانات مؤشرات الأداء اليومية (معدل التحويل، متوسط السلة ATV، حجم UPT، المخزون، وحركة الزوار) لتحديد المحرك والمسبب الحقيقي لضعف الأداء، وبناء قناعة تامة لدى مدير الفرع بالفكرة قبل تغيير الروتين التشغيلي أو الأهداف.</span>
                   <span data-lang="en">Use daily KPI data (conversion, ATV, UPT, stock, footfall) to identify the real driver behind under-performance, and build branch-manager buy-in before changing a routine or a target.</span>
                 </p>
               </div>
 
-              <div class="philosophy-quote-item" style="border-inline-start: 3px solid var(--emerald-primary); padding-inline-start: 16px;">
+              <div class="philosophy-quote-item" style="border-inline-start-color: var(--emerald-primary);">
                 <h4 style="margin: 0 0 6px 0; font-size: 0.92rem; font-weight: 700; color: var(--text-white);">
                   <span data-lang="ar">2. القيادة الميدانية المباشرة</span>
                   <span data-lang="en">Lead from the floor</span>
                 </h4>
-                <p style="margin: 0; font-size: 0.85rem; line-height: 1.6; color: var(--text-dim);">
+                <p style="margin: 0; font-size: 0.85rem; line-height: 1.6; color: var(--text-slate);">
                   <span data-lang="ar">التدريب والتوجيه من خلال الزيارات الميدانية المباشرة وتقديم التغذية الراجعة اللحظية، بدلاً من مجرد مراجعة التقارير الرقمية عن بُعد؛ بحيث يتم ترسيخ المعايير وتوضيحها بشكل عملي على أرض الواقع، لا شفهياً فقط.</span>
                   <span data-lang="en">Coach through direct site visits and real-time feedback rather than remote reporting, so standards are demonstrated, not just communicated.</span>
                 </p>
               </div>
 
-              <div class="philosophy-quote-item" style="border-inline-start: 3px solid var(--azure-primary); padding-inline-start: 16px;">
+              <div class="philosophy-quote-item" style="border-inline-start-color: var(--azure-primary);">
                 <h4 style="margin: 0 0 6px 0; font-size: 0.92rem; font-weight: 700; color: var(--text-white);">
                   <span data-lang="ar">3. تحويل مستويات الضعف إلى نقاط قوة</span>
                   <span data-lang="en">Turn underperforming baselines into strengths</span>
                 </h4>
-                <p style="margin: 0; font-size: 0.85rem; line-height: 1.6; color: var(--text-dim);">
+                <p style="margin: 0; font-size: 0.85rem; line-height: 1.6; color: var(--text-slate);">
                   <span data-lang="ar">سجل حافل وموثق من النجاحات في إعادة هيكلة وتحسين أداء الفروع والفرق ضعيفة الإنتاجية؛ ويتحقق ذلك من خلال التدريب الممنهج (Coaching)، ترسيخ قنوات المحاسبة والمسؤولية الواضحة، والتخطيط المحكم لتعاقب القيادات.</span>
                   <span data-lang="en">Repeated track record of rebuilding low-performing branches and teams through structured coaching, clear accountability, and succession planning.</span>
+                </p>
+              </div>
+
+              <div class="philosophy-quote-item" style="border-inline-start-color: var(--teal-primary);">
+                <h4 style="margin: 0 0 6px 0; font-size: 0.92rem; font-weight: 700; color: var(--text-white);">
+                  <span data-lang="ar">4. بيع القرار، وليس فرضه</span>
+                  <span data-lang="en">Selling the decision, not imposing it</span>
+                </h4>
+                <p style="margin: 0; font-size: 0.85rem; line-height: 1.6; color: var(--text-slate);">
+                  <span data-lang="ar">إقناع الفريق بالقرار وأهدافه، وبناء الالتزام بتنفيذه، مع المتابعة والدعم لضمان جودة التطبيق وتحقيق النتائج.</span>
+                  <span data-lang="en">Persuading the team of the decision and its objectives, building authentic commitment to execution, backed by continuous on-floor follow-up and coaching to guarantee quality and deliver results.</span>
                 </p>
               </div>
             </div>
@@ -730,74 +1232,45 @@
       </div>
 
       <div class="projects-list">
-        <!-- Build 1: Retail ERP Dashboard -->
+        <!-- Build 1: ORA Cockpit -->
         <article class="project-card reveal">
           <div class="project-card-header">
             <div>
-              <p class="badge-tag">RETAIL OPERATIONS PLATFORM · PROJECT LEAD</p>
-              <h3><span data-lang="ar">داشبورد ERP ريتيل</span><span data-lang="en">Retail ERP Dashboard</span></h3>
+              <p class="badge-tag">RETAIL OPERATIONS INTELLIGENCE PLATFORM · DYNAMICS 365</p>
+              <h3><span data-lang="ar">منصة أورا (ORA Cockpit)</span><span data-lang="en">ORA Cockpit — Retail Operations Intelligence</span></h3>
             </div>
           </div>
           <div class="project-grid-3">
             <div class="grid-3-col">
-              <small><span data-lang="ar">المشكلة</span><span data-lang="en">Problem</span></small>
-              <p><span data-lang="ar">بيانات موزعة في ملفات PDF وExcel تجعل اكتشاف أسباب تراجع المبيعات وتوفر المخزون بطيئاً ومعقداً.</span><span data-lang="en">Fragmented PDF and Excel reporting creating delayed decision-making across multi-store regions.</span></p>
+              <small><span data-lang="ar">المشكلة والتحدي الميداني</span><span data-lang="en">Floor Problem</span></small>
+              <p><span data-lang="ar">بيانات مبيعات ومخزون مبعثرة في ملفات PDF وإكسل تستهلك ساعات طويلة في التحليل اليدوي وتعيق سرعة القرار لـ 6 فروع.</span><span data-lang="en">Fragmented PDF and Excel reporting creating delayed decision-making and heavy manual analysis across 6 branch networks.</span></p>
             </div>
             <div class="grid-3-col">
-              <small><span data-lang="ar">الحل التقني</span><span data-lang="en">Solution</span></small>
-              <p><span data-lang="ar">ربط الـ ERP عبر Dynamics 365 OAuth وSQL مع مزامنة GitHub كل 15 دقيقة وعرض لحظي عبر دوال Vercel بدون خادم.</span><span data-lang="en">Bridged D365 ERP APIs & SQL with automated 15-minute GitHub syncing and Vercel serverless live views.</span></p>
+              <small><span data-lang="ar">الحل التقني والهندسي</span><span data-lang="en">Engineering Solution</span></small>
+              <p><span data-lang="ar">بناء منصة متكاملة تربط بيانات Dynamics 365 وSQL وAPIs مع واجهة React & TypeScript واستضافة Vercel لتحديث لوحات المتابعة لحظياً.</span><span data-lang="en">Built an ERP-integrated retail intelligence platform connecting D365, SQL, React, TypeScript, APIs and Vercel for live reporting.</span></p>
             </div>
             <div class="grid-3-col">
-              <small><span data-lang="ar">القيمة التشغيلية</span><span data-lang="en">Value Delivered</span></small>
-              <p><span data-lang="ar">مقارنات فورية هجري وميلادي LFL، وتنبيهات نفاد المخزون، وتحليل سلة المشتريات والفرص الضائعة.</span><span data-lang="en">Live Hijri/Gregorian LFL comparison, stockout alerts, market-basket analysis, and Employee 360 views.</span></p>
+              <small><span data-lang="ar">القيمة التشغيلية المباشرة</span><span data-lang="en">Value Delivered</span></small>
+              <p><span data-lang="ar">تقليص التحليل اليدوي بنسبة 80%، متابعة لحظية كل 15 دقيقة، ومقارنات LFL فورية، وتنبيهات نفاد المخزون ومؤشرات الأداء اليومية.</span><span data-lang="en">Slashed manual Excel drag by 80%, enabled 15-minute live KPIs, instant LFL views, and rapid stockout alerts for Store Managers.</span></p>
             </div>
           </div>
           <div class="project-tech-tags">
+            <span class="tech-pill">Dynamics 365 ERP</span>
             <span class="tech-pill">SQL</span>
-            <span class="tech-pill">Dynamics 365 OAuth / OData</span>
             <span class="tech-pill">React & TypeScript</span>
-            <span class="tech-pill">Vercel Serverless</span>
-            <span class="tech-pill">PWA</span>
+            <span class="tech-pill">APIs & Vercel</span>
+            <span class="tech-pill">AI-Assisted Dev</span>
           </div>
         </article>
 
-        <!-- Build 2: Career Compass -->
+        <!-- Build 2: Bayani -->
         <article class="project-card reveal">
           <div class="project-card-header">
             <div>
-              <p class="badge-tag">JOB INTELLIGENCE</p>
-              <h3>Career Compass</h3>
+              <p class="badge-tag">AI-ENABLED FINANCE PLATFORM · GEMINI WORKFLOWS</p>
+              <h3><span data-lang="ar">بياني (Bayani)</span><span data-lang="en">Bayani — AI Finance & Automation</span></h3>
             </div>
-          </div>
-          <div class="project-grid-3">
-            <div class="grid-3-col">
-              <small><span data-lang="ar">المشكلة</span><span data-lang="en">Problem</span></small>
-              <p><span data-lang="ar">إعلانات وظائف مكررة أو منتهية الصلاحية، وتطابق سطحي مبني على المسمى الوظيفي فقط دون قياس المهارات الفعلية.</span><span data-lang="en">Expired listings, title-only matching, and scattered tracking leading to lost strategic career opportunities.</span></p>
-            </div>
-            <div class="grid-3-col">
-              <small><span data-lang="ar">كيف يعمل النظام</span><span data-lang="en">How It Works</span></small>
-              <p><span data-lang="ar">يجمع الفرص المستهدفة، يحلل إشارات الملاءمة مع الخبرات واللغة والمنطقة، ويكتشف الروابط التالفة تلقائياً.</span><span data-lang="en">Aggregates targeted roles, evaluates fit signals based on experience and geography, and monitors link health.</span></p>
-            </div>
-            <div class="grid-3-col">
-              <small><span data-lang="ar">القيمة التشغيلية</span><span data-lang="en">Value Delivered</span></small>
-              <p><span data-lang="ar">فرص ذات جودة وملاءمة عالية، توفير للوقت، وإدارة واضحة لمراحل التقدم في خط سير منظم.</span><span data-lang="en">Higher quality fit, substantial time saved, and a single pipeline showing immediate next priorities.</span></p>
-            </div>
-          </div>
-          <div class="project-tech-tags">
-            <span class="tech-pill">Targeted Search</span>
-            <span class="tech-pill">Fit Signals</span>
-            <span class="tech-pill">Pipeline Workflow</span>
-          </div>
-        </article>
-
-        <!-- Build 3: Bayani -->
-        <article class="project-card reveal">
-          <div class="project-card-header">
-            <div>
-              <p class="badge-tag">ARABIC CASH FLOW</p>
-              <h3><span data-lang="ar">بياني (Bayani)</span><span data-lang="en">Bayani Financial</span></h3>
-            </div>
-            <a class="project-link-btn" href="https://kha159-create.github.io/bayani/" target="_blank" rel="noreferrer">
+            <a class="project-link-btn" href="https://expense-woad-beta.vercel.app/" target="_blank" rel="noreferrer">
               <span data-lang="ar">عرض المشروع الحي</span>
               <span data-lang="en">Live Project</span>
               <span>↗</span>
@@ -805,22 +1278,23 @@
           </div>
           <div class="project-grid-3">
             <div class="grid-3-col">
-              <small><span data-lang="ar">المشكلة</span><span data-lang="en">Problem</span></small>
-              <p><span data-lang="ar">عمليات مالية موزعة بين حسابات وبطاقات متعددة، واختلاط التحويلات البينية بالمصروفات التشغيلية الحقيقية.</span><span data-lang="en">Transactions scattered across accounts, with internal transfers obscuring true operating expenditures.</span></p>
+              <small><span data-lang="ar">المشكلة والتحدي</span><span data-lang="en">Problem</span></small>
+              <p><span data-lang="ar">عمليات مالية مبعثرة بين حسابات متعددة ورسائل بنكية معقدة، واختلاط التحويلات البينية بالالتزامات التشغيلية.</span><span data-lang="en">Scattered bank messages and accounts obscuring true cash-flow patterns and operating obligations.</span></p>
             </div>
             <div class="grid-3-col">
-              <small><span data-lang="ar">كيف يعمل النظام</span><span data-lang="en">How It Works</span></small>
-              <p><span data-lang="ar">ينظم السجلات ويزيل التكرار، ويفصل التحويلات والسلف والالتزامات ضمن واجهة عربية سريعة ودقيقة.</span><span data-lang="en">Deduplicates records, categorizes cash movements, and isolates debt transfers in a refined Arabic UX.</span></p>
+              <small><span data-lang="ar">كيف يعمل النظام والذكاء الاصطناعي</span><span data-lang="en">AI Solution & System</span></small>
+              <p><span data-lang="ar">ربط تحليلات المعاملات المالية وأتمتة مسارات الرسائل البنكية مع رؤى وتحليلات مدعومة بنماذج Gemini في واجهة عربية سريعة.</span><span data-lang="en">Connects transaction telemetry, automated bank-message workflows, and Gemini-powered financial intelligence.</span></p>
             </div>
             <div class="grid-3-col">
-              <small><span data-lang="ar">القيمة التشغيلية</span><span data-lang="en">Value Delivered</span></small>
-              <p><span data-lang="ar">رؤية دقيقة وصادقة للتدفقات النقدية، وفهم حقيقي لأوجه الإنفاق وأولويات سداد الالتزامات.</span><span data-lang="en">A truthful cash-flow portrait, crystal clarity on outflow destinations, and structured planning.</span></p>
+              <small><span data-lang="ar">القيمة المباشرة</span><span data-lang="en">Value Delivered</span></small>
+              <p><span data-lang="ar">رؤية دقيقة وفورية للتدفقات النقدية، تصنيف تلقائي للبنود، وحوكمة كاملة لأولويات الصرف وسداد الالتزامات.</span><span data-lang="en">Crystal-clear cash flow visibility, automated deduplication, and actionable outflow prioritization.</span></p>
             </div>
           </div>
           <div class="project-tech-tags">
-            <span class="tech-pill">PWA</span>
+            <span class="tech-pill">Gemini AI</span>
+            <span class="tech-pill">Automated Workflows</span>
             <span class="tech-pill">Arabic UX</span>
-            <span class="tech-pill">Cash Flow Intelligence</span>
+            <span class="tech-pill">PWA</span>
           </div>
         </article>
       </div>
@@ -886,15 +1360,63 @@
     </a>
   </aside>
 
-  <!-- Footer -->
+  <!-- Executive Footer with Designed Brand Lockup -->
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <div>
-        <strong style="color: var(--text-white); font-size: 0.95rem;">خليل الصانع — Khaleel Alsani</strong>
-        <p style="margin: 4px 0 0; color: var(--text-dim); font-size: 0.8rem;">Regional Operations Leadership. Systems-Driven Execution.</p>
+      <!-- Stylized Executive Brand Mark Lockup -->
+      <div class="exec-footer-brand">
+        <!-- Geometric Hexagonal Monogram Emblem -->
+        <div class="exec-brand-emblem" aria-hidden="true">
+          <svg viewBox="0 0 52 52" class="emblem-svg" fill="none">
+            <defs>
+              <linearGradient id="emblemBorderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0E7490" />
+                <stop offset="50%" stop-color="#06B6D4" />
+                <stop offset="100%" stop-color="#38BDF8" />
+              </linearGradient>
+              <linearGradient id="silverTitleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFFFFF" />
+                <stop offset="55%" stop-color="#E2E8F0" />
+                <stop offset="100%" stop-color="#94A3B8" />
+              </linearGradient>
+            </defs>
+            <!-- Hexagonal Insignia Base -->
+            <polygon points="26,3 46,14.5 46,37.5 26,49 6,37.5 6,14.5" stroke="url(#emblemBorderGlow)" stroke-width="2" fill="rgba(14, 116, 144, 0.16)" />
+            <polygon points="26,7 42,16.5 42,35.5 26,45 10,35.5 10,16.5" stroke="rgba(255, 255, 255, 0.22)" stroke-width="1" fill="none" />
+            <!-- Stylized Calligraphic 'خ / KA' Monogram Core -->
+            <path d="M18 20C18 20 22 17 28 17C32 17 35 19 35 23C35 27 30 29 26 31C21 33 17 35 17 38C17 41 21 42 27 42C32 42 35 40 35 40" stroke="url(#silverTitleGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="28" cy="12" r="2.2" fill="#38BDF8" />
+          </svg>
+        </div>
+
+        <!-- Designed Dual-Language Signature Lockup -->
+        <div class="exec-brand-text-block">
+          <div class="exec-signature-title-row">
+            <span class="exec-signature-ar">خـلـيـل الـصـانـع</span>
+            <span class="exec-signature-slash">/</span>
+            <span class="exec-signature-en">KHALEEL ALSANI</span>
+          </div>
+          <div class="exec-signature-subtitle-row">
+            <span class="exec-indicator-pill">
+              <span class="exec-pulse-dot"></span>
+              <span data-lang="ar">قيادة عمليات وتجزئة متعددة الفروع</span>
+              <span data-lang="en">Regional Retail Operations & Systems Leadership</span>
+            </span>
+            <span class="exec-scope-badge">SAR 61.9M+ SCOPE · 11 BRANCHES</span>
+          </div>
+        </div>
       </div>
-      <div>
-        <span>© 2026 · All Rights Reserved</span>
+
+      <!-- Quick Verified CV Download & Copyright -->
+      <div class="exec-footer-actions">
+        <a href="Khaleel-Alsani-CV-2026.pdf" download class="exec-footer-cv-btn">
+          <span class="footer-cv-icon">↓</span>
+          <span data-lang="ar">تحميل السيرة الذاتية الرسمية</span>
+          <span data-lang="en">Download Verified CV (PDF)</span>
+        </a>
+        <div class="exec-footer-copy">
+          <span>© 2026 خليل الصانع · All Rights Reserved</span>
+        </div>
       </div>
     </div>
   </footer>

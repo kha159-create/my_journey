@@ -6,9 +6,9 @@
 (() => {
   // ── Language & Localization Controller ──
   const root = document.documentElement;
-  const langToggle = document.querySelector('.lang-toggle');
+  const langToggles = document.querySelectorAll('.lang-toggle');
   const params = new URLSearchParams(location.search);
-  let currentLang = params.get('lang') === 'en' ? 'en' : 'ar';
+  let currentLang = params.get('lang') || localStorage.getItem('lang') || 'ar';
 
   const strings = {
     ar: {
@@ -37,10 +37,16 @@
     currentLang = lang;
     root.lang = lang;
     root.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    localStorage.setItem('lang', lang);
 
-    if (langToggle) {
-      langToggle.textContent = strings[lang].toggleBtn;
-    }
+    langToggles.forEach(btn => {
+      const textSpan = btn.querySelector('.lang-btn-text');
+      if (textSpan) {
+        textSpan.textContent = strings[lang].toggleBtn;
+      } else {
+        btn.textContent = strings[lang].toggleBtn;
+      }
+    });
     document.title = strings[lang].title;
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.content = strings[lang].desc;
@@ -63,11 +69,11 @@
     }
   }
 
-  if (langToggle) {
-    langToggle.addEventListener('click', () => {
+  langToggles.forEach(btn => {
+    btn.addEventListener('click', () => {
       updateLanguage(currentLang === 'ar' ? 'en' : 'ar', true);
     });
-  }
+  });
 
   // ── Header Scroll State ──
   const siteHeader = document.querySelector('.site-header');
@@ -102,6 +108,35 @@
   const btnImpactToggle = document.getElementById('btnImpactToggle');
   const hintText = document.querySelector('.visual-hint-text');
 
+  // ── Multi-View Switcher Tab Management ──
+  const radarTabs = document.querySelectorAll('.radar-view-tab');
+  const radarPanes = document.querySelectorAll('.radar-view-pane');
+
+  radarTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetView = tab.dataset.view;
+      radarTabs.forEach(t => {
+        t.classList.toggle('active', t === tab);
+        t.setAttribute('aria-selected', t === tab ? 'true' : 'false');
+      });
+      radarPanes.forEach(p => {
+        const isActive = p.id === 'view' + targetView.charAt(0).toUpperCase() + targetView.slice(1);
+        p.classList.toggle('active', isActive);
+      });
+      if (targetView === 'spider') {
+        setTimeout(resize, 60);
+      }
+    });
+  });
+
+  // KPI Matrix Card Clicks trigger spotlight
+  document.querySelectorAll('.radar-kpi-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const nodeId = card.dataset.node;
+      if (nodeId) showSpotlight(nodeId);
+    });
+  });
+
   if (!canvas) return;
 
   const ctx = canvas.getContext('2d');
@@ -109,43 +144,43 @@
   let height = 0;
   let dpr = Math.min(window.devicePixelRatio || 1, 2);
 
-  let isSynchronized = false;
-  let morphProgress = 0.0;
-  let targetMorph = 0.0;
+  let isSynchronized = true; // Default to aligned, pristine professional radar
+  let morphProgress = 1.0;
+  let targetMorph = 1.0;
   let activeSpotlightNodeId = null;
 
   // Expanding White Energy Pulse Wave
   let pulseWave = { active: false, radius: 0, maxRadius: 520, alpha: 0 };
   let mouse = { x: -1000, y: -1000, active: false };
 
-  // Operational Retail Signals with Subtle, Refined Executive Palette (Matching Reference Image 1)
+  // Operational Retail Signals: 8 Pillars with Mastery Scores for Spider Chart
   const retailSignals = [
-    { id: 'CORE', labelAr: 'خليل الصانع — القيادة الميدانية', labelEn: 'Khaleel Alsani — Field Command', tag: 'OPERATIONAL INTEGRATOR', isCore: true, color: '#F59E0B', glow: 'rgba(245, 158, 11, 0.35)' },
-    { id: 'S1', labelAr: 'حركة الزوار', labelEn: 'Footfall Traffic', tag: '625K+ Visitors', color: '#CBD5E1', glow: 'rgba(203, 213, 225, 0.18)' },
-    { id: 'S2', labelAr: 'معدل التحويل', labelEn: 'Conversion Rate', tag: '18.7% Ratio', color: '#94A3B8', glow: 'rgba(148, 163, 184, 0.18)' },
-    { id: 'S3', labelAr: 'متوسط السلة', labelEn: 'Average Basket', tag: 'ATV +18%', color: '#93C5FD', glow: 'rgba(147, 197, 253, 0.18)' },
-    { id: 'S4', labelAr: 'قطع لكل عميل', labelEn: 'Units Per Tx', tag: 'UPT 2 → 4', color: '#A5B4FC', glow: 'rgba(165, 180, 252, 0.18)' },
-    { id: 'S5', labelAr: 'نفاد المخزون', labelEn: 'Stockout Incidents', tag: '−40% Slashed', color: '#6EE7B7', glow: 'rgba(110, 231, 183, 0.18)' },
-    { id: 'S6', labelAr: 'دوران الموظفين', labelEn: 'Turnover Rate', tag: '60% → 20%', color: '#C4B5FD', glow: 'rgba(196, 181, 253, 0.18)' },
-    { id: 'S7', labelAr: 'مبيعات العمليات', labelEn: 'Annual Revenue', tag: 'SAR 28.9M', color: '#FDE68A', glow: 'rgba(253, 230, 138, 0.18)' },
-    { id: 'S8', labelAr: 'تزامن الـ ERP', labelEn: 'ERP Data Sync', tag: '15-Min Live', color: '#E2E8F0', glow: 'rgba(226, 232, 240, 0.18)' }
+    { id: 'CORE', labelAr: 'خليل الصانع', labelEn: 'Khaleel Alsani', tag: 'القيادة والمنظومة', isCore: true, mastery: 1.0, color: '#0E7490', glow: 'rgba(14, 116, 144, 0.35)' },
+    { id: 'S1', labelAr: 'حركة الزوار', labelEn: 'Footfall Traffic', tag: '625K+ زائر', mastery: 0.90, color: '#0D9488', glow: 'rgba(13, 148, 136, 0.22)' },
+    { id: 'S2', labelAr: 'معدل التحويل', labelEn: 'Conversion Rate', tag: '18.7% Ratio', mastery: 0.94, color: '#0284C7', glow: 'rgba(2, 132, 199, 0.22)' },
+    { id: 'S3', labelAr: 'متوسط السلة', labelEn: 'Average Basket', tag: '+18% ATV', mastery: 0.88, color: '#0891B2', glow: 'rgba(8, 145, 178, 0.22)' },
+    { id: 'S4', labelAr: 'قطع لكل عميل', labelEn: 'Units Per Tx', tag: 'UPT 2 → 4', mastery: 0.95, color: '#0F766E', glow: 'rgba(15, 118, 110, 0.22)' },
+    { id: 'S5', labelAr: 'حوكمة المخزون', labelEn: 'Stockout Slash', tag: '−40% نفاد', mastery: 0.95, color: '#059669', glow: 'rgba(5, 150, 105, 0.22)' },
+    { id: 'S6', labelAr: 'استقرار الفرق', labelEn: 'Retention Rate', tag: '60% → 20%', mastery: 0.92, color: '#4F46E5', glow: 'rgba(79, 70, 229, 0.22)' },
+    { id: 'S7', labelAr: 'المسؤولية والـ P&L', labelEn: 'P&L Scope', tag: 'SAR 61.9M', mastery: 0.95, color: '#D97706', glow: 'rgba(217, 119, 6, 0.22)' },
+    { id: 'S8', labelAr: 'ذكاء الـ ERP', labelEn: 'ERP Operations', tag: '15-Min ORA', mastery: 0.98, color: '#0E7490', glow: 'rgba(14, 116, 144, 0.22)' }
   ];
 
   const nodes = [];
-  const PARTICLES_COUNT = 75;
+  const PARTICLES_COUNT = 45;
   const particles = [];
   const packets = [];
 
   function initNodes() {
     nodes.length = 0;
 
-    // Hub 0 is the Central Decision Anchor over Khaleel's portrait
+    // Hub 0 is the Central Decision Anchor
     nodes.push({
       ...retailSignals[0],
       x: 0, y: 0,
       chaosX: 0, chaosY: 0,
       syncX: 0, syncY: 0,
-      chaosSpeed: 0.35,
+      chaosSpeed: 0.25,
       radius: 12
     });
 
@@ -158,25 +193,26 @@
         ...retailSignals[i],
         x: 0, y: 0,
         syncAngle: angle,
-        syncDist: 145,
+        syncDist: 140,
         syncX: 0, syncY: 0,
-        chaosX: (Math.random() - 0.5) * 340,
-        chaosY: (Math.random() - 0.5) * 340,
-        chaosSpeed: 0.3 + Math.random() * 0.4,
-        radius: 6
+        chaosX: 0,
+        chaosY: 0,
+        badgeBox: { x: 0, y: 0, w: 90, h: 28 },
+        chaosSpeed: 0.2 + Math.random() * 0.25,
+        radius: 6.5
       });
     }
 
-    // Wanderer noise particles
+    // Gentle ambient dust particles
     particles.length = 0;
     for (let i = 0; i < PARTICLES_COUNT; i++) {
       particles.push({
-        x: (Math.random() - 0.5) * 450,
-        y: (Math.random() - 0.5) * 450,
-        vx: (Math.random() - 0.5) * 0.6,
-        vy: (Math.random() - 0.5) * 0.6,
-        size: Math.random() * 2 + 1,
-        alpha: Math.random() * 0.5 + 0.15
+        x: (Math.random() - 0.5) * 350,
+        y: (Math.random() - 0.5) * 350,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        size: Math.random() * 1.5 + 1,
+        alpha: Math.random() * 0.35 + 0.1
       });
     }
   }
@@ -189,31 +225,44 @@
       width = canvas.parentElement ? canvas.parentElement.clientWidth : 800;
       height = canvas.parentElement ? canvas.parentElement.clientHeight : 520;
     }
-    if (height < 300) height = 520;
+    if (height < 320) height = 520;
     dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = Math.round(width * dpr);
     canvas.height = Math.round(height * dpr);
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.scale(dpr, dpr);
 
+    const isMobile = width < 768;
     const cx = width / 2;
-    const cy = height * (width < 768 ? 0.38 : 0.44);
+    const cy = height * (isMobile ? 0.46 : 0.47);
+
+    // Guaranteed Bounded Distance so labels NEVER cross canvas or page boundaries
+    const maxRadarRadius = Math.min(width * (isMobile ? 0.28 : 0.26), height * (isMobile ? 0.34 : 0.33), 150);
+    const responsiveDist = Math.max(isMobile ? 88 : 110, maxRadarRadius);
 
     nodes.forEach((n, idx) => {
       if (n.isCore) {
         n.syncX = cx;
         n.syncY = cy;
-        n.chaosX = cx + (Math.random() - 0.5) * 50;
-        n.chaosY = cy + (Math.random() - 0.5) * 50;
+        n.chaosX = cx;
+        n.chaosY = cy;
       } else {
-        const responsiveDist = Math.min(width * (width < 768 ? 0.31 : 0.36), 170);
-        n.syncX = cx + Math.cos(n.syncAngle) * responsiveDist;
-        n.syncY = cy + Math.sin(n.syncAngle) * responsiveDist;
-        n.chaosX = cx + (Math.random() - 0.5) * width * 0.85;
-        n.chaosY = cy + (Math.random() - 0.5) * height * 0.75;
+        // Position on polygon vertex according to mastery level
+        const dist = responsiveDist * (0.82 + (n.mastery || 0.9) * 0.18);
+        n.syncX = cx + Math.cos(n.syncAngle) * dist;
+        n.syncY = cy + Math.sin(n.syncAngle) * dist;
+
+        // Bounded gentle orbit for scatter mode to prevent collisions
+        const scatterDist = responsiveDist * (0.6 + (idx % 3) * 0.25);
+        const scatterAngle = n.syncAngle + 0.25 * (idx % 2 === 0 ? 1 : -1);
+        n.chaosX = cx + Math.cos(scatterAngle) * scatterDist;
+        n.chaosY = cy + Math.sin(scatterAngle) * scatterDist;
       }
-      n.x = n.syncX;
-      n.y = n.syncY;
+
+      if (morphProgress >= 0.95) {
+        n.x = n.syncX;
+        n.y = n.syncY;
+      }
     });
   }
 
@@ -225,13 +274,13 @@
   setTimeout(resize, 600);
 
   function spawnPacket() {
-    if (packets.length > 10) return;
+    if (packets.length > 8) return;
     const target = Math.floor(Math.random() * 8) + 1;
     packets.push({
       from: 0,
       to: target,
       progress: 0,
-      speed: 0.016 + Math.random() * 0.025
+      speed: 0.018 + Math.random() * 0.02
     });
   }
 
@@ -239,123 +288,76 @@
   function render() {
     time += 0.016;
 
-    // Smooth morph
+    // Smooth morph between Synchronized Radar and Scatter Mode
     if (Math.abs(morphProgress - targetMorph) > 0.001) {
       morphProgress += (targetMorph - morphProgress) * 0.08;
     } else {
       morphProgress = targetMorph;
     }
 
+    const isMobile = width < 768;
     const cx = width / 2;
-    const cy = height * 0.44;
+    const cy = height * (isMobile ? 0.46 : 0.47);
 
     ctx.clearRect(0, 0, width, height);
 
-    // ── SUBTLE GEOMETRIC TELEMETRY GRID (MATCHING REFERENCE IMAGE 1) ──
+    // ── AUTHENTIC SPIDER RADAR LEVEL RINGS (25%, 50%, 75%, 100%) ──
+    const maxR = Math.min(width * (isMobile ? 0.28 : 0.26), height * (isMobile ? 0.34 : 0.33), 150);
+    const baseR = Math.max(isMobile ? 88 : 110, maxR);
+    const levels = [0.25, 0.50, 0.75, 1.0];
+
     ctx.save();
-    
-    // Dot Matrix Accent Field (Matching Reference Image 1)
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.04)';
-    const dotSpacing = 28;
-    const gridCols = Math.ceil(width / dotSpacing);
-    const gridRows = Math.ceil(height / dotSpacing);
-    const offsetX = (width % dotSpacing) / 2;
-    const offsetY = (height % dotSpacing) / 2;
-    for (let c = 0; c <= gridCols; c++) {
-      for (let r = 0; r <= gridRows; r++) {
-        const dx = offsetX + c * dotSpacing;
-        const dy = offsetY + r * dotSpacing;
-        const dist = Math.hypot(dx - cx, dy - cy);
-        if (dist > 50 && dist < 240) {
-          ctx.fillRect(dx - 0.75, dy - 0.75, 1.5, 1.5);
-        }
-      }
-    }
 
-    // Precision Crosshair Axes (0° and 90°)
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
-    ctx.lineWidth = 0.8;
-    ctx.setLineDash([2, 5]);
-    ctx.beginPath();
-    ctx.moveTo(cx - 230, cy);
-    ctx.lineTo(cx + 230, cy);
-    ctx.moveTo(cx, cy - 210);
-    ctx.lineTo(cx, cy + 210);
-    ctx.stroke();
-
-    // Concentric Range Rings with Delicate Calibration
-    const rings = [65, 120, 175, 225];
-    rings.forEach((r, idx) => {
-      const ringAlpha = (0.035 + idx * 0.015) * (0.5 + 0.5 * morphProgress);
+    // Subtle background concentric octagons
+    levels.forEach((lvl, lIdx) => {
+      const ringR = baseR * lvl;
       ctx.beginPath();
-      ctx.arc(cx, cy, r, 0, Math.PI * 2);
-      ctx.strokeStyle = idx === rings.length - 1 ? 'rgba(212, 175, 55, 0.15)' : `rgba(255, 255, 255, ${ringAlpha})`;
-      ctx.lineWidth = 0.8;
-      ctx.setLineDash(idx % 2 === 0 ? [3, 5] : []);
+      for (let i = 0; i < 8; i++) {
+        const ang = (i / 8) * Math.PI * 2 - Math.PI / 2;
+        const x = cx + Math.cos(ang) * ringR;
+        const y = cy + Math.sin(ang) * ringR;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.closePath();
+      ctx.strokeStyle = lIdx === levels.length - 1 
+        ? `rgba(14, 116, 144, ${0.28 * morphProgress})` 
+        : `rgba(14, 116, 144, ${0.12 * morphProgress})`;
+      ctx.lineWidth = lIdx === levels.length - 1 ? 1.2 : 0.75;
+      if (lIdx % 2 === 0) ctx.setLineDash([3, 4]);
+      else ctx.setLineDash([]);
       ctx.stroke();
 
-      // Delicate calibration ticks on outer circle
-      if (idx === rings.length - 1 && morphProgress > 0.4) {
-        for (let a = 0; a < Math.PI * 2; a += Math.PI / 12) {
-          const isMajor = (a % (Math.PI / 4)) < 0.01;
-          const len = isMajor ? 5 : 2.5;
-          const tx1 = cx + Math.cos(a) * (r - len);
-          const ty1 = cy + Math.sin(a) * (r - len);
-          const tx2 = cx + Math.cos(a) * (r + len);
-          const ty2 = cy + Math.sin(a) * (r + len);
-          ctx.beginPath();
-          ctx.moveTo(tx1, ty1);
-          ctx.lineTo(tx2, ty2);
-          ctx.strokeStyle = isMajor ? 'rgba(212, 175, 55, 0.25)' : 'rgba(255, 255, 255, 0.1)';
-          ctx.stroke();
-        }
+      // Percentage marker along top axis
+      if (morphProgress > 0.5) {
+        ctx.font = '700 8.5px Space Grotesk, Manrope';
+        ctx.fillStyle = 'rgba(14, 116, 144, 0.45)';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        ctx.fillText(`${Math.round(lvl * 100)}%`, cx, cy - ringR - 2);
       }
     });
 
-    // Precision Coordinate Indicators
-    if (morphProgress > 0.4) {
-      ctx.font = '600 8.5px Space Grotesk, Manrope';
-      ctx.fillStyle = 'rgba(148, 163, 184, 0.35)';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText('000°', cx, cy - 235);
-      ctx.fillText('090°', cx + 235, cy);
-      ctx.fillText('180°', cx, cy + 235);
-      ctx.fillText('270°', cx - 235, cy);
-    }
-
-    // Faint Geometric Rotating Sweep Arc
-    if (morphProgress > 0.1 && Number.isFinite(cx) && Number.isFinite(cy) && cx > 0 && cy > 0) {
-      const beamAngle = time * 0.8;
-      const grad = ctx.createRadialGradient(cx, cy, 10, cx, cy, 225);
-      grad.addColorStop(0, 'rgba(255, 255, 255, 0)');
-      grad.addColorStop(0.5, `rgba(212, 175, 55, ${0.02 * morphProgress})`);
-      grad.addColorStop(1, `rgba(203, 213, 225, ${0.05 * morphProgress})`);
-
+    // Radial Spoke Lines radiating from Center to each vertex
+    for (let i = 0; i < 8; i++) {
+      const ang = (i / 8) * Math.PI * 2 - Math.PI / 2;
       ctx.beginPath();
       ctx.moveTo(cx, cy);
-      ctx.arc(cx, cy, 225, beamAngle, beamAngle + 0.32);
-      ctx.closePath();
-      ctx.fillStyle = grad;
-      ctx.fill();
-
-      // Subtle sweep leading vector
-      ctx.beginPath();
-      ctx.moveTo(cx, cy);
-      ctx.lineTo(cx + Math.cos(beamAngle + 0.32) * 225, cy + Math.sin(beamAngle + 0.32) * 225);
-      ctx.strokeStyle = `rgba(226, 232, 240, ${0.15 * morphProgress})`;
+      ctx.lineTo(cx + Math.cos(ang) * baseR, cy + Math.sin(ang) * baseR);
+      ctx.strokeStyle = `rgba(14, 116, 144, ${0.15 * morphProgress})`;
       ctx.lineWidth = 0.8;
+      ctx.setLineDash([2, 3]);
       ctx.stroke();
     }
     ctx.restore();
 
-    // ── EXPANDING WHITE/GOLD ACTIVATION PULSE WAVE ──
+    // ── EXPANDING ACTIVATION PULSE WAVE ──
     if (pulseWave.active) {
-      pulseWave.radius += 9;
+      pulseWave.radius += 8;
       pulseWave.alpha = Math.max(0, 1 - pulseWave.radius / pulseWave.maxRadius);
 
       ctx.save();
-      ctx.strokeStyle = `rgba(212, 175, 55, ${pulseWave.alpha * 0.45})`;
+      ctx.strokeStyle = `rgba(14, 116, 144, ${pulseWave.alpha * 0.4})`;
       ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.arc(cx, cy, pulseWave.radius, 0, Math.PI * 2);
@@ -367,72 +369,48 @@
       }
     }
 
-    // ── UPDATE NODES ──
+    // ── UPDATE NODES POSITION ──
     nodes.forEach((n, idx) => {
-      const spd = n.chaosSpeed || 0.4;
-      if (morphProgress < 0.99) {
-        n.chaosX += Math.sin(time * spd + idx) * 0.45;
-        n.chaosY += Math.cos(time * spd * 0.8 + idx) * 0.45;
+      const spd = n.chaosSpeed || 0.3;
+      if (morphProgress < 0.98) {
+        n.chaosX += Math.sin(time * spd + idx) * 0.35;
+        n.chaosY += Math.cos(time * spd * 0.8 + idx) * 0.35;
       }
       n.x = (1 - morphProgress) * n.chaosX + morphProgress * n.syncX;
       n.y = (1 - morphProgress) * n.chaosY + morphProgress * n.syncY;
 
-      // Ensure finite values at all times
       if (!Number.isFinite(n.x)) n.x = n.syncX || cx;
       if (!Number.isFinite(n.y)) n.y = n.syncY || cy;
     });
 
-    // ── DRAW REFINED CONNECTING GEOMETRIC LINES (TONED DOWN) ──
-    const coreNode = nodes[0];
-    if (coreNode && Number.isFinite(coreNode.x) && Number.isFinite(coreNode.y)) {
-      for (let i = 1; i < nodes.length; i++) {
+    // ── DRAW RADAR MASTERY POLYGON (SHADED AREA OF EXCELLENCE) ──
+    if (morphProgress > 0.2) {
+      ctx.save();
+      ctx.beginPath();
+      for (let i = 1; i <= 8; i++) {
         const n = nodes[i];
-        if (!n || !Number.isFinite(n.x) || !Number.isFinite(n.y)) continue;
-        const nextN = nodes[(i % (nodes.length - 1)) + 1];
-
-        // Line from Central Core to Peripheral Metric
-        const lineAlpha = (0.12 + 0.22 * morphProgress);
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(coreNode.x, coreNode.y);
-        ctx.lineTo(n.x, n.y);
-        const dist = Math.hypot(n.x - coreNode.x, n.y - coreNode.y);
-        if (morphProgress > 0.4 && dist > 1) {
-          const beamGrad = ctx.createLinearGradient(coreNode.x, coreNode.y, n.x, n.y);
-          beamGrad.addColorStop(0, `rgba(212, 175, 55, ${lineAlpha})`);
-          beamGrad.addColorStop(1, (n.glow || `rgba(203, 213, 225, ${lineAlpha})`));
-          ctx.strokeStyle = beamGrad;
-        } else {
-          ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 * (1 - morphProgress)})`;
-          if (morphProgress <= 0.4) ctx.setLineDash([2, 6]);
-        }
-        ctx.lineWidth = 0.8;
-        ctx.stroke();
-        ctx.restore();
-
-        // Outer Perimeter Octagon (when aligned)
-        if (morphProgress > 0.3 && nextN && Number.isFinite(nextN.x) && Number.isFinite(nextN.y)) {
-          const octDist = Math.hypot(nextN.x - n.x, nextN.y - n.y);
-          ctx.save();
-          ctx.beginPath();
-          ctx.moveTo(n.x, n.y);
-          ctx.lineTo(nextN.x, nextN.y);
-          if (octDist > 1) {
-            const octGrad = ctx.createLinearGradient(n.x, n.y, nextN.x, nextN.y);
-            octGrad.addColorStop(0, 'rgba(203, 213, 225, 0.12)');
-            octGrad.addColorStop(1, 'rgba(203, 213, 225, 0.12)');
-            ctx.strokeStyle = octGrad;
-          } else {
-            ctx.strokeStyle = 'rgba(203, 213, 225, 0.12)';
-          }
-          ctx.lineWidth = 0.8;
-          ctx.stroke();
-          ctx.restore();
-        }
+        if (i === 1) ctx.moveTo(n.x, n.y);
+        else ctx.lineTo(n.x, n.y);
       }
+      ctx.closePath();
+
+      // Glowing Translucent Fill
+      const polyGrad = ctx.createRadialGradient(cx, cy, 10, cx, cy, baseR);
+      polyGrad.addColorStop(0, `rgba(14, 116, 144, ${0.25 * morphProgress})`);
+      polyGrad.addColorStop(0.7, `rgba(6, 182, 212, ${0.15 * morphProgress})`);
+      polyGrad.addColorStop(1, `rgba(14, 116, 144, ${0.06 * morphProgress})`);
+      ctx.fillStyle = polyGrad;
+      ctx.fill();
+
+      // Crisp Perimeter Stroke
+      ctx.strokeStyle = `rgba(14, 116, 144, ${0.85 * morphProgress})`;
+      ctx.lineWidth = 1.8;
+      ctx.setLineDash([]);
+      ctx.stroke();
+      ctx.restore();
     }
 
-    // ── MONOCHROME DATA PACKETS ──
+    // ── DATA PACKETS ALONG RADIAL SPOKES ──
     if (morphProgress > 0.7 && Math.random() < 0.08) {
       spawnPacket();
     }
@@ -443,75 +421,150 @@
 
       const pFrom = nodes[pkt.from];
       const pTo = nodes[pkt.to];
-      if (!pFrom || !pTo || !Number.isFinite(pFrom.x) || !Number.isFinite(pTo.x)) {
+      if (!pFrom || !pTo) {
         packets.splice(i, 1);
         continue;
       }
       const px = pFrom.x + (pTo.x - pFrom.x) * pkt.progress;
       const py = pFrom.y + (pTo.y - pFrom.y) * pkt.progress;
-      if (!Number.isFinite(px) || !Number.isFinite(py)) {
-        packets.splice(i, 1);
-        continue;
-      }
 
       ctx.save();
       ctx.beginPath();
-      ctx.arc(px, py, 1.8, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
-      ctx.shadowColor = 'rgba(255, 255, 255, 0.5)';
+      ctx.arc(px, py, 2, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(14, 116, 144, 0.95)';
+      ctx.shadowColor = 'rgba(14, 116, 144, 0.6)';
       ctx.shadowBlur = 4;
       ctx.fill();
       ctx.restore();
 
-      if (pkt.progress >= 1) {
-        packets.splice(i, 1);
-      }
+      if (pkt.progress >= 1) packets.splice(i, 1);
     }
 
-    // ── DRAW NODES & REAL OPERATIONAL SIGNALS (TONED DOWN) ──
-    nodes.forEach((n, idx) => {
-      const isHovered = mouse.active && Math.hypot(n.x - mouse.x, n.y - mouse.y) < 25;
-
+    // ── DRAW CENTRAL DECISION HUB (KHALEEL ALSANi) ──
+    const core = nodes[0];
+    if (core) {
       ctx.save();
-      // Outer ambient glowing ring
       ctx.beginPath();
-      ctx.arc(n.x, n.y, n.radius + (isHovered ? 5 : 2), 0, Math.PI * 2);
-      ctx.fillStyle = n.glow ? n.glow : (n.isCore ? 'rgba(212, 175, 55, 0.15)' : 'rgba(255, 255, 255, 0.06)');
+      ctx.arc(core.x, core.y, 14, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(14, 116, 144, 0.18)';
       ctx.fill();
 
-      // Core Node Body
+      ctx.beginPath();
+      ctx.arc(core.x, core.y, 9, 0, Math.PI * 2);
+      ctx.fillStyle = '#0E7490';
+      ctx.shadowColor = 'rgba(14, 116, 144, 0.5)';
+      ctx.shadowBlur = 10;
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(core.x, core.y, 3.5, 0, Math.PI * 2);
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fill();
+      ctx.restore();
+    }
+
+    // ── DRAW DIRECTION-AWARE NON-COLLIDING BADGES FOR ALL 8 NODES ──
+    for (let i = 1; i <= 8; i++) {
+      const n = nodes[i];
+      if (!n) continue;
+
+      const isHovered = mouse.active && Math.hypot(n.x - mouse.x, n.y - mouse.y) < 26;
+
+      // Draw Vertex Dot
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.radius + (isHovered ? 3 : 0), 0, Math.PI * 2);
+      ctx.fillStyle = n.glow;
+      ctx.fill();
+
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.radius, 0, Math.PI * 2);
-      ctx.fillStyle = morphProgress > 0.4 ? (n.color || '#E2E8F0') : '#64748b';
-      ctx.shadowColor = n.color || '#ffffff';
-      ctx.shadowBlur = isHovered ? 10 : 4;
+      ctx.fillStyle = n.color;
+      ctx.shadowColor = n.color;
+      ctx.shadowBlur = isHovered ? 12 : 5;
       ctx.fill();
 
-      // Inner center dot
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.radius * 0.4, 0, Math.PI * 2);
-      ctx.fillStyle = '#030509';
+      ctx.fillStyle = '#FFFFFF';
       ctx.fill();
       ctx.restore();
 
-      // Signal Tag / Metric (Crisp typography)
+      // ── Direction-Aware Badge Dimensions & Positioning ──
       ctx.save();
-      ctx.font = '600 10.5px ' + (currentLang === 'ar' ? 'IBM Plex Sans Arabic' : 'Manrope');
-      ctx.fillStyle = '#E2E8F0';
-      ctx.textAlign = 'center';
-
       const labelText = currentLang === 'ar' ? n.labelAr : n.labelEn;
-      const labelY = n.y + (n.isCore ? 22 : 17);
-      ctx.fillText(labelText, n.x, labelY);
+      ctx.font = '700 10.5px ' + (currentLang === 'ar' ? 'IBM Plex Sans Arabic' : 'Manrope');
+      const textW1 = ctx.measureText(labelText).width;
+      ctx.font = '800 8.5px Manrope, Space Grotesk';
+      const textW2 = ctx.measureText(n.tag).width;
 
-      // Value badge tag
-      if (morphProgress > 0.6) {
-        ctx.font = '700 8.5px Manrope';
-        ctx.fillStyle = 'rgba(148, 163, 184, 0.85)';
-        ctx.fillText(n.tag, n.x, labelY + 11);
+      const badgeW = Math.max(textW1, textW2) + 16;
+      const badgeH = 28;
+
+      // Smart direction offsets according to angle to eliminate collisions
+      const cosA = Math.cos(n.syncAngle);
+      const sinA = Math.sin(n.syncAngle);
+
+      let bX = n.x;
+      let bY = n.y;
+
+      if (sinA < -0.75) {
+        // Top node (S1) -> place directly above vertex
+        bX = n.x;
+        bY = n.y - badgeH / 2 - 12;
+      } else if (sinA > 0.75) {
+        // Bottom node (S5) -> place directly below vertex
+        bX = n.x;
+        bY = n.y + badgeH / 2 + 12;
+      } else if (cosA > 0.35) {
+        // Right side nodes (S2, S3, S4) -> offset outward to the right
+        bX = n.x + badgeW / 2 + 10;
+        bY = n.y + sinA * 8;
+      } else if (cosA < -0.35) {
+        // Left side nodes (S6, S7, S8) -> offset outward to the left
+        bX = n.x - badgeW / 2 - 10;
+        bY = n.y + sinA * 8;
       }
+
+      // Strictly clamp badge within canvas to guarantee NO horizontal or vertical overflow
+      bX = Math.max(badgeW / 2 + 8, Math.min(width - badgeW / 2 - 8, bX));
+      bY = Math.max(badgeH / 2 + 8, Math.min(height - badgeH / 2 - 8, bY));
+
+      n.badgeBox = { x: bX - badgeW / 2, y: bY - badgeH / 2, w: badgeW, h: badgeH };
+
+      // Render Frosted Glass Pill Behind Text
+      ctx.beginPath();
+      const radius = 6;
+      const rx = bX - badgeW / 2;
+      const ry = bY - badgeH / 2;
+      ctx.roundRect ? ctx.roundRect(rx, ry, badgeW, badgeH, radius) : ctx.rect(rx, ry, badgeW, badgeH);
+
+      ctx.fillStyle = isHovered ? 'rgba(255, 255, 255, 0.98)' : 'rgba(255, 255, 255, 0.88)';
+      ctx.shadowColor = 'rgba(15, 23, 42, 0.08)';
+      ctx.shadowBlur = 6;
+      ctx.shadowOffsetY = 2;
+      ctx.fill();
+
+      ctx.strokeStyle = isHovered ? n.color : 'rgba(14, 116, 144, 0.24)';
+      ctx.lineWidth = isHovered ? 1.4 : 0.9;
+      ctx.stroke();
+
+      // Render Text Lines Inside Pill
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+
+      // Title Line
+      ctx.font = '700 9.5px ' + (currentLang === 'ar' ? 'IBM Plex Sans Arabic' : 'Manrope');
+      ctx.fillStyle = '#0F172A';
+      ctx.fillText(labelText, bX, bY - 5.5);
+
+      // Value Tag Line
+      ctx.font = '800 8.2px Manrope, Space Grotesk';
+      ctx.fillStyle = n.color;
+      ctx.fillText(n.tag, bX, bY + 6.5);
+
       ctx.restore();
-    });
+    }
 
     requestAnimationFrame(render);
   }
@@ -519,95 +572,101 @@
   // ── TOGGLE & TRIGGER HANDLERS ──
   const spotlightDetails = {
     'S1': {
-      titleAr: 'حركة الزوار (Footfall Traffic)',
-      titleEn: 'Footfall Traffic (حركة الزوار)',
+      titleAr: 'حركة الزوار (Footfall Traffic — 625K+)',
+      titleEn: 'Footfall Traffic (625K+ Visitors)',
       challengeAr: 'إهمال بيانات التدفق البشري المباشر وتوزيع القوى العاملة بشكل عشوائي، مما يترك فترات الذروة دون تغطية كافية وفترات الركود متكدسة بالموظفين.',
       challengeEn: 'Ignoring hourly traffic counts led to poor staff scheduling, leaving peak rushes critically under-staffed and dead hours over-staffed.',
       actionAr: 'تطبيق جدولة ذكية ومقننة تربط فترات ذروة الزوار المسجلة بساعات عمل الموظفين والفرق النشطة بالميدان (Smart Staff Rota Integration).',
       actionEn: 'Integrated footfall telemetry with dynamic floor coverage charts and real-time sales shift planning.',
-      impactAr: 'تنظيم الحضور البشري الميداني، استغلال كامل الفرص البيعية، وتحقيق أقصى كفاءة إنتاجية للموظفين بالمتر المربع.',
+      impactAr: 'تنظيم الحضور البشري الميداني، استغلال كامل الفرص البيعية، وتغطية 625K+ زائر عبر الفروع بكفاءة تشغيلية قصوى.',
       impactEn: 'Eliminated floor service gaps during premium hours, maximizing opportunity capture and floor productivity.'
     },
     'S2': {
-      titleAr: 'معدل التحويل (Conversion Rate)',
-      titleEn: 'Conversion Rate (معدل التحويل)',
+      titleAr: 'معدل التحويل (Conversion Rate — 18.7%)',
+      titleEn: 'Conversion Rate (18.7% Ratio)',
       challengeAr: 'انخفاض نسبة تحويل الزوار إلى مشترين نتيجة العشوائية في تخطيط الأقسام، وضعف حافز البيع، وغياب التوجيه اللحظي للمبيعات.',
       challengeEn: 'Low sales conversion caused by unorganized product zoning, unmotivated sales staff, and zero floor accountability.',
-      actionAr: 'تطبيق نظام تتبع يومي وساعي مدعوم بـ "الكوتشينج السريع" للموظفين، وتحديد أهداف مبيعات واضحة لكل عضو في الفريق.',
+      actionAr: 'تطبيق نظام تتبع يومي وساعي مدعوم بـ "الكوتشينج السريع" للموظفين، وتحديد أهداف مبيعات واضحة ومقاسة لكل مستشار بالمناوبة.',
       actionEn: 'Initiated structured peer-to-peer coaching directly on the sales floor, breaking down store targets into manageable hourly goals.',
-      impactAr: 'رفع دافعية الفريق، تحويل الزوار العابرين إلى عملاء دائمين، وتحقيق نسبة تحويل قياسية بلغت 18.7%.',
-      impactEn: 'Achieved an outstanding 18.7% conversion average by building a highly engaged, proactive sales floor culture.'
+      impactAr: 'رفع دافعية الفريق، تحويل الزوار العابرين إلى عملاء دائمين، وتحقيق نسبة تحويل قياسية بلغت 18.7% (تفوق متوسط القطاع بـ 70%).',
+      impactEn: 'Achieved an outstanding 18.7% conversion average (+70% higher than retail baseline) by building a highly engaged floor culture.'
     },
     'S3': {
-      titleAr: 'متوسط قيمة السلة (Average Basket Value)',
-      titleEn: 'Average Basket Value (متوسط قيمة السلة)',
+      titleAr: 'متوسط قيمة السلة (Average Basket Value — +18% ATV)',
+      titleEn: 'Average Basket Value (+18% ATV)',
       challengeAr: 'مبيعات أحادية ومحدودة تجعل متوسط قيمة السلة منخفضاً (ATV)، مع اقتصار العميل على شراء المنتج الأساسي دون مكملات.',
       challengeEn: 'Flat Average Transaction Value (ATV) due to passive order-taking with no dynamic cross-selling or upselling.',
       actionAr: 'تطبيق استراتيجية عرض المنتجات المترابطة وتدريب الفريق على أساليب البيع الإضافي (Cross-selling) والبيع المتقاطع.',
       actionEn: 'Trained team in on-floor styling, dynamic category pairings, and impulse-buy suggestions at the POS terminal.',
-      impactAr: 'نمو حقيقي ومسستدام في متوسط قيمة الفاتورة والسلة بمقدار +18% عبر شبكات الفروع المدارة.',
+      impactAr: 'نمو حقيقي ومستدام في متوسط قيمة الفاتورة والسلة بمقدار +18% LFL مقارنة بالفترة السابقة عبر شبكات الفروع المدارة.',
       impactEn: 'Generated +18% growth in ATV and basket value, converting simple visits into high-ticket transactions.'
     },
     'S4': {
-      titleAr: 'عدد القطع لكل عميل (Units Per Transaction)',
-      titleEn: 'Units Per Transaction (قطع لكل عميل)',
+      titleAr: 'عدد القطع لكل عميل (Units Per Transaction — 2 → 4)',
+      titleEn: 'Units Per Transaction (UPT 2 → 4)',
       challengeAr: 'شراء قطعة واحدة فقط لكل عملية بيعية كنمط سائد (متوسط UPT يتراوح بين 1.2 إلى 1.5)، مما يعطل حركة مخزون الإكسسوارات والمتممات.',
       challengeEn: 'Extremely low units per transaction (1.2 to 1.5 UPT), leaving high-margin accessories stagnating in storage.',
       actionAr: 'بناء روتين لربط المكملات وعقد ورش عمل ميدانية يومية سريعة لتعليم الموظفين كيفية اقتراح بدائل وخيارات ملائمة تزيد القطع المباعة.',
       actionEn: 'Enforced attachment-rate goals and trained staff in on-floor styling packages and visual combination routines.',
-      impactAr: 'رفع وتضاعف عدد القطع لكل عميل من قطعتين إلى 4 قطع بنسب نجاح استثنائية (UPT 2 → 4).',
+      impactAr: 'مضاعفة عدد القطع لكل عميل من قطعتين إلى 4 قطع بنسب نجاح استثنائية (UPT 2 → 4) مما سرع دوران الأصناف الثانوية عالية الهامش.',
       impactEn: 'Successfully doubled units-per-transaction from 2 to 4, accelerating high-margin secondary stock turnover.'
     },
     'S5': {
-      titleAr: 'حوكمة المخزون ونفاد السلع (Inventory & Stockout Control)',
-      titleEn: 'Inventory & Stockout Control (حوكمة المخزون ونفاد السلع)',
+      titleAr: 'حوكمة المخزون ونفاد السلع (Inventory & Stockout Control — −40%)',
+      titleEn: 'Inventory & Stockout Control (−40% Slash)',
       challengeAr: 'ارتفاع في نسب فاقد المخزون وعجز السلع الأكثر طلباً على الأرفف، مما تسبب في إهدار فرص مبيعات كبرى وارتفاع الفاقد والسرقات.',
       challengeEn: 'High shrinkage, chaotic stock counts, and critical stockouts on high-demand bestsellers causing massive revenue loss.',
-      actionAr: 'فرض قواعد صارمة وجرد يومي مجدول، وتطبيق الحوكمة على حركة السلع، وتدريب الفرق على رصد ومطابقة المخزون دورياً.',
-      actionEn: 'Established rigorous daily cycle counts, locked shrinkage tracking loops, and implemented visual stockout alerts.',
-      impactAr: 'تقليص الفاقد وهدر السلع بنسبة 40%، وضمان توافر المنتجات الأعلى ربحية في متناول يد العميل بشكل دائم ومستمر.',
+      actionAr: 'فرض قواعد صارمة وجرد دوري مجدول، وتحليل Sell-Through وSell-Out، وتطبيق المناقلة الذكية بين الفروع خلال 24 ساعة.',
+      actionEn: 'Established rigorous cycle counts, sell-through tracking loops, and implemented 24h inter-store stock rebalancing.',
+      impactAr: 'تقليص نفاد السلع بنسبة 40%، وضمان توافر المنتجات الأعلى ربحية في متناول يد العميل بشكل دائم ومستمر.',
       impactEn: 'Slashed shrinkage and stockout rates by an outstanding 40%, securing perfect availability of high-margin items.'
     },
     'S6': {
-      titleAr: 'دوران الموظفين واستقرار الكفاءات (Employee Retention)',
-      titleEn: 'Employee Retention (دوران الموظفين)',
+      titleAr: 'دوران الموظفين واستقرار الكفاءات (Employee Retention — 60% → 20%)',
+      titleEn: 'Employee Retention (60% → 20%)',
       challengeAr: 'معدل دوران وظيفي مرتفع للغاية يصل لـ 60%؛ يؤدي إلى تآكل المعرفة التشغيلية، وارتفاع كلفة التوظيف، وتدهور جودة الخدمة.',
       challengeEn: 'High employee turnover of 60% draining store performance, causing continuous recruitment costs and poor customer service.',
-      actionAr: 'تطبيق نموذج منظم للدمج والتأهيل (Structured Onboarding)، والمتابعة الشخصية، والتمكين عبر التدريب، وتأسيس مسار حافز واضح للترقي.',
+      actionAr: 'تطبيق نموذج منظم للدمج والتأهيل (Structured Onboarding)، والمتابعة الشخصية 1:1، وتأسيس مسار حافز واضح وتأهيل مدراء المتاجر.',
       actionEn: 'Structured standard onboarding, created personal progression paths, and established on-the-floor manager coaching.',
-      impactAr: 'تقليص معدل دوران الموظفين بشكل قياسي من 60% إلى 20% فقط، مع بناء صف ثانٍ جاهز لقيادة الفروع بنسبة استدامة عالية.',
-      impactEn: 'Slashed staff turnover from 60% to 20% and extended tenure, building a loyal, self-sustaining bench of future leaders.'
+      impactAr: 'تقليص معدل دوران الموظفين بشكل قياسي من 60% إلى 20% بالرياض، وتثبيت صفر تسرب وظيفي في الجوف وعرعر، وبناء صف ثانٍ جاهز.',
+      impactEn: 'Slashed staff turnover from 60% to 20% in Riyadh, 0% in Jouf/Arar, building a self-sustaining bench of future leaders.'
     },
     'S7': {
-      titleAr: 'مبيعات العمليات والأرباح (Annual P&L Scope)',
-      titleEn: 'Annual P&L Scope (مبيعات العمليات والأرباح)',
+      titleAr: 'نطاق العمليات والـ P&L المباشر (Annual P&L Scope — SAR 61.9M)',
+      titleEn: 'Annual P&L Scope (SAR 61.9M Total)',
       challengeAr: 'فروع إقليمية ومحافظ مبيعات كبرى تعاني من تذبذب الأرباح وعدم وضوح المسؤولية الماليّة والتشغيلية لدى الكوادر الميدانية.',
       challengeEn: 'Underperforming regional branch networks with bleeding operating profits and zero individual store P&L ownership.',
-      actionAr: 'توحيد قنوات التواصل المالي، تفكيك الميزانيات بدقة وتطوير أدوات الحوكمة التشغيلية وخفض المصاريف والهدر بمعدلات مدروسة.',
-      actionEn: 'Enforced absolute store-level P&L accountability, optimized operating cost structures, and aligned stock rotation.',
-      impactAr: 'إدارة وتوجيه محافظ مبيعات وأرباح بملايين الريالات (تصل إلى 33 مليون ريال سعودي) بكفاءة مالية فائقة ومستدامة.',
-      impactEn: 'Successfully led and scaled complex store networks to cross over 33M SAR in profitable annual operating scope.'
+      actionAr: 'حوكمة الـ P&L لـ 11 فرعاً (SAR 33M الرياض + SAR 28.9M الشمال)، تفكيك الميزانيات بدقة وضبط المصاريف وهامش الربح الإجمالي Gross Margin.',
+      actionEn: 'Enforced absolute store-level P&L accountability across 11 stores (33M Riyadh + 28.9M North), optimizing margins and cost structures.',
+      impactAr: 'تحقيق نمو إيرادات Q1 بنسبة 22% مقارنة بالعام السابق، وإدارة محافظ سنوية تتجاوز SAR 61.9M بكفاءة مالية فائقة ومستدامة.',
+      impactEn: 'Delivered 22% Q1 LFL revenue growth, steering annual retail portfolios exceeding SAR 61.9M with full commercial mastery.'
     },
     'S8': {
-      titleAr: 'تزامن مبيعات الـ ERP والـ POS (Live ERP Integration)',
-      titleEn: 'Live ERP Integration (تزامن مبيعات الـ ERP)',
-      challengeAr: 'بيانات المبيعات والمؤشرات متباعدة ومحصورة في تقارير ورقية مكتبية معقدة لا يستفيد منها الموظفون على الأرض لتصحيح الانحرافات والكساد.',
+      titleAr: 'ذكاء الـ ERP والربط اللحظي (ORA Cockpit & D365 Sync)',
+      titleEn: 'Live ERP Integration (ORA Cockpit & D365)',
+      challengeAr: 'بيانات المبيعات والمؤشرات متباعدة ومحصورة في ملفات PDF وإكسل يدوية بطيئة لا تمنح المشرف الميداني رؤية فورية لاتخاذ القرار.',
       challengeEn: 'Dynamics 365 metrics buried in remote, desktop-bound office reports; frontline managers had zero access to live figures.',
-      actionAr: 'ابتكار وبناء لوحة تحكم رقمية ميدانية (مثل منصة ORA) تسحب البيانات اللحظية وتعيد تقديمها للفرق بشكل مؤشرات حية ومباشرة.',
-      actionEn: 'Conceived and built live mobile telemetry views directly parsing D365 / POS data into visual, action-ready dashboards.',
-      impactAr: 'تمكين مدراء الفروع من رصد انخفاض المبيعات والتدخل السريع لتلافي الفجوات خلال نوافذ زمنية لا تتعدى الـ 15 دقيقة.',
-      impactEn: 'Empowered store managers to monitor performance gaps in real-time and execute floor corrections within 15-minute intervals.'
+      actionAr: 'بناء منصة ORA Cockpit لربط بيانات Dynamics 365 وSQL وReact/TypeScript لتحديث تقارير الفروع الستة تلقائياً كل 15 دقيقة.',
+      actionEn: 'Built ORA Cockpit connecting Dynamics 365, SQL, React and Vercel to stream live 15-minute operational dashboards for 6 stores.',
+      impactAr: 'تقليص التحليل اليدوي بنسبة 80%، وتمكين مدراء الفروع من رصد الفرص الضائعة وتصحيح الانحرافات التشغيلية فورياً.',
+      impactEn: 'Slashed manual Excel reporting by 80%, empowering store managers to correct floor bottlenecks in real time.'
     }
   };
 
-  // Helper to find peripheral node under mouse cursor
+  // Helper to find peripheral node or its badge box under mouse cursor
   function findNodeAt(mx, my) {
     return nodes.find((n, idx) => {
       if (idx === 0) return false; // skip central core
+      // Check node circle hit
       const dx = mx - n.x;
       const dy = my - n.y;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      return dist <= 24; // tactile hit target
+      if (Math.hypot(dx, dy) <= 22) return true;
+      // Check badge box hit
+      if (n.badgeBox) {
+        const b = n.badgeBox;
+        if (mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h) return true;
+      }
+      return false;
     });
   }
 
@@ -647,10 +706,8 @@
     panel.style.display = 'block';
     panel.classList.add('active');
 
-    // Smooth scroll into view on mobile so the user sees it immediately
-    if (window.innerWidth < 768) {
-      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
+    // Smooth scroll into view
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   function triggerSynchronization(sync) {
@@ -668,26 +725,14 @@
       const activeTexts = btnImpactToggle.querySelectorAll('.state-active-text');
 
       if (isSynchronized) {
-        btnImpactToggle.classList.add('active');
-        idleTexts.forEach(el => el.style.display = 'none');
-        activeTexts.forEach(el => el.style.display = 'inline');
-      } else {
         btnImpactToggle.classList.remove('active');
         idleTexts.forEach(el => el.style.display = 'inline');
         activeTexts.forEach(el => el.style.display = 'none');
-
-        // Close spotlight on dispersion
-        const panel = document.getElementById('metricSpotlight');
-        if (panel) {
-          panel.style.display = 'none';
-          panel.classList.remove('active');
-        }
-        activeSpotlightNodeId = null;
+      } else {
+        btnImpactToggle.classList.add('active');
+        idleTexts.forEach(el => el.style.display = 'none');
+        activeTexts.forEach(el => el.style.display = 'inline');
       }
-    }
-
-    if (hintText) {
-      hintText.textContent = isSynchronized ? strings[currentLang].triggerActionSync : strings[currentLang].triggerActionChaos;
     }
   }
 
@@ -732,11 +777,7 @@
 
     // Check hover to change cursor
     const hoveredNode = findNodeAt(mouse.x, mouse.y);
-    if (hoveredNode) {
-      canvas.style.cursor = 'pointer';
-    } else {
-      canvas.style.cursor = 'default';
-    }
+    canvas.style.cursor = hoveredNode ? 'pointer' : 'default';
   });
 
   canvas.addEventListener('mouseleave', () => {
