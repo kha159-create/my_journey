@@ -1,5 +1,5 @@
 // Service Worker for Khaleel Alsani Portfolio PWA
-const CACHE_NAME = 'khaleel-portfolio-v20261021-force';
+const CACHE_NAME = 'khaleel-portfolio-v20261102';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

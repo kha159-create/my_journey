@@ -80,6 +80,8 @@
   if (siteHeader) {
     const handleScroll = () => {
       siteHeader.classList.toggle('scrolled', window.scrollY > 20);
+      const waFab = document.querySelector('.floating-mobile-wa');
+      if (waFab) waFab.classList.toggle('is-shown', window.scrollY > 520);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
